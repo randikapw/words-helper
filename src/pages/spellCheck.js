@@ -6,6 +6,7 @@ import wordsService from "../services/wordsService";
 const SpellCheck = () => {
     const [value, setValue] = useState("");
     const [currentWord, setCurrentWord] = useState("ready");
+    const [currentEnteredWord, setCurrentEnteredWord] = useState("");
     const [previousWord, setPreviousWord] = useState(null);
     const [showCurrent, setShowCurrent] = useState(false);
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
@@ -55,6 +56,7 @@ const SpellCheck = () => {
             wordsService.scoreAttempt(currentWord,true,isFirstAttempt);
             setIsFirstAttempt(false);
             speak({ text: currentWord });
+            setCurrentEnteredWord(lclValue);
             setShowCurrent(true);
         }
         setValue("");
@@ -115,7 +117,7 @@ const SpellCheck = () => {
                 <h2>Type the word with correct spellings</h2>
             </div>
             {showCurrent 
-                ? <DisplayWord word={currentWord}/>
+                ? <><DisplayWord word={currentWord}/><div>Word you entered: <span style={{color:"red"}}>{currentEnteredWord}</span></div> </>
                 : <div>Type 'L' then Enter to listen the word again</div>
             }
             <div className="group">

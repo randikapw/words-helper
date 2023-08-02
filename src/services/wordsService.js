@@ -118,6 +118,9 @@ class WordService {
             score += (isFirstAttempt ? 2 : 1)
         } else if (isFirstAttempt && score > 0) {
             score -= 1;
+            if(score > 5) score -= 1;
+            if(score > 10) score -= 1;
+            if(score > 20) score -= 1;
         }
         // if(!isFirstAttempt) alert("next attempt");
         this.#wordsMap[word] = { ...wordObj, score, attempts, date }

@@ -2,6 +2,7 @@ import { fireEvent } from "@testing-library/react";
 import { getItemAsJson, getToday, setItemFromJson } from "../utils";
 import counterService from "./counterService";
 import moment from "moment";
+import todaySpecialService from "./todaySpecialService";
 
 export const lcl_key = "Difficult_Words";
 let today = getToday().toISOString();
@@ -85,6 +86,16 @@ class IrregularVerbService {
         // console.log("unsorted",unsortedWords)
         const sortedWords = unsortedWords.sort(this.#prioritySorter);
         console.log("sorted", sortedWords)
+        const todaySpecials = todaySpecialService.getTodaySpecials(lcl_key);
+        if (!todaySpecials.length) {
+            const l = Math.min(sortedWords.length, 3);
+            console.log("L is", l)
+            for (let index = 0; index < l; index++) {
+                todaySpecialService.addToTodaySpecials(lcl_key, sortedWords[index] )
+                
+            console.log("i is", index)
+            }
+        }
         return sortedWords;
     }
 
@@ -100,6 +111,14 @@ class IrregularVerbService {
         newWord = newWord.replace( /\(#\)/g, '\t' );
         console.log(`updating ${newWord}`)
         this.addMany([newWord]);
+    }
+
+    #reduceByWieght(marks) {
+        if (marks < 1) return marks;
+        if(--marks < 5) return marks;
+        if(--marks < 10) return marks;
+        if(--marks < 20) return marks;
+        return --marks;
     }
 
     scoreAttempt(word, isWrong = false, isFirstAttempt = true, langType) {
@@ -124,8 +143,8 @@ class IrregularVerbService {
             wordObj[vTypeKey] += newPoints;
         } else if (isFirstAttempt) { //Answer is correct at firstattempt
             ++attempts;
-            if (score > 0) score -= 1;
-            if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] -= 1;
+            if (score > 0) score = this.#reduceByWieght(score);
+            if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = this.#reduceByWieght(wordObj[vTypeKey]);
         }
         
         this.#wordsMap[word.english] = {...wordObj, score, attempts}
@@ -175,6 +194,15 @@ class IrregularVerbService {
         } else if (!this.#lazyTimeoutObj) {
             this.#lazyTimeoutObj = setTimeout(() => this.save(), this.#lazyTimeout);
         }
+    }
+
+    getTodaySpecials() {
+        return todaySpecialService.getTodaySpecials(lcl_key);
+    }
+
+    addToTodaySpecials(content) {
+        //todo need to validate content
+        todaySpecialService.addToTodaySpecials(content);
     }
 
     
