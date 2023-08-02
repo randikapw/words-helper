@@ -51,7 +51,6 @@ comprehensive	පුළුල්	rw fb qno: 592
 propotion	සමානුපාතිකය	rw fb qno: 1
 predate	පෙර	rw fb qno: 2
 dignity	ගරුත්වය	rw fb qno: 43
-susceptible	සංවේදීයි	rw fb qno: 100
 leapfrogging	පැනීම	rw fb qno: 121
 booming	පිම්බෙනවා | growing	rw fb qno: 253
 deterrent	වැළැක්වීම	rw fb qno: 2
@@ -136,7 +135,6 @@ symphony	තූර්ය සංවාදය	apeuni fib-rw n817
 placate	v. කෝපය සමනය කරනවා	apeuni fib-rw #812
 celestial	ආකාශ - (in) space | දිව්‍යමය - heavenly	apeuni fib-rw  #817
 detrimental	පාඩු ඇති කරන (damaging | harmful)	apeuni fib-rw  #817
-unravel	විසඳනවා | බේරුම් කරනවා vt.	apeuni fib-rw  #817
 unleash	මුදවාහැරීම | release	apeuni fib-rw  #817
 persuade	ඒත්තු ගන්වනවා | නම්මා ගන්නවා	apeuni fib-rw #812
 pacify	සංසිඳනවා	apeuni fib-rw #812
@@ -224,3 +222,105 @@ convinced	අවබෝධ කළ | ඒත්තු ගත්	apeuni fib-l #876
 prohibited	තහනම්	apeuni fib-l #876
 sustained	පෝෂිත | තිරසාර විය	apeuni fib-r #845
 intervened	මැදිහත් වුණා	apeuni fib-r #184
+strive	උත්සාහ කරන්න	ptelabs fib-r 94
+abandoning	අත්හැරීම	ptelabs fib-r 94
+competent	දක්ෂ	ptelabs fib-r 94
+dizzy	කරකැවිල්ල	ptelabs fib-r 94
+convey	ගෙන යනවා | පවරා දෙනවා	ptelabs fib-r 94
+flourish	සමෘද්ධිමත්	ptelabs fib-r 94
+vivid	විචිත්රවත්	ptelabs fib-r 108
+oftentimes	බොහෝ විට	ptelabs fib-r 108
+aquatic	ජලජ	ptelabs fib-r 108
+dilatory	අතපසු කරන | ප්‍රමාදකාරී	ptelabs fib-r 108
+indefatigable	ඉතා උත්සාහවත්වෙ | භෙස නොසලකන	ptelabs fib-r 108
+harsh	අමිහිරි | කටුක	ptelabs fib-r 211
+curb	සීමා කරන්න | පාලනය | මැඩලනවා | සීමාව	ptelabs fib-r 48
+encroachment	ආක්‍රමණය කිරීම	ptelabs fib-r 48
+invasion	ආක්‍රමණය	ptelabs fib-r 48
+wetland	තෙත් බිම	ptelabs fib-r 48
+deplete	ප්‍රමාණය අඩු කරනවා | හිස් කරනවා	apeuni fib-rw #768
+sophisticated	සංකීර්ණ | අතිපණ්ඩිත | විචිත්‍ර	apeuni fib-rw 767
+rejuvenated	තිරිහන් | පුනර්ජීවනය විය	apeuni fib-rw 767
+stitch	මසනවා | ගොතනවා | මැහුම | ගෙත්තම	apeuni fib-rw 771
+compile	සකස් කරනවා |  සම්පාදනය කරනවා	apeuni fib-rw 771
+invasive	ආක්රමණශීලී	apeuni fib-rw 771
+onset	ආක්‍රමණය ආරම්භය | වේගයෙන් පහරදීම	apeuni fib-r #763
+impaired	ආබාධිත	apeuni fib-r #758
+composition	සංයුතිය *	apeuni fib-r #755
+deprivation	අහිමි වීම , වියෝගය	apeuni fib-r #755
+imprison	සිරගත කරනවා	apeuni
+susceptible	ගොදුරු විය හැක | vulnerable to	rw fb qno: 100
+unravel	විසඳනවා (ප්‍රහේලිකා) | බේරුම් කරනවා vt.	apeuni fib-rw  #817
+obsolete	යල්පැන ගිය , out dated	apeuni fib-rw #768
+frigid	ශ්‍රීතාධික	ptelabs fib-rw 370
+shallow	නොගැඹුරු	ptelabs fib-rw 370
+polyp	බහුපාදියා	ptelabs fib-rw 370
+utter	දොඩවනවා, පවසනවා (v) | සම්පූර්ණ (adj)	ptelabs fib-rw 370
+ridge	කඳු වැටිය | a long narrow hilltop, mountain range, or watershed.	ptelabs fib-rw 370
+rift	පැල්ම | පැළුම	ptelabs fib-rw 370
+inevitable	unavoidable | නොවැළැක්විය හැකිය	ptelabs fib-rw 370
+erupt	පුපුරා යයි	ptelabs fib-rw 370
+presumably	අනුමාන වශයෙන් | (i assume, i belived)	ptelabs fib-rw 370
+clam	බෙල්ලා	ptelabs fib-rw 370
+wandering	ඉබාගාතේ යනවා	ptelabs fib-rw 478
+constrain	සීමා කරනවා (verb)	ptelabs fib-r 160
+constraint	වැළැක්වීම | සීමාව (noun)	ptelabs fib-r 160 sub
+communal	කුලවාදී | වාර්ගික	ptelabs fib-r 179
+invade		ptelabs fib-r
+realization	අවබෝධය	ptelabs fib-r 228
+fatal	මාරක	ptelabs fib-r 228 sub
+fatality	මාරක විපත , මාරක අනතුර | කර්මශක්තිය, දෛවයෙහි නොවැළැක්වියහැකි බලය	ptelabs fib-r 228
+mutation	විකෘතිය | වෙනස් වීම	ptelabs fib-r 231
+deter	බාධා කරනවා	ptelabs fib-r 252
+forerunners	පුරෝගාමීන්	ptelabs fib-rw 502
+anticipate	අපේක්ෂා කරනවා	ptelabs fib-rw 622
+expressive	ප්රකාශිත	ptelabs fib-rw 622
+elite	ප්රභූ | ඉතා උසස් කොටස	ptelabs fib-rw 622
+some location	යම් ස්ථානයක්	ptelabs fib-rw 644
+frustating	කලකිරෙනවා	ptelabs fib-r 266
+adopt	*යොදා ගන්නවා | දරුවෙකු හදා ගන්නවා	ptelabs fib-r 267
+emphasis	අවධාරණය | බරකොට කීම	ptelabs fib-r 268
+spawn	පැටවු ගහනවා | බිජු දමනවා	ptelabs fib-r 267
+versed	ප්‍රවීණ , නිපුණ , දක්ෂ	ptelabs fib-r 270
+adequate	ප්‍රමාණවත් | සෑභෙන	ptelabs fib-r 271(sub)
+inadequate	මදි වූ | ප්‍රමාණයෙන් නොසෑභෙන	ptelabs fib-r 271
+extravagant	ප්‍රමාණය ඉක්මවා යන , අතිරික්ත	ptelabs fib-r 271
+monetary	මූල්‍යමය,  මුදල් පිළිබඳ	ptelabs fib-r 272
+acknowledge	පිළිගන්නවා	ptelabs fib-r 273
+regardless	නොසලකා	ptelabs fib-r 273
+critic	විචාරකයා | රසිකයා	ptelabs fib-r 273
+demerit	දෝෂය | අකුසලය , පාපය	ptelabs fib-r 273
+acclaim	පිළිගැනීම , ගෞරවයෙන් පිළිගන්නවා	ptelabs fib-r 273
+conversely	අනෙක් අතට	ptelabs fib-r 273
+boredom	කරදරකාරී ස්වභාවය	ptelabs fib-r 274
+scheme	යෝජනා ක්‍රමය	ptelabs fib-r 275
+perk	වරප්රසාද	ptelabs fib-r 275
+emancipate	නිදහස් කරනවා | විමුක්තිය	ptelabs
+ingestion	ශරීරගත වීම	apeuni fib-rw #853
+predilection	නැඹුරුව | අභිරුචිය	apeuni fib-rw #853
+unappetizing	අරුචිය	apeuni fib-rw #851
+trigger	අවුලුවාලීම | ක්‍රියාරම්භකය | තුවක්කුවේ කොකා	apeuni fib-rw #851
+contend	තරග කරනවා | විවාද කරනවා	apeuni fib-rw #851
+dilute	තනූක කරනවා | බාලකරනවා | තනුක(adj)	apeuni fib-rw #851
+comprise	අඩංගු වෙනවා | සමන්විත වේ | අඩංගු කරනවා	apeuni fib-rw #850
+apprise	දැනුවත් කරනවා | මිල නියම කරනවා	apeuni fib-rw #850
+fading	වියැකී යනවා	apeuni fib-rw #850
+inhabit	වාසය කරනවා	apeuni fib-rw #850
+refurbishment	අලුත්වැඩියා කිරීම	apeuni fib-rw #849
+nugget of wisdom	helpful bits of knowledge or advice, often from experience.	apeuni fib-rw #846
+nugget	කුට්ටිය | පිඬ	apeuni fib-rw #846
+instrumental	උපකාරී	apeuni fib-rw #846
+longevity	දීර්ඝායුෂ	apeuni fib-rw #846
+sensitivity	සංවේදීතාව	apeuni fib-rw #846
+intend	අදහස් කරනවා	apeuni fib-r #840
+replenished	නැවත පිරෙව්වා	apeuni fib-r #827
+plentiful	බහුල	apeuni fib-r #827
+devastating	වනසන	apeuni fib-r #829
+cohort	සමුහය	apeuni fib-rw #261
+confounded	අවුල් වූ | ව්‍යාකූල වූ	apeuni fib-rw #261
+deprive	අහිමි කරනවා	apeuni fib-r #843
+criteria	නිර්ණායක	apeuni fib-r #843
+seldom	කලාතුරකින්	apeuni fib-r #330
+unwilling	අකමැති	apeuni fib-r #330
+empathy	සහකම්පනය	apeuni fib-r #558
+ultimately	අවසානයේදී	apeuni fib-r #558

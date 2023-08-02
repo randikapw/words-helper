@@ -102,6 +102,14 @@ class IrregularVerbService {
         this.addMany([newWord]);
     }
 
+    #reduceByWieght(marks) {
+        if (marks < 1) return marks;
+        if(--marks < 5) return marks;
+        if(--marks < 10) return marks;
+        if(--marks < 20) return marks;
+        return --marks;
+    }
+
     scoreAttempt(word, isWrong = false, isFirstAttempt = true, vType) {
         const wordObj = this.#wordsMap[word.v1];
         let score = wordObj.score || 0;
@@ -116,8 +124,8 @@ class IrregularVerbService {
             wordObj[vTypeKey] += newPoints;
         } else if (isFirstAttempt) { //if correct AND first attempt
             ++attempts;
-            if (score > 0) score -= 1;
-            if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] -= 1;
+            if (score > 0) score = this.#reduceByWieght(score);
+            if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = this.#reduceByWieght(wordObj[vTypeKey]);
         }
         
         this.#wordsMap[word.v1] = {...wordObj, score, attempts}

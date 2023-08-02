@@ -30,6 +30,7 @@ const IrregularVerbs = () => {
     const [value, setValue] = useState("");
     const [currentWord, setCurrentWord] = useState(null);
     const [currentWordType, setCurrentWordType] = useState(null);
+    const [currentEnteredWord, setCurrentEnteredWord] = useState("");
     const [previousWord, setPreviousWord] = useState(null);
     const [showCurrent, setShowCurrent] = useState(false);
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
@@ -92,6 +93,7 @@ const IrregularVerbs = () => {
             irregularVerbService.scoreAttempt(currentWord, true, isFirstAttempt, currentWordType);
             setIsFirstAttempt(false);
             speak({ text: currentWord[currentWordType] });
+            setCurrentEnteredWord(lclValue);
             setShowCurrent(true);
         }
         setValue("");
@@ -152,7 +154,7 @@ const IrregularVerbs = () => {
                 <h2>Type the all three verbfroms seperated by spaces with correct spellings</h2>
             </div>
             {showCurrent 
-                ? <DisplayWord word={currentWord}/>
+                ? <><DisplayWord word={currentWord}/><div>Word you entered: <span style={{color:"red"}}>{currentEnteredWord}</span></div> </>
                 : <div>Type 'L' then Enter to listen the word again or, Type 'S' then Enter to show the word.</div>
             }
             <div className="group">
