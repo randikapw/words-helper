@@ -324,3 +324,16 @@ seldom	කලාතුරකින්	apeuni fib-r #330
 unwilling	අකමැති	apeuni fib-r #330
 empathy	සහකම්පනය	apeuni fib-r #558
 ultimately	අවසානයේදී	apeuni fib-r #558
+extent	ප්‍රමාණය	apeuni fib-rw #862
+in/to some extent	යම් දුරකට / යම් ප්‍රමාණයකින්	apeuni fib-rw #862
+in some cases	සමහර අවස්ථාවලදී	apeuni fib-rw #862
+in some way	යම් ආකාරයකින්	apeuni fib-rw #869
+impose	පනවනවා, (thrust,urge) , ආරූඩ කරනවා  | රවටනවා (misuse, exploit)	apeuni fib-rw #869
+relying	රඳා පවතී	apeuni fib-rw #869
+lessen	අඩු කරනවා | අඩු වෙනවා	apeuni fib-rw #429
+commence	ආරම්භ කරනවා	apeuni fib-rw #429
+impact	බලපෑම (more physically) | ගැටුම	apeuni fib-rw #429
+undergo	දරනවා / දුකට යටත් වෙනවා	apeuni fib-r #679
+phased	අදියර වශයෙන් (adj)	apeuni fib-r #679
+influx	ගලා ඒම | ආගමනය	apeuni fib-r #72
+hindering	බාධා කරනවා	apeuni fib-r #84
