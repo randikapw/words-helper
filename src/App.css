@@ -24,6 +24,15 @@ textarea {
 	border-radius: 3px;
 }
 
+.examplesAvilable {
+    color: blue;
+}
+
+.examplesView {
+    color: blue;
+    border: 1px solid rgb(255 255 255);
+}
+
 button {
 	width: 100%;
 	display: block;
@@ -33,7 +42,12 @@ button {
 	cursor: pointer;
 	outline: none;
 	background: rgb(227, 240, 219);
-	;
+	margin: 2px;
+    border-radius: 8px;
+}
+
+button:hover {
+	background: rgb(204, 214, 198);
 }
 
 .options {
@@ -51,6 +65,24 @@ button {
 	outline: none;
 	background: rgb(18, 201, 176);
 	;
+}
+
+
+.options span {
+    width: unset;
+    display: block;
+    /* padding: 10px 22px; */
+    /* color: rgb(10, 10, 10); */
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    background: rgb(33 150 243 / 30%);
+    border-radius: 12px;
+	font-size: small;
+}
+
+.options span:hover {
+	background: rgba(33, 149, 243, 0.753);;
 }
 
 h2 {

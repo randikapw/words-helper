@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSpeechSynthesis } from "react-speech-kit";
 import difficultWordService from "../services/difficultWordService";
 import { useMemo } from "react";
+import { CopyText } from "../comp/copyToCipboard";
 
 const getLanguageType = (word) => {
     if (!word.sinhala?.trim()) return ["english", "sinhala"];
@@ -12,7 +13,7 @@ const getLanguageType = (word) => {
     } else if (word.score_s2e > word.score_e2s) {
         return ["sinhala", "english"];
     }
-    const r = Math.floor(Math.random() * 4);
+    const r = Math.floor(Math.random() * 10);
     //biasing to english
     if (r > 0) return ["english", "sinhala"];
     return ["sinhala", "english"];
@@ -42,7 +43,6 @@ const DifficultWords = () => {
     const [currentAnswerOptions, setCurrentAnswerOptions] = useState([]);
     const [previousWord, setPreviousWord] = useState(null);
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
-    const [editMode, setEditMode] = useState(null);
     const [index, setIndex] = useState(0);
     const { speak } = useSpeechSynthesis();
 
@@ -72,7 +72,7 @@ const DifficultWords = () => {
         const [targetLangType, answerLangType] = getLanguageType(newWord);
         const options = getOtherOptions(words, answerLangType);
         //adding correct answer to random place
-        const rand = Math.floor(Math.random() * options.length);
+        const rand = Math.floor(Math.random() * (options.length + 1));
         options.splice(rand, 0, newWord[answerLangType]);
         setPreviousWord(currentWord);
         setCurrentAnswerOptions(options);
@@ -105,22 +105,12 @@ const DifficultWords = () => {
 
     }
 
-    const onRemove = (key) => {
-        difficultWordService.removeWord(key);
-        speak({ text: getNextWord() });
-    }
-
-    const onEdit = (key, newKey) => {
-        difficultWordService.updateWord(key, newKey);
-        //setCurrentWord(newKey);
-        speak({ text: getNextWord() });
-        setEditMode(null);
-
-    }
-
     const onSearch = (key, soruce) => {
-        if (soruce === "madura") window.open(`https://www.maduraonline.com/?find=${key}`, "_blank");
-        else window.open(`https://www.google.com/search?q=${key}&oq=${key}`, "_blank");
+        if (soruce === "madura") return window.open(`https://www.maduraonline.com/?find=${key}`, "_blank");
+        if (soruce === "bing") return window.open(`https://www.bing.com/search?q=${key}`, "_blank");
+        if (soruce === "trans") return window.open(`https://translate.google.com/details?hl=en&sl=en&tl=si&text=${key}&op=translate`, "_blank");
+        
+        return window.open(`https://www.google.com/search?q=${key}&oq=${key}`, "_blank");
     }
 
     const addToTSP = (word) => {
@@ -141,7 +131,70 @@ const DifficultWords = () => {
         </div>
     }
 
+    const Examples = ({word, onHide}) => {
+        const gptTxt = useMemo(() => `give me 3 simple sentences using the word "${word['english']}"`, [word]);
+        const [editMode, setEditMode] = useState(word.examples ? false : true);
+        const [editText, setEditText] = useState(word.examples ? word.examples : '');
+
+        function onTextChange(value) {
+            if (editMode) setEditText(value);
+        }
+
+        function onUpdate() {
+            difficultWordService.updateExamples(word, editText)
+            setEditMode(false)
+        }
+
+        return <div>
+            {editMode && <div className="options">
+                AI ASK: {gptTxt} 
+                <CopyText textToCopy={gptTxt}/>
+                <span onClick={() => onSearch(gptTxt, "bing")}>Bing</span>
+            </div>}
+        <textarea
+            value={editText}
+            rows="10"
+            onChange={(e) => onTextChange(e.target.value)}
+            className={editMode?'':'examplesView'}
+        ></textarea>
+        { editMode 
+        ?<div className="options">
+        <span onClick={onUpdate}>Update Examples</span>
+        <span onClick={() => setEditMode(false)}>Cancel</span>
+        </div>
+        : <div className="options">
+            <span onClick={() => setEditMode(true)}>Edit Examples</span>
+            <span onClick={onHide}>Hide Examples</span>
+            </div>
+    }
+
+        </div>
+    }
+
     const DisplayWord = ({ word, displayMore }) => {
+        const [editText, setEditText] = useState("");
+        const [editMode, setEditMode] = useState(false);
+        const [showExamples, setShowExamples] = useState(false);
+
+        const onRemove = (key) => {
+            difficultWordService.removeWord(key);
+            speak({ text: getNextWord() });
+        }
+    
+        const onEdit = (key, newKey) => {
+            difficultWordService.updateWord(key, newKey);
+            //setCurrentWord(newKey);
+            speak({ text: getNextWord() });
+            setEditMode(false)
+    
+        }
+
+        const toggoleShowExamples = () => {setShowExamples(!showExamples)}
+        const toggoleEditMode = () => {
+            setEditText(`${word.english}(#)${word.sinhala}(#)${word.comment}`);
+            setEditMode(!editMode);
+        }
+
         return <div className="group">
             <h1>
                 {
@@ -154,26 +207,32 @@ const DifficultWords = () => {
                 word && displayMore && <span>{word["comment"]}</span>
             }
             {editMode
-                ? <div>
+                ? <div className="options">
                     <textarea
-                        value={editMode}
-                        onChange={(e) => setEditMode(e.target.value)}
-                    ></textarea><span onClick={() => onEdit(word, editMode)}>Update</span>
-                    <span> | </span> <span onClick={() => setEditMode(null)}>Cancel</span>
+                        value={editText}
+                        onChange={(e) => setEditText(e.target.value)}
+                    ></textarea><span onClick={() => onEdit(word, editText)}>Update</span>
+                    <span onClick={toggoleEditMode}>Cancel</span>
                 </div>
-                : <div>
-                    <span onClick={() => setEditMode(`${word.english}(#)${word.sinhala}(#)${word.comment}`)}>Edit</span>
-                    <span> | </span> <span onClick={() => onRemove(word)}>Remove</span>
+                : <div >
+                    <div className="options">
+                    <span onClick={toggoleEditMode}>🖉</span>
                     {(displayMore || (currentLangType === "english")) && <>
-                    <span> | </span> <span onClick={() => speak({ text: word['english'] })}>Speak (E)</span>
+                    <span onClick={() => speak({ text: word['english'] })}>🔊(E)</span>
                     </>}
-                    <span> | </span> <span onClick={() => onSearch(word['english'])}>Google (E)</span>
-                    <span> | </span> <span onClick={() => onSearch(word['english'], "madura")}>Madura (E)</span>
-                    <span> | </span> <span onClick={() => onSearch(word[currentLangType])}>Google (S)</span>
-                    <span> | </span> <span onClick={() => onSearch(word[currentLangType], "madura")}>Madura (s)</span>
+                    <span className={word?.examples?'examplesAvilable':''} onClick={toggoleShowExamples}>{showExamples? 'Hide': word?.examples?'Show':''} Ex</span>
+                    <span onClick={() => onSearch(word['english'])}>Google (E)</span>
+                    <span onClick={() => onSearch(word['english'], "madura")}>මදුර(E)</span>
+                    <span onClick={() => onSearch(word['english'], "trans")}>🌏(E)</span>
+                    <span onClick={() => onSearch(word['sinhala'])}>Google (සි)</span>
+                    <span onClick={() => onSearch(word['sinhala'], "madura")}>මදුර(සි)</span>
                     {displayMore !== "tsps" && <>
-                    <span> | </span> <span onClick={() => difficultWordService.addToTodaySpecials(word)}>TSP</span>
+                    <span onClick={() => difficultWordService.addToTodaySpecials(word)}>TSP</span>
+                    <span onClick={() => onRemove(word)}>Remove</span>
                     </>}
+                    {word && <CopyText textToCopy={word.english} label="Copy(E)"/>}
+                    </div>
+                    {showExamples && <Examples word={word} onHide={toggoleShowExamples} />}
                 </div>
             }
         </div>

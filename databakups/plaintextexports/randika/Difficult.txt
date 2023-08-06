@@ -1,339 +1,398 @@
 ###Difficult_Words###
-repels	විකර්ෂණය කරයි	rw fb qno: 42
-capped	ආවරණය කර ඇත	rw fb qno: 43
-sophistication	නවීනත්වය	rw fb qno: 45
-surge	හැඩ පාර	rw fb qno: 51
-smirk	සිනහවකින්	rw fb qno: 56
-retention	අත්නෑර තබාගැනීම	rw fb qno: 66
-notion	සංකල්පය	rw fb qno: 69
-laborious	වෙහෙසකාරී	rw fb qno: 83
-blossoms	මල් හට ගනී	rw fb qno: 87
-conventional	typical | සාම්ප්‍රදායික	rw fb qno: 88
-contemporary	සමකාලීන | pressent-time	rw fb qno: 101
-reservoirs	ජලාශ	rw fb qno: 104
-occupancy	පදිංචිය	rw fb qno: 105
-distinguish	වෙන්කර හඳුනාගන්න	rw fb qno: 109
-steadfast	ස්ථිරයි	rw fb qno: 110
-abide	රැඳී සිටින්න	rw fb qno: 111
-immense	අතිමහත්	rw fb qno: 118
-seemingly	පෙනෙන විදිහට	rw fb qno: 119
-heralded	ප්‍රකාශ කළා	rw fb qno: 121
-expedition	ගවේෂණය	rw fb qno: 124
-desperately	මංමුලා සහගත ලෙස	rw fb qno: 130
-determine	තීරණය කරන්න	rw fb qno: 131
-convincing	ඒත්තු ගන්වයි	rw fb qno: 132
-delicacy	ප්රණීත	rw fb qno: 134
-phenomenon	සංසිද්ධිය	rw fb qno: 135
-patronage	අනුග්රහය දක්වයි	rw fb qno: 145
-beside	පසෙකින් | at a side	rw fb qno: 146
-dwells	වාසය කරයි	rw fb qno: 147
-compensate	වන්දි ගෙවන්න	rw fb qno: 153
-rodents	මීයන්	rw fb qno: 161
-steep	බෑවුම්	rw fb qno: 162
-subordination	යටත්වීම	rw fb qno: 167
-convictions	විශ්වාසයන්	rw fb qno: 169
-attire	ඇඳුම් පැළඳුම්	rw fb qno: 175
-enigma	ප්‍රහේලිකාව	rw fb qno: 191
-embarrassed	ලැජ්ජයි	rw fb qno: 199
-fierce	දරුණු	rw fb qno: 206
-abolishing	අහෝසි කරනවා	rw fb qno: 245
-drab	අඳුරු	rw fb qno: 253
-congestion	තදබදය	rw fb qno: 255
-besides	අමතරව	rw fb qno: 357
-emerged	මතු විය	rw fb qno: 360
-intense	දැඩි	rw fb qno: 380
-certain	සමහර	rw fb qno: 412
-reinforce	ශක්තිමත් කරන්න	rw fb qno: 428
-urge	ඉල්ලා සිටින්න	rw fb qno: 442
-overwhelming	අතිමහත්	rw fb qno: 453
-diminished	අඩු වී ඇත	rw fb qno: 523
-comprehensive	පුළුල්	rw fb qno: 592
-propotion	සමානුපාතිකය	rw fb qno: 1
-predate	පෙර	rw fb qno: 2
-dignity	ගරුත්වය	rw fb qno: 43
-leapfrogging	පැනීම	rw fb qno: 121
-booming	පිම්බෙනවා | growing	rw fb qno: 253
-deterrent	වැළැක්වීම	rw fb qno: 2
-undermined	යටපත් කර ඇත	rw fb qno: 48
-beholder	නරඹන්නා	rw fb qno: 56
-gratification	තෘප්තිය	rw fb qno: 83
-buds	අංකුර	rw fb qno: 87
-instinct	සහජ බුද්ධිය	rw fb qno: 90
-deterioration	පිරිහීම	rw fb qno: 105
-stiff	දැඩි	rw fb qno: 110
-conventions	සම්ප්‍රදාය | සම්මුතීන්	rw fb qno: 118
-dissemination	පැතිරීම	rw fb qno: 121
-eventually	අවසානයේ	rw fb qno: 124
-unvoiced	not expressed in words; unuttered; වචනවලින් ප්‍රකාශ නොකළ; නොකියන ලද	rw fb qno: 134
-dialects	උපභාෂා	rw fb qno: 147
-odoriferous	දුර්ගන්ධය	rw fb qno: 161
-opus	any artistic work, especially one on a large scale.	rw fb qno: 191
-deserves	fit | සුදුසුයි	rw fb qno: 199
-retains	රඳවා තබයි	rw fb qno: 360
-notions	සංකල්ප	rw fb qno: 411
-pale	සුදුමැලි	rw fb qno: 43
-unrivalled	අසමසම	rw fb qno: 45
-predator	ගොදුරු අල්ලන සතා | විලෝපිකයා	rw fb qno: 88
-prevailing	පවතින	rw fb qno: 101
-pole	කණුව	rw fb qno: 148
-contrasted	ප්රතිවිරුද්ධ	rw fb qno: 1
-sovereignty	ස්වෛරීත්වය | අධිරාජ්‍යය	rw fb qno: 6
-reigns	රජකම් කරයි|රාජ්‍ය පාලනය	rw fb qno: 129
-clinch	confirm or settle|දැඩි ග්‍රහණය|ස්ථීර කරනවා	rw fb qno: 637
-corollary	අනුපූරකය	rw fb qno: 6
-expenditure of effort	උත්සාහයේ වියදම(collocation)	rw fb qno: 83
-attuned	අනුගත විය | ගළපනවා | නියම නාදය ගන්නවා	rw fb qno: 6
-engagement of effort	උත්සාහයේ නියැලීම	(collocation) rw fb qno: 83
-unrivaled	අසමසම	rw fb qno: 10
-hatch | hatching	පැටවුන් බිහි කිරීම	rw fb qno: 40
-truant	absentee | අලසයා	rw fb qno: 254
-boon	වාසිය | advantage	rw fb qno: 48
-contrary	ප්‍රතිවිරුද්ධ | opposite | opposing	rw fb qno: 90
-certainly	නිසැකවම	dd fill blanks qno: 220
-prospect	අපේක්ෂාව	dd fill blanks qno: 217
-suspicious	සැක සහිත	dd fill blanks qno: 220
-aspiration	hope | අභිලාෂය	dd fill blanks qno: 264
-pervasive	පැතිරී ඇත | wide spread	dd fill blanks qno: 265
-temptation	පෙළඹවීම	dd fill blanks qno: 18
-honed	මුවහත් කර ඇත	dd fill blanks qno: 217
-ideals	පරමාදර්ශ	dd fill blanks qno: 220
-predominate	ප්රමුඛ වේ	dd fill blanks qno: 221
-scandal	offence | crime | sin	dd fill blanks qno: 223
-insight	තීක්ෂ්ණ බුද්ධිය	dd fill blanks qno: 231
-matter	n කාරණය | v ..	dd fill blanks qno: 244
-thriving	දියුණු වෙනවා	dd fill blanks qno: 264
-offenders	වැරදිකරුවන්	dd fill blanks qno: 265
-efficacy	කාර්යක්ෂමතාව	dd fill blanks qno: 71
-assertive	ස්ථිරසාර	dd fill blanks qno: 76
-advent	පැමිණීම	dd fill blanks qno: 89
-nevertheless	කෙසේ වෙතත්	dd fill blanks qno: 92
-intimate	සමීපයි	dd fill blanks qno: 140
-sough after	බොහෝ දෙනාට ප්රියවු	dd fill blanks qno: 144
-eroding	ඛාදනය වීම	dd fill blanks qno: 164
-depict	නිරූපණය	dd fill blanks qno: 215
-conservative	ගතානුගතික	dd fill blanks qno: 216
-ritual	චාරිත්රය	dd fill blanks qno: 220
-preservation	සංරක්ෂණය	dd fill blanks qno: 222
-exacerbate	උග්ර කරයි	dd fill blanks qno: 223
-trajectory	ගමන් පථය	dd fill blanks qno: 225
-intellectually	බුද්ධිමය වශයෙන්	dd fill blanks qno: 226
-"in part, to"	partly responsible	(collocation) - dd fill blanks qno: 229
-affect	බලපාන	dd fill blanks qno: 231
-roster	ලැයිස්තුව | list	dd fill blanks qno: 233
-unprecedented	adj | පෙර නොවූ විරූ	dd fill blanks qno: 237
-dwellers	පදිංචිකරුවන්	dd fill blanks qno: 239
-outweigh	ඉක්මවා යයි	dd fill blanks qno: 241
-strain	පීඩා කරනවා	dd fill blanks qno: 245
-recidivist	repeatedly අපරාධයට යොමුවන්නා	dd fill blanks qno: 265
-it was not until	එය එතෙක් නොවීය(collocation)	dd fill blanks qno: 237
-staple	ප්රධාන ආහාරය|මූලික	dd fill blanks qno: 241
-extent to which	කොතෙක් දුරට	(collocation) dd fill blanks qno: 238
-living matter	ජීවී ද්රව්යය	dd fill blanks qno: 244
-pursue	ලුහුබඳිනවා	apeuni fib-rw #812
-cacophony	අමිහිරි හඬ	apeuni fib-rw 817
-symphony	තූර්ය සංවාදය	apeuni fib-rw n817
-placate	v. කෝපය සමනය කරනවා	apeuni fib-rw #812
-celestial	ආකාශ - (in) space | දිව්‍යමය - heavenly	apeuni fib-rw  #817
-detrimental	පාඩු ඇති කරන (damaging | harmful)	apeuni fib-rw  #817
-unleash	මුදවාහැරීම | release	apeuni fib-rw  #817
-persuade	ඒත්තු ගන්වනවා | නම්මා ගන්නවා	apeuni fib-rw #812
-pacify	සංසිඳනවා	apeuni fib-rw #812
-pious	බැතිමත් | ශ්‍රද්ධාවන්ත | religious (adj)	apeuni fib-rw #812
-well-rounded	සම්පූර්ණ හා මනාව ගැලැපූ | fully developed in all aspects.	apeuni fib-rw #812
-waddle	ගාටනවා	apeuni fib-rw #812
-bristle	රළු ලෝම | පොල් කෙඳි | a short, stiff hair	apeuni fib-rw #812
-desperate	මංමුලා සහගත | hopeless	apeuni fib-rw #811
-conformance	අනුකූලතාව | compliance with standards, rules, or laws.	apeuni fib-rw #811
-compliance	අනුකූලතාව | යටත් වීම	apeuni fib-rw #811
-manifestation	විද්‍යමානවීම | demonstration	apeuni fib-rw #811
-infestation	ආසාදනය | ගහණවීම (of insects or animals)	apeuni fib-rw #811
-citation	උපුටා දැක්වීම | or: සිතාසිය	apeuni fib-rw #811
-recessed	අවපාතය	apeuni fib-rw #811
-outrageous	දරුණු | සාහසික | කෝපාවිෂ්ඨ | disgraceful	apeuni fib-rw #806
-forgo	අත්හරිනවා | අත්හරින්න	apeuni fib-rw #806
-respiring	ශ්වසනය	apeuni fib-rw #806
-inspiring	ආශ්වාදජනකයි	apeuni fib-rw #806
-potent	ප්‍රබල | බලසම්පන්න	apeuni fib-rw #806
-pertinent	අදාළ | උචිත	apeuni fib-rw #806
-prominent	විශිෂ්ට | ප්‍රමුඛ | ප්‍රසිද්ධ	apeuni fib-rw #806
-immanent	තැන්පත්	apeuni fib-rw #806
-outnumbering	සංඛ්යාව ඉක්මවා	apeuni fib-rw #804
-outperforming	අභිබවා යයි	apeuni fib-rw #804
-outweighing	වඩා බරයි	apeuni fib-rw #804
-outsourcing	බාහිරින් ලබා දීම	apeuni fib-rw #804
-antedate	පූර්වගාමී | come before (something) in date.	apeuni fib-rw #804
-herculean	දැඩි | අතිදුෂ්කර | අතිප්‍රබල	apeuni ro  #524
-voracious	කෑදරයි	apeuni ro  #524
-encompass	ආවරණය කරයි | වට කරනවා | enclose	apeuni fib-r #786
-phenomena	සංසිද්ධි | සිද්ධි	apeuni fib-r #786
-dominant	ප්‍රබල | ප්‍රධාන | ප්‍රමුඛ	apeuni fib-r #784
-alleviating	සමනය කිරීම | relieving	apeuni fib-r #781
-consequence	විපාකය | ප්‍රතිඑලය | outcome	apeuni fib-r #778
-adolescence	නවයොවුන් විය | ගැටවර විය	apeuni fib-r #778
-sacrifice	කැප කිරීම | පරිත්‍යාගය | බිල්ල	apeuni fib-r #770
-exhaustion	වෙහෙසට පත්වීම | අධික වෙභෙස | නාස්තිය | පිට කිරීම	apeuni fib-l #192
-proposition	ඉදිරිපත් කරන යෝජනාව | වාක්‍යය | hypothesis	pte essay structure
-carriers	වාහකයන්	apeuni sst #597
-merchandize	වෙළඳාම් කරනවා	apeuni hiw #250
-creers	වෘත්තීන්	me
-endeavor	උත්සාහය	apeuni fib-rw #834
-imply	අඟවනවා | අදහස් කරනවා	apeuni fib-rw #834
-alliances	සන්ධාන	apeuni fib-rw #835
-abolish	ඉවත් කරනවා | අහෝසි කරනවා	apeuni fib-rw #836
-exploit	ගසාකනවා | සූරාකනවා | අයුතු ප්‍රයෝජන ගන්නවා	apeuni fib-rw #836
-consolidation	ඒකාබද්ධ කිරීම(වීම)	apeuni fib-rw #836
-degradation	පහත වැටීම | පිරිහීම	apeuni fib-rw #836
-aroused	අවදි කළා	apeuni fib-rw #840
-ridiculous	හාස්‍යජනක ය	apeuni ro #539
-disrupting	බාධා කරනවා | කඩා කප්පල් කිරීම	apeuni fib-r #834
-encountered	හමු විය	apeuni fib-r #834
-distinctive	සුවිශේෂී	apeuni fib-r #838
-subsist	ජීවත් වෙනවා | survive	apeuni fib-r #838
-insist	අවධාරනය කරති | ස්ථීර ලෙස සිටිනවා	apeuni fib-r #838
-diverse	විවිධ	apeuni fib-r #795
-slammed	ගැහුවා | තදින් ගසා වැසීම	apeuni fib-r #797
-ingrained	සහජයෙන් පිහිටි | මුල් බැසගත්	apeuni fib-rw #887
-ambitious	මහාඅපේක්ෂා සහිත | අභිලාෂකාමී	apeuni fib-rw #887
-avid	උද්යෝගිමත් |  තද ආශා ඇති	apeuni fib-rw #887
-alike	සමානව | ඒකාකාර	apeuni fib-rw #886
-conspicuous	කැපී පෙනෙන | noticeable	apeuni fib-l  #247
-cemetery	සුසාන භූමිය	apeuni fib-l #247
-excavation	කැණීම | හෑරීම	apeuni fib-l #247
-mysterious	අද්භූත | ගුප්ත |  අභිරහස්	apeuni fib-l #86
-corresponding	සමාන | අනූරූප	ptelabs fib-rw 184
-sustainability	තිරසාර බව | නොනැසී පවත්වනවා	ptelabs fib-rw 184
-archipelago	දූපත් ගහන මුහුද	ptelabs fib-rw 256
-aground	බිම ඇනී | grounded | beached	ptelabs fib-rw 256
-scurried	ගැස්සිලා ගියා	ptelabs fib-rw 256
-shipwreck	නැව් දියබත් වීම	ptelabs fib-rw 256
-consciousness	සිහිය | විඥානය	ptelabs fib-rw 256
-inadvertently	අනවධාන ලෙස | නොසැලකිලිමත් ලෙස	ptelabs fib-rw 256
-colloquial	වාචික | කථා ව්‍යවහාර	ptelabs fib-rw 256
-colloquialism	කටවහර	ptelabs fib-rw 256
-emphasize	අවධාරණය කරනවා | වැදගත් කොට කියනවා | බරපතළ කොට කියනවා |	ptelabs fib-rw 83
-coercive	බලාත්කාර | බලහත්කාරයෙන්	apeuni fib-l #231
-permeate	පැතිරෙනවා | විනිවිද යයි	apeuni fib-l #231
-breaches	උල්ලංඝනය කරයි	apeuni fib-rw #874
-spontaneously	හිටිවන | ස්වයංසිද්ධව	apeuni fib-l #876
-rampant	ඉවසුම් නැති | බහුලව පැතුරුණු | ඉහවහා ගිය	apeuni fib-l #876
-destruction	විනාශය | හානිය | වැනසීම	apeuni fib-l #876
-immune	resistant | ප්‍රතිශක්ත	apeuni fib-l #876
-convinced	අවබෝධ කළ | ඒත්තු ගත්	apeuni fib-l #876
-prohibited	තහනම්	apeuni fib-l #876
-sustained	පෝෂිත | තිරසාර විය	apeuni fib-r #845
-intervened	මැදිහත් වුණා	apeuni fib-r #184
-strive	උත්සාහ කරන්න	ptelabs fib-r 94
-abandoning	අත්හැරීම	ptelabs fib-r 94
-competent	දක්ෂ	ptelabs fib-r 94
-dizzy	කරකැවිල්ල	ptelabs fib-r 94
-convey	ගෙන යනවා | පවරා දෙනවා	ptelabs fib-r 94
-flourish	සමෘද්ධිමත්	ptelabs fib-r 94
-vivid	විචිත්රවත්	ptelabs fib-r 108
-oftentimes	බොහෝ විට	ptelabs fib-r 108
-aquatic	ජලජ	ptelabs fib-r 108
-dilatory	අතපසු කරන | ප්‍රමාදකාරී	ptelabs fib-r 108
-indefatigable	ඉතා උත්සාහවත්වෙ | භෙස නොසලකන	ptelabs fib-r 108
-harsh	අමිහිරි | කටුක	ptelabs fib-r 211
-curb	සීමා කරන්න | පාලනය | මැඩලනවා | සීමාව	ptelabs fib-r 48
-encroachment	ආක්‍රමණය කිරීම	ptelabs fib-r 48
-invasion	ආක්‍රමණය	ptelabs fib-r 48
-wetland	තෙත් බිම	ptelabs fib-r 48
-deplete	ප්‍රමාණය අඩු කරනවා | හිස් කරනවා	apeuni fib-rw #768
-sophisticated	සංකීර්ණ | අතිපණ්ඩිත | විචිත්‍ර	apeuni fib-rw 767
-rejuvenated	තිරිහන් | පුනර්ජීවනය විය	apeuni fib-rw 767
-stitch	මසනවා | ගොතනවා | මැහුම | ගෙත්තම	apeuni fib-rw 771
-compile	සකස් කරනවා |  සම්පාදනය කරනවා	apeuni fib-rw 771
-invasive	ආක්රමණශීලී	apeuni fib-rw 771
-onset	ආක්‍රමණය ආරම්භය | වේගයෙන් පහරදීම	apeuni fib-r #763
-impaired	ආබාධිත	apeuni fib-r #758
-composition	සංයුතිය *	apeuni fib-r #755
-deprivation	අහිමි වීම , වියෝගය	apeuni fib-r #755
-imprison	සිරගත කරනවා	apeuni
-susceptible	ගොදුරු විය හැක | vulnerable to	rw fb qno: 100
-unravel	විසඳනවා (ප්‍රහේලිකා) | බේරුම් කරනවා vt.	apeuni fib-rw  #817
-obsolete	යල්පැන ගිය , out dated	apeuni fib-rw #768
-frigid	ශ්‍රීතාධික	ptelabs fib-rw 370
-shallow	නොගැඹුරු	ptelabs fib-rw 370
-polyp	බහුපාදියා	ptelabs fib-rw 370
-utter	දොඩවනවා, පවසනවා (v) | සම්පූර්ණ (adj)	ptelabs fib-rw 370
-ridge	කඳු වැටිය | a long narrow hilltop, mountain range, or watershed.	ptelabs fib-rw 370
-rift	පැල්ම | පැළුම	ptelabs fib-rw 370
-inevitable	unavoidable | නොවැළැක්විය හැකිය	ptelabs fib-rw 370
-erupt	පුපුරා යයි	ptelabs fib-rw 370
-presumably	අනුමාන වශයෙන් | (i assume, i belived)	ptelabs fib-rw 370
-clam	බෙල්ලා	ptelabs fib-rw 370
-wandering	ඉබාගාතේ යනවා	ptelabs fib-rw 478
-constrain	සීමා කරනවා (verb)	ptelabs fib-r 160
-constraint	වැළැක්වීම | සීමාව (noun)	ptelabs fib-r 160 sub
-communal	කුලවාදී | වාර්ගික	ptelabs fib-r 179
-invade		ptelabs fib-r
-realization	අවබෝධය	ptelabs fib-r 228
-fatal	මාරක	ptelabs fib-r 228 sub
-fatality	මාරක විපත , මාරක අනතුර | කර්මශක්තිය, දෛවයෙහි නොවැළැක්වියහැකි බලය	ptelabs fib-r 228
-mutation	විකෘතිය | වෙනස් වීම	ptelabs fib-r 231
-deter	බාධා කරනවා	ptelabs fib-r 252
-forerunners	පුරෝගාමීන්	ptelabs fib-rw 502
-anticipate	අපේක්ෂා කරනවා	ptelabs fib-rw 622
-expressive	ප්රකාශිත	ptelabs fib-rw 622
-elite	ප්රභූ | ඉතා උසස් කොටස	ptelabs fib-rw 622
-some location	යම් ස්ථානයක්	ptelabs fib-rw 644
-frustating	කලකිරෙනවා	ptelabs fib-r 266
-adopt	*යොදා ගන්නවා | දරුවෙකු හදා ගන්නවා	ptelabs fib-r 267
-emphasis	අවධාරණය | බරකොට කීම	ptelabs fib-r 268
-spawn	පැටවු ගහනවා | බිජු දමනවා	ptelabs fib-r 267
-versed	ප්‍රවීණ , නිපුණ , දක්ෂ	ptelabs fib-r 270
-adequate	ප්‍රමාණවත් | සෑභෙන	ptelabs fib-r 271(sub)
-inadequate	මදි වූ | ප්‍රමාණයෙන් නොසෑභෙන	ptelabs fib-r 271
-extravagant	ප්‍රමාණය ඉක්මවා යන , අතිරික්ත	ptelabs fib-r 271
-monetary	මූල්‍යමය,  මුදල් පිළිබඳ	ptelabs fib-r 272
-acknowledge	පිළිගන්නවා	ptelabs fib-r 273
-regardless	නොසලකා	ptelabs fib-r 273
-critic	විචාරකයා | රසිකයා	ptelabs fib-r 273
-demerit	දෝෂය | අකුසලය , පාපය	ptelabs fib-r 273
-acclaim	පිළිගැනීම , ගෞරවයෙන් පිළිගන්නවා	ptelabs fib-r 273
-conversely	අනෙක් අතට	ptelabs fib-r 273
-boredom	කරදරකාරී ස්වභාවය	ptelabs fib-r 274
-scheme	යෝජනා ක්‍රමය	ptelabs fib-r 275
-perk	වරප්රසාද	ptelabs fib-r 275
-emancipate	නිදහස් කරනවා | විමුක්තිය	ptelabs
-ingestion	ශරීරගත වීම	apeuni fib-rw #853
-predilection	නැඹුරුව | අභිරුචිය	apeuni fib-rw #853
-unappetizing	අරුචිය	apeuni fib-rw #851
-trigger	අවුලුවාලීම | ක්‍රියාරම්භකය | තුවක්කුවේ කොකා	apeuni fib-rw #851
-contend	තරග කරනවා | විවාද කරනවා	apeuni fib-rw #851
-dilute	තනූක කරනවා | බාලකරනවා | තනුක(adj)	apeuni fib-rw #851
-comprise	අඩංගු වෙනවා | සමන්විත වේ | අඩංගු කරනවා	apeuni fib-rw #850
-apprise	දැනුවත් කරනවා | මිල නියම කරනවා	apeuni fib-rw #850
-fading	වියැකී යනවා	apeuni fib-rw #850
-inhabit	වාසය කරනවා	apeuni fib-rw #850
-refurbishment	අලුත්වැඩියා කිරීම	apeuni fib-rw #849
-nugget of wisdom	helpful bits of knowledge or advice, often from experience.	apeuni fib-rw #846
-nugget	කුට්ටිය | පිඬ	apeuni fib-rw #846
-instrumental	උපකාරී	apeuni fib-rw #846
-longevity	දීර්ඝායුෂ	apeuni fib-rw #846
-sensitivity	සංවේදීතාව	apeuni fib-rw #846
-intend	අදහස් කරනවා	apeuni fib-r #840
-replenished	නැවත පිරෙව්වා	apeuni fib-r #827
-plentiful	බහුල	apeuni fib-r #827
-devastating	වනසන	apeuni fib-r #829
-cohort	සමුහය	apeuni fib-rw #261
-confounded	අවුල් වූ | ව්‍යාකූල වූ	apeuni fib-rw #261
-deprive	අහිමි කරනවා	apeuni fib-r #843
-criteria	නිර්ණායක	apeuni fib-r #843
-seldom	කලාතුරකින්	apeuni fib-r #330
-unwilling	අකමැති	apeuni fib-r #330
-empathy	සහකම්පනය	apeuni fib-r #558
-ultimately	අවසානයේදී	apeuni fib-r #558
-extent	ප්‍රමාණය	apeuni fib-rw #862
-in/to some extent	යම් දුරකට / යම් ප්‍රමාණයකින්	apeuni fib-rw #862
-in some cases	සමහර අවස්ථාවලදී	apeuni fib-rw #862
-in some way	යම් ආකාරයකින්	apeuni fib-rw #869
-impose	පනවනවා, (thrust,urge) , ආරූඩ කරනවා  | රවටනවා (misuse, exploit)	apeuni fib-rw #869
-relying	රඳා පවතී	apeuni fib-rw #869
-lessen	අඩු කරනවා | අඩු වෙනවා	apeuni fib-rw #429
-commence	ආරම්භ කරනවා	apeuni fib-rw #429
-impact	බලපෑම (more physically) | ගැටුම	apeuni fib-rw #429
-undergo	දරනවා / දුකට යටත් වෙනවා	apeuni fib-r #679
-phased	අදියර වශයෙන් (adj)	apeuni fib-r #679
-influx	ගලා ඒම | ආගමනය	apeuni fib-r #72
-hindering	බාධා කරනවා	apeuni fib-r #84
+repels	විකර්ෂණය කරයි	rw fb qno: 42	
+capped	ආවරණය කර ඇත	rw fb qno: 43	
+sophistication	නවීනත්වය	rw fb qno: 45	
+surge	හැඩ පාර	rw fb qno: 51	
+smirk	සිනහවකින්	rw fb qno: 56	
+retention	අත්නෑර තබාගැනීම	rw fb qno: 66	
+notion	සංකල්පය	rw fb qno: 69	
+laborious	වෙහෙසකාරී	rw fb qno: 83	
+blossoms	මල් හට ගනී	rw fb qno: 87	
+conventional	typical | සාම්ප්‍රදායික	rw fb qno: 88	
+contemporary	සමකාලීන | pressent-time	rw fb qno: 101	
+reservoirs	ජලාශ	rw fb qno: 104	
+occupancy	පදිංචිය	rw fb qno: 105	
+distinguish	වෙන්කර හඳුනාගන්න	rw fb qno: 109	
+steadfast	ස්ථිරයි	rw fb qno: 110	
+abide	රැඳී සිටින්න	rw fb qno: 111	
+immense	අතිමහත්	rw fb qno: 118	
+seemingly	පෙනෙන විදිහට	rw fb qno: 119	
+heralded	ප්‍රකාශ කළා	rw fb qno: 121	
+expedition	ගවේෂණය	rw fb qno: 124	
+desperately	මංමුලා සහගත ලෙස	rw fb qno: 130	
+determine	තීරණය කරන්න	rw fb qno: 131	
+convincing	ඒත්තු ගන්වයි	rw fb qno: 132	
+delicacy	ප්රණීත	rw fb qno: 134	
+phenomenon	සංසිද්ධිය	rw fb qno: 135	
+patronage	අනුග්රහය දක්වයි	rw fb qno: 145	
+beside	පසෙකින් | at a side	rw fb qno: 146	
+dwells	වාසය කරයි	rw fb qno: 147	
+compensate	වන්දි ගෙවන්න	rw fb qno: 153	
+rodents	මීයන්	rw fb qno: 161	
+steep	බෑවුම්	rw fb qno: 162	
+subordination	යටත්වීම	rw fb qno: 167	
+convictions	විශ්වාසයන්	rw fb qno: 169	
+attire	ඇඳුම් පැළඳුම්	rw fb qno: 175	
+enigma	ප්‍රහේලිකාව	rw fb qno: 191	
+embarrassed	ලැජ්ජයි	rw fb qno: 199	
+fierce	දරුණු	rw fb qno: 206	
+abolishing	අහෝසි කරනවා	rw fb qno: 245	
+drab	අඳුරු	rw fb qno: 253	
+congestion	තදබදය	rw fb qno: 255	
+besides	අමතරව	rw fb qno: 357	
+emerged	මතු විය	rw fb qno: 360	
+intense	දැඩි	rw fb qno: 380	
+certain	සමහර	rw fb qno: 412	
+reinforce	ශක්තිමත් කරන්න	rw fb qno: 428	
+urge	ඉල්ලා සිටින්න	rw fb qno: 442	
+overwhelming	අතිමහත්	rw fb qno: 453	1. After receiving the news, she felt an overwhelming sense of joy and relief.(#nl#)(#nl#)2. The team faced an overwhelming challenge, but they managed to overcome it through sheer determination and teamwork.(#nl#)(#nl#)3. The support and encouragement from friends and family can be overwhelming, but it also gives me the strength to keep going.
+diminished	අඩු වී ඇත	rw fb qno: 523	Later on in life the sex drive tends to diminish.(#nl#)Rising unemployment has diminished the bargaining power of people with jobs.(#nl#)The inaccuracy of the missiles greatly diminishes their effectiveness.(#nl#)Her popularity as a singer has diminished since the glory days of the 1980s.
+comprehensive	පුළුල්	rw fb qno: 592	
+propotion	සමානුපාතිකය	rw fb qno: 1	
+predate	පෙර	rw fb qno: 2	
+dignity	ගරුත්වය	rw fb qno: 43	
+leapfrogging	පැනීම	rw fb qno: 121	
+booming	පිම්බෙනවා | growing	rw fb qno: 253	
+deterrent	වැළැක්වීම	rw fb qno: 2	
+undermined	යටපත් කර ඇත	rw fb qno: 48	
+beholder	නරඹන්නා	rw fb qno: 56	1. Beauty is subjective and lies in the eyes of the beholder.(#nl#)(#nl#)2. Each artwork carries its unique message, open to interpretation by the beholder.(#nl#)(#nl#)3. The artist aimed to evoke various emotions in the beholder through his abstract paintings.
+gratification	තෘප්තිය	rw fb qno: 83	
+buds	අංකුර	rw fb qno: 87	1. The cherry tree in my backyard is covered in beautiful pink buds, ready to blossom.(#nl#)(#nl#)2. The children eagerly plucked the fresh strawberries from the plant, delighting in the sweet taste of the ripe buds.(#nl#)(#nl#)3. Spring is my favorite season when the garden is filled with colorful buds and the promise of new life.
+instinct	සහජ බුද්ධිය	rw fb qno: 90	
+deterioration	පිරිහීම	rw fb qno: 105	
+stiff	දැඩි	rw fb qno: 110	
+conventions	සම්ප්‍රදාය | සම්මුතීන්	rw fb qno: 118	
+dissemination	පැතිරීම	rw fb qno: 121	
+eventually	අවසානයේ	rw fb qno: 124	
+unvoiced	not expressed in words; unuttered; වචනවලින් ප්‍රකාශ නොකළ; නොකියන ලද	rw fb qno: 134	
+dialects	උපභාෂා	rw fb qno: 147	
+odoriferous	දුර්ගන්ධය	rw fb qno: 161	
+opus	any artistic work, especially one on a large scale.	rw fb qno: 191	
+deserves	fit | සුදුසුයි	rw fb qno: 199	
+retains	රඳවා තබයි	rw fb qno: 360	
+notions	සංකල්ප	rw fb qno: 411	
+pale	සුදුමැලි	rw fb qno: 43	
+unrivalled	අසමසම	rw fb qno: 45	
+predator	ගොදුරු අල්ලන සතා | විලෝපිකයා	rw fb qno: 88	
+prevailing	පවතින	rw fb qno: 101	
+pole	කණුව	rw fb qno: 148	
+contrasted	ප්රතිවිරුද්ධ	rw fb qno: 1	
+sovereignty	ස්වෛරීත්වය | අධිරාජ්‍යය	rw fb qno: 6	
+reigns	රජකම් කරයි|රාජ්‍ය පාලනය	rw fb qno: 129	
+clinch	confirm or settle|දැඩි ග්‍රහණය|ස්ථීර කරනවා	rw fb qno: 637	
+corollary	අනුපූරකය	rw fb qno: 6	
+expenditure of effort	උත්සාහයේ වියදම(collocation)	rw fb qno: 83	
+attuned	අනුගත විය | ගළපනවා | නියම නාදය ගන්නවා	rw fb qno: 6	
+engagement of effort	උත්සාහයේ නියැලීම	(collocation) rw fb qno: 83	
+unrivaled	අසමසම	rw fb qno: 10	
+hatch | hatching	පැටවුන් බිහි කිරීම	rw fb qno: 40	
+truant	absentee | අලසයා	rw fb qno: 254	
+boon	වාසිය | advantage	rw fb qno: 48	
+contrary	ප්‍රතිවිරුද්ධ | opposite | opposing	rw fb qno: 90	
+certainly	නිසැකවම	dd fill blanks qno: 220	
+prospect	අපේක්ෂාව	dd fill blanks qno: 217	
+suspicious	සැක සහිත	dd fill blanks qno: 220	
+aspiration	hope | අභිලාෂය	dd fill blanks qno: 264	
+pervasive	පැතිරී ඇත | wide spread	dd fill blanks qno: 265	
+temptation	පෙළඹවීම	dd fill blanks qno: 18	
+honed	මුවහත් කර ඇත	dd fill blanks qno: 217	
+ideals	පරමාදර්ශ	dd fill blanks qno: 220	
+predominate	ප්රමුඛ වේ	dd fill blanks qno: 221	
+scandal	offence | crime | sin	dd fill blanks qno: 223	
+insight	තීක්ෂ්ණ බුද්ධිය	dd fill blanks qno: 231	
+matter	n කාරණය | v ..	dd fill blanks qno: 244	
+thriving	දියුණු වෙනවා	dd fill blanks qno: 264	
+offenders	වැරදිකරුවන්	dd fill blanks qno: 265	
+efficacy	කාර්යක්ෂමතාව	dd fill blanks qno: 71	
+assertive	ස්ථිරසාර	dd fill blanks qno: 76	
+advent	පැමිණීම	dd fill blanks qno: 89	
+nevertheless	කෙසේ වෙතත්	dd fill blanks qno: 92	
+intimate	සමීපයි	dd fill blanks qno: 140	
+sough after	බොහෝ දෙනාට ප්රියවු	dd fill blanks qno: 144	
+eroding	ඛාදනය වීම	dd fill blanks qno: 164	
+depict	නිරූපණය	dd fill blanks qno: 215	
+conservative	ගතානුගතික	dd fill blanks qno: 216	
+ritual	චාරිත්රය	dd fill blanks qno: 220	
+preservation	සංරක්ෂණය	dd fill blanks qno: 222	
+exacerbate	උග්ර කරයි	dd fill blanks qno: 223	
+trajectory	ගමන් පථය	dd fill blanks qno: 225	
+intellectually	බුද්ධිමය වශයෙන්	dd fill blanks qno: 226	
+"in part, to"	partly responsible	(collocation) - dd fill blanks qno: 229	
+affect	බලපාන	dd fill blanks qno: 231	
+roster	ලැයිස්තුව | list	dd fill blanks qno: 233	
+unprecedented	adj | පෙර නොවූ විරූ	dd fill blanks qno: 237	
+dwellers	පදිංචිකරුවන්	dd fill blanks qno: 239	
+outweigh	ඉක්මවා යයි	dd fill blanks qno: 241	
+strain	පීඩා කරනවා	dd fill blanks qno: 245	
+recidivist	repeatedly අපරාධයට යොමුවන්නා	dd fill blanks qno: 265	
+it was not until	එය එතෙක් නොවීය(collocation)	dd fill blanks qno: 237	
+staple	ප්රධාන ආහාරය|මූලික	dd fill blanks qno: 241	
+extent to which	කොතෙක් දුරට	(collocation) dd fill blanks qno: 238	
+living matter	ජීවී ද්රව්යය	dd fill blanks qno: 244	
+pursue	ලුහුබඳිනවා	apeuni fib-rw #812	
+cacophony	අමිහිරි හඬ	apeuni fib-rw 817	
+symphony	තූර්ය සංවාදය	apeuni fib-rw n817	
+placate	v. කෝපය සමනය කරනවා	apeuni fib-rw #812	
+celestial	ආකාශ - (in) space | දිව්‍යමය - heavenly	apeuni fib-rw  #817	
+detrimental	පාඩු ඇති කරන (damaging | harmful)	apeuni fib-rw  #817	
+unleash	මුදවාහැරීම | release	apeuni fib-rw  #817	
+persuade	ඒත්තු ගන්වනවා | නම්මා ගන්නවා	apeuni fib-rw #812	
+pacify	සංසිඳනවා	apeuni fib-rw #812	
+pious	බැතිමත් | ශ්‍රද්ධාවන්ත | religious (adj)	apeuni fib-rw #812	
+well-rounded	සම්පූර්ණ හා මනාව ගැලැපූ | fully developed in all aspects.	apeuni fib-rw #812	
+waddle	ගාටනවා	apeuni fib-rw #812	
+bristle	රළු ලෝම | පොල් කෙඳි | a short, stiff hair	apeuni fib-rw #812	
+desperate	මංමුලා සහගත | hopeless	apeuni fib-rw #811	
+conformance	අනුකූලතාව | compliance with standards, rules, or laws.	apeuni fib-rw #811	
+compliance	අනුකූලතාව | යටත් වීම	apeuni fib-rw #811	
+manifestation	විද්‍යමානවීම | demonstration	apeuni fib-rw #811	
+infestation	ආසාදනය | ගහණවීම (of insects or animals)	apeuni fib-rw #811	
+citation	උපුටා දැක්වීම | or: සිතාසිය	apeuni fib-rw #811	
+recessed	අවපාතය	apeuni fib-rw #811	
+outrageous	දරුණු | සාහසික | කෝපාවිෂ්ඨ | disgraceful	apeuni fib-rw #806	
+forgo	අත්හරිනවා | අත්හරින්න	apeuni fib-rw #806	
+respiring	ශ්වසනය	apeuni fib-rw #806	
+inspiring	ආශ්වාදජනකයි	apeuni fib-rw #806	
+potent	ප්‍රබල | බලසම්පන්න	apeuni fib-rw #806	
+pertinent	අදාළ | උචිත	apeuni fib-rw #806	
+prominent	විශිෂ්ට | ප්‍රමුඛ | ප්‍රසිද්ධ	apeuni fib-rw #806	
+immanent	තැන්පත්	apeuni fib-rw #806	
+outnumbering	සංඛ්යාව ඉක්මවා	apeuni fib-rw #804	
+outperforming	අභිබවා යයි	apeuni fib-rw #804	
+outweighing	වඩා බරයි	apeuni fib-rw #804	
+outsourcing	බාහිරින් ලබා දීම	apeuni fib-rw #804	
+antedate	පූර්වගාමී | come before (something) in date.	apeuni fib-rw #804	
+herculean	දැඩි | අතිදුෂ්කර | අතිප්‍රබල	apeuni ro  #524	
+voracious	කෑදරයි	apeuni ro  #524	
+encompass	ආවරණය කරයි | වට කරනවා | enclose	apeuni fib-r #786	
+phenomena	සංසිද්ධි | සිද්ධි	apeuni fib-r #786	
+dominant	ප්‍රබල | ප්‍රධාන | ප්‍රමුඛ	apeuni fib-r #784	
+alleviating	සමනය කිරීම | relieving	apeuni fib-r #781	
+consequence	විපාකය | ප්‍රතිඑලය | outcome	apeuni fib-r #778	
+adolescence	නවයොවුන් විය | ගැටවර විය	apeuni fib-r #778	
+sacrifice	කැප කිරීම | පරිත්‍යාගය | බිල්ල	apeuni fib-r #770	
+exhaustion	වෙහෙසට පත්වීම | අධික වෙභෙස | නාස්තිය | පිට කිරීම	apeuni fib-l #192	
+proposition	ඉදිරිපත් කරන යෝජනාව | වාක්‍යය | hypothesis	pte essay structure	
+carriers	වාහකයන්	apeuni sst #597	
+merchandize	වෙළඳාම් කරනවා	apeuni hiw #250	
+creers	වෘත්තීන්	me	
+endeavor	උත්සාහය	apeuni fib-rw #834	
+imply	අඟවනවා | අදහස් කරනවා	apeuni fib-rw #834	
+alliances	සන්ධාන	apeuni fib-rw #835	
+abolish	ඉවත් කරනවා | අහෝසි කරනවා	apeuni fib-rw #836	
+exploit	ගසාකනවා | සූරාකනවා | අයුතු ප්‍රයෝජන ගන්නවා	apeuni fib-rw #836	
+consolidation	ඒකාබද්ධ කිරීම(වීම)	apeuni fib-rw #836	
+degradation	පහත වැටීම | පිරිහීම	apeuni fib-rw #836	
+aroused	අවදි කළා	apeuni fib-rw #840	
+ridiculous	හාස්‍යජනක ය	apeuni ro #539	
+disrupting	බාධා කරනවා | කඩා කප්පල් කිරීම	apeuni fib-r #834	
+encountered	හමු විය	apeuni fib-r #834	
+distinctive	සුවිශේෂී	apeuni fib-r #838	
+subsist	ජීවත් වෙනවා | survive	apeuni fib-r #838	
+insist	අවධාරනය කරති | ස්ථීර ලෙස සිටිනවා	apeuni fib-r #838	
+diverse	විවිධ	apeuni fib-r #795	
+slammed	ගැහුවා | තදින් ගසා වැසීම	apeuni fib-r #797	
+ingrained	සහජයෙන් පිහිටි | මුල් බැසගත්	apeuni fib-rw #887	
+ambitious	මහාඅපේක්ෂා සහිත | අභිලාෂකාමී	apeuni fib-rw #887	
+avid	උද්යෝගිමත් |  තද ආශා ඇති	apeuni fib-rw #887	
+alike	සමානව | ඒකාකාර	apeuni fib-rw #886	
+conspicuous	කැපී පෙනෙන | noticeable	apeuni fib-l  #247	
+cemetery	සුසාන භූමිය	apeuni fib-l #247	
+excavation	කැණීම | හෑරීම	apeuni fib-l #247	
+mysterious	අද්භූත | ගුප්ත |  අභිරහස්	apeuni fib-l #86	
+corresponding	සමාන | අනූරූප	ptelabs fib-rw 184	
+sustainability	තිරසාර බව | නොනැසී පවත්වනවා	ptelabs fib-rw 184	
+archipelago	දූපත් ගහන මුහුද	ptelabs fib-rw 256	
+aground	බිම ඇනී | grounded | beached	ptelabs fib-rw 256	
+scurried	ගැස්සිලා ගියා	ptelabs fib-rw 256	
+shipwreck	නැව් දියබත් වීම	ptelabs fib-rw 256	
+consciousness	සිහිය | විඥානය	ptelabs fib-rw 256	
+inadvertently	අනවධාන ලෙස | නොසැලකිලිමත් ලෙස	ptelabs fib-rw 256	
+colloquial	වාචික | කථා ව්‍යවහාර	ptelabs fib-rw 256	
+colloquialism	කටවහර	ptelabs fib-rw 256	
+emphasize	අවධාරණය කරනවා | වැදගත් කොට කියනවා | බරපතළ කොට කියනවා |	ptelabs fib-rw 83	
+coercive	බලාත්කාර | බලහත්කාරයෙන්	apeuni fib-l #231	
+permeate	පැතිරෙනවා | විනිවිද යයි	apeuni fib-l #231	
+breaches	උල්ලංඝනය කරයි	apeuni fib-rw #874	
+spontaneously	හිටිවන | ස්වයංසිද්ධව	apeuni fib-l #876	
+rampant	ඉවසුම් නැති | බහුලව පැතුරුණු | ඉහවහා ගිය	apeuni fib-l #876	
+destruction	විනාශය | හානිය | වැනසීම	apeuni fib-l #876	
+immune	resistant | ප්‍රතිශක්ත	apeuni fib-l #876	
+convinced	අවබෝධ කළ | ඒත්තු ගත්	apeuni fib-l #876	
+prohibited	තහනම්	apeuni fib-l #876	
+sustained	පෝෂිත | තිරසාර විය	apeuni fib-r #845	
+intervened	මැදිහත් වුණා	apeuni fib-r #184	#184 - the Prime Minister of the time, Margaret Thatcher, intervened in the debate(#nl#)(#nl#)1. The teacher intervened when the students started arguing in the classroom.(#nl#)(#nl#)2. The referee intervened to stop the fight between the two players on the field.(#nl#)(#nl#)3. The counselor intervened to help the struggling student with their personal issues.
+strive	උත්සාහ කරන්න	ptelabs fib-r 94	
+abandoning	අත්හැරීම	ptelabs fib-r 94	
+competent	දක්ෂ	ptelabs fib-r 94	
+dizzy	කරකැවිල්ල	ptelabs fib-r 94	
+convey	ගෙන යනවා | පවරා දෙනවා	ptelabs fib-r 94	
+flourish	සමෘද්ධිමත්	ptelabs fib-r 94	
+vivid	විචිත්රවත්	ptelabs fib-r 108	
+oftentimes	බොහෝ විට	ptelabs fib-r 108	
+aquatic	ජලජ	ptelabs fib-r 108	
+dilatory	අතපසු කරන | ප්‍රමාදකාරී	ptelabs fib-r 108	*in fib-r 108 it is just an option, not an answer(#nl#)(#nl#)Judicial processes are permanently delayed by dilatory appeals.(#nl#)His messengers sent back to hurry on the dilatory convoy had strangely failed to return.(#nl#)Unhappy with her job, the secretary performed every task at a dilatory speed.
+indefatigable	ඉතා උත්සාහවත්වෙ | භෙස නොසලකන	ptelabs fib-r 108	
+harsh	අමිහිරි | කටුක	ptelabs fib-r 211	
+curb	සීමා කරන්න | පාලනය | මැඩලනවා | සීමාව	ptelabs fib-r 48	
+encroachment	ආක්‍රමණය කිරීම	ptelabs fib-r 48	
+invasion	ආක්‍රමණය	ptelabs fib-r 48	
+wetland	තෙත් බිම	ptelabs fib-r 48	
+deplete	ප්‍රමාණය අඩු කරනවා | හිස් කරනවා	apeuni fib-rw #768	
+sophisticated	සංකීර්ණ | අතිපණ්ඩිත | විචිත්‍ර	apeuni fib-rw 767	
+rejuvenated	තිරිහන් | පුනර්ජීවනය විය	apeuni fib-rw 767	
+stitch	මසනවා | ගොතනවා | මැහුම | ගෙත්තම	apeuni fib-rw 771	
+compile	සකස් කරනවා |  සම්පාදනය කරනවා	apeuni fib-rw 771	
+invasive	ආක්රමණශීලී	apeuni fib-rw 771	
+onset	ආක්‍රමණය ආරම්භය | වේගයෙන් පහරදීම	apeuni fib-r #763	
+impaired	ආබාධිත	apeuni fib-r #758	
+composition	සංයුතිය *	apeuni fib-r #755	
+deprivation	අහිමි වීම , වියෝගය	apeuni fib-r #755	
+imprison	සිරගත කරනවා	apeuni	
+susceptible	ගොදුරු විය හැක | vulnerable to	rw fb qno: 100	
+unravel	විසඳනවා (ප්‍රහේලිකා) | බේරුම් කරනවා vt.	apeuni fib-rw  #817	
+obsolete	යල්පැන ගිය , out dated	apeuni fib-rw #768	
+frigid	ශ්‍රීතාධික	ptelabs fib-rw 370	
+shallow	නොගැඹුරු	ptelabs fib-rw 370	
+polyp	බහුපාදියා	ptelabs fib-rw 370	
+utter	දොඩවනවා, පවසනවා (v) | සම්පූර්ණ (adj)	ptelabs fib-rw 370	
+ridge	කඳු වැටිය | a long narrow hilltop, mountain range, or watershed.	ptelabs fib-rw 370	
+rift	පැල්ම | පැළුම	ptelabs fib-rw 370	
+inevitable	unavoidable | නොවැළැක්විය හැකිය	ptelabs fib-rw 370	
+erupt	පුපුරා යයි	ptelabs fib-rw 370	
+presumably	අනුමාන වශයෙන් | (i assume, i belived)	ptelabs fib-rw 370	
+clam	බෙල්ලා	ptelabs fib-rw 370	
+wandering	ඉබාගාතේ යනවා	ptelabs fib-rw 478	
+constrain	සීමා කරනවා (verb)	ptelabs fib-r 160	
+constraint	වැළැක්වීම | සීමාව (noun)	ptelabs fib-r 160 sub	
+communal	කුලවාදී | වාර්ගික	ptelabs fib-r 179	
+realization	අවබෝධය	ptelabs fib-r 228	
+fatal	මාරක	ptelabs fib-r 228 sub	
+fatality	මාරක විපත , මාරක අනතුර | කර්මශක්තිය, දෛවයෙහි නොවැළැක්වියහැකි බලය	ptelabs fib-r 228	
+mutation	විකෘතිය | වෙනස් වීම	ptelabs fib-r 231	
+deter	බාධා කරනවා	ptelabs fib-r 252	
+forerunners	පුරෝගාමීන්	ptelabs fib-rw 502	
+anticipate	අපේක්ෂා කරනවා	ptelabs fib-rw 622	
+expressive	ප්රකාශිත	ptelabs fib-rw 622	
+elite	ප්රභූ | ඉතා උසස් කොටස	ptelabs fib-rw 622	
+some location	යම් ස්ථානයක්	ptelabs fib-rw 644	
+frustating	කලකිරෙනවා	ptelabs fib-r 266	
+adopt	*යොදා ගන්නවා | දරුවෙකු හදා ගන්නවා	ptelabs fib-r 267	
+emphasis	අවධාරණය | බරකොට කීම	ptelabs fib-r 268	
+spawn	පැටවු ගහනවා | බිජු දමනවා	ptelabs fib-r 267	
+versed	ප්‍රවීණ , නිපුණ , දක්ෂ	ptelabs fib-r 270	
+adequate	ප්‍රමාණවත් | සෑභෙන	ptelabs fib-r 271(sub)	
+inadequate	මදි වූ | ප්‍රමාණයෙන් නොසෑභෙන	ptelabs fib-r 271	
+extravagant	ප්‍රමාණය ඉක්මවා යන , අතිරික්ත	ptelabs fib-r 271	
+monetary	මූල්‍යමය,  මුදල් පිළිබඳ	ptelabs fib-r 272	
+acknowledge	පිළිගන්නවා	ptelabs fib-r 273	
+regardless	නොසලකා	ptelabs fib-r 273	
+critic	විචාරකයා | රසිකයා	ptelabs fib-r 273	
+demerit	දෝෂය | අකුසලය , පාපය	ptelabs fib-r 273	
+acclaim	පිළිගැනීම , ගෞරවයෙන් පිළිගන්නවා	ptelabs fib-r 273	
+conversely	අනෙක් අතට	ptelabs fib-r 273	
+boredom	කරදරකාරී ස්වභාවය	ptelabs fib-r 274	
+scheme	යෝජනා ක්‍රමය	ptelabs fib-r 275	
+perk	වරප්රසාද	ptelabs fib-r 275	
+emancipate	නිදහස් කරනවා | විමුක්තිය	ptelabs	
+ingestion	ශරීරගත වීම	apeuni fib-rw #853	
+predilection	නැඹුරුව | අභිරුචිය	apeuni fib-rw #853	** this is not a correct answer in the quesiton #853 but comes as an option(#nl#)----(#nl#)Her predilection for chocolate-covered roaches is so weird!(#nl#)Gregory goes out to watch birds daily so I assume he has a predilection for the hobby.(#nl#)Hollywood's predilection to portray evil and wickedness puzzles me.(#nl#)I have a predilection for spending time with my family.
+unappetizing	අරුචිය	apeuni fib-rw #851	
+trigger	අවුලුවාලීම | ක්‍රියාරම්භකය | තුවක්කුවේ කොකා	apeuni fib-rw #851	
+contend	තරග කරනවා | විවාද කරනවා	apeuni fib-rw #851	
+dilute	තනූක කරනවා | බාලකරනවා | තනුක(adj)	apeuni fib-rw #851	
+comprise	අඩංගු වෙනවා | සමන්විත වේ | අඩංගු කරනවා	apeuni fib-rw #850	
+apprise	දැනුවත් කරනවා | මිල නියම කරනවා	apeuni fib-rw #850	
+fading	වියැකී යනවා	apeuni fib-rw #850	
+inhabit	වාසය කරනවා	apeuni fib-rw #850	
+refurbishment	අලුත්වැඩියා කිරීම	apeuni fib-rw #849	
+nugget of wisdom	helpful bits of knowledge or advice, often from experience.	apeuni fib-rw #846	
+nugget	කුට්ටිය | පිඬ	apeuni fib-rw #846	
+instrumental	උපකාරී	apeuni fib-rw #846	
+longevity	දීර්ඝායුෂ	apeuni fib-rw #846	
+sensitivity	සංවේදීතාව	apeuni fib-rw #846	
+intend	අදහස් කරනවා	apeuni fib-r #840	
+replenished	නැවත පිරෙව්වා	apeuni fib-r #827	
+plentiful	බහුල	apeuni fib-r #827	
+devastating	වනසන	apeuni fib-r #829	
+cohort	සමුහය	apeuni fib-rw #261	
+confounded	අවුල් වූ | ව්‍යාකූල වූ	apeuni fib-rw #261	
+deprive	අහිමි කරනවා	apeuni fib-r #843	
+criteria	නිර්ණායක	apeuni fib-r #843	
+seldom	කලාතුරකින්	apeuni fib-r #330	He seldom answers my call.
+unwilling	අකමැති	apeuni fib-r #330	
+empathy	සහකම්පනය	apeuni fib-r #558	
+ultimately	අවසානයේදී	apeuni fib-r #558	
+extent	ප්‍රමාණය	apeuni fib-rw #862	
+in/to some extent	යම් දුරකට / යම් ප්‍රමාණයකින්	apeuni fib-rw #862	
+in some cases	සමහර අවස්ථාවලදී	apeuni fib-rw #862	
+in some way	යම් ආකාරයකින්	apeuni fib-rw #869	
+impose	පනවනවා, (thrust,urge) , ආරූඩ කරනවා  | රවටනවා (misuse, exploit)	apeuni fib-rw #869	
+relying	රඳා පවතී	apeuni fib-rw #869	
+lessen	අඩු කරනවා | අඩු වෙනවා	apeuni fib-rw #429	
+commence	ආරම්භ කරනවා	apeuni fib-rw #429	
+impact	බලපෑම (more physically) | ගැටුම	apeuni fib-rw #429	
+undergo	දරනවා / දුකට යටත් වෙනවා	apeuni fib-r #679	
+phased	අදියර වශයෙන් (adj)	apeuni fib-r #679	
+influx	ගලා ඒම | ආගමනය	apeuni fib-r #72	
+hindering	බාධා කරනවා	apeuni fib-r #84	
+invade	ආක්‍රමණය කරනවා	ptelabs fib-r	
+intention	අරමුණ | චේතනාව	ptelabs fib-r 277	
+unfathomable	අදහාගත නොහැකි | ගැඹුරු	ptelabs fib-r 279	
+vastness	විශාලත්වය	ptelabs fib-r 279	
+spectacle	සංදර්ශනය | කණ්ණාඩිය	ptelabs fib-r 280	
+integral	අවශ්‍ය | *	ptelabs fib-r 280	
+interrupt	බාධා කරනවා | අතරමගදී නවත්වනවා	ptelabs fib-r 280	
+efflux	පිටාරය | ප්‍රස‍්‍රාවය	ptelabs fib-r 282	
+prone	නැඹුරු | යමකට ආශාව දක්වන	ptelabs fib-r 281	
+chaos	අවුල් ජාලය ,  අවුල, disorder	ptelabs fib-r 283	
+contrast	ප්රතිවිරුද්ධය	ptelabs fib-r 283	
+in contrast	ඊට වෙනස්ව	ptelabs fib-r 283	
+anarchy	අරාජිකත්වය	ptelabs fib-r 283	
+haute couture	උසස් මෝස්තර විලාසිතාව	ptelabs fib-r 283	
+haute cuisine	උසස් ගණයේ සූපශාස්ත්‍රය	ptelabs fib-r 283	
+dense	ඝනැති | උකු	ptelabs fib-r 284	
+enormous	දැවැන්ත	ptelabs fib-r 284	
+element of truth	to express that there may be some truth in a particular idea or opinion, even if the overall opinion cannot be accepted as true	ptelabs fib-r 285	
+exaggeration	අතිශයෝක්තිය	ptelabs fib-r 285	
+aphorism	ප්‍රත්‍යක්ෂය | axiam	ptelabs fib-r 285	
+formative	ආකෘතික	ptelabs fib-r 285	
+frontier	මායිම | දේශසීමාව	ptelabs fib-r 285	
+subjugation	යටත් කර ගැනීම | දමනය	ptelabs fib-r 285	
+allegiance	පක්ෂපාතකම	ptelabs fib-r 285	
+coffer	මුදල් පෙට්ටිය | මුදල් පෙට්ටිය	ptelabs fib-r 285	
+adjoining	යාබද	ptelabs fib-r 285	
+sovereign	ස්වෛරී | ශෙ‍්‍රෂ්ඨ	ptelabs fib-r 285	
+demarcation	සීමා නිර්ණය කිරීම	ptelabs fib-r 285	
+delineate	නිරූපනය කරනවා	ptelabs fib-r 285	
+prolific	සාරවත් (productive) | plentiful බොහෝ පල දරන	prolific rs	
+a whiff of	a faint or slight scent or smell	apeuni fib-rw #860	#860 - what’s more, there is often more than a whiff of racism to such calls.
+wreaking	විනාශ කරනවා	apeuni fib-rw #858	mock - microplastics in recent years have taken front and center as a massive environmental problem wreaking havoc on ecosystems in even the most remote areas of the planet.
+freaking	විකාර | විහිළු	apeuni fib-rw #858	
+creaking	කිරි කිරි ගෑම	apeuni fib-rw #858	
+rid	බැහැර කරනවා | ඉවත් කරනවා	apeuni fib-rw #858	* in fact, since plastic is not decomposable, environmental scientists have been scrambling to come up with ways to rid the planet of microplastics and keep our waterways clean
+stimulate	උත්තේජනය කරන්න	apeuni fib-rw #589	* this in turn will stimulate further investment due to the multiplier effect and significant rural-to-urban migration
+expanse	වපසරිය | විශාල ප්‍රදේශය	apeuni fib-rw #589	
+expense	වියදම්	apeuni fib-rw #589	*the investment in this city will be at the expense of other cities.
+reminiscent	සිහිගන්වයි | අතීතය සිහිකරවන	apeuni fib-rw #855	*a pleasing combination of flavors reminiscent of parsley and citrus, the herb is a common ingredient in many cuisines around the world.
+remnant	අවශේෂ | ඉතිරි වූ කැබෙල්ල	apeuni fib-rw #855	
+revolting	පිළිකුල් දනවන	apeuni fib-rw #855	* however, some people find cilantro revolting .
+suspecting	සැක කරනවා	apeuni fib-rw #855	
+quirk	විකාර | විකාර විලාසය	apeuni fib-rw #855	* this genetic quirk is usually only found in a small percent of the population, though it varies geographically.
+taint	කැළල | අපිරිසිදු	apeuni fib-rw #855	
+mainstay	ප්රධාන ස්ථානය	apeuni fib-rw #855	* which might explain how the herb was able to become such a mainstay in those regions.
+primitive	ප්රාථමික	apeuni fib-rw #857	* pinning down when our planet’s land emerged could help us understand the conditions in which primitive life began.
+spatial	අවකාශීය	apeuni fib-rw #857	
+thrusting	තෙරපුම	apeuni fib-rw #857	* continental crust is usually much older, formed from volcanism where plates crash into each other, thrusting a thicker, less-dense layer above sea level.
+everlasting	සදාකාලික	apeuni fib-rw #857	
+orient	පෙරදිග | දිශානතිය	apeuni fib-rw #857	
+recoup	ආපසු අයකර ගැනීම | පාඩුව පිරිමසා ගන්නවා	apeuni fib-r #836	* according to a study, the world will need to make significant investment in infrastructure over the next 15 years, but it can recoup those investments.
+derange	අවුල් කරනවා	apeuni fib-r #836	
+streamline	විධිමත් කරන්න	apeuni fib-r #835	* the ‘mobility as a service’ philosophy aims to streamline the entire travel experience by moving away from the focus on companies and approaching travel as more of a service that can cater to citizens' individual needs.
+frustrating	කලකිරෙනවා | ඉච්ඡාභංග	apeuni fib-r #835	*this outdated system is considered to be inconvenient and frustrating for the consumer.
+home to *	* a noun bofre to is ther any pattern?	apeuni fib-r #837	forests are also home to more than three-quarters of the world’s life on land. <<< is there any pattern like if it is not a verb after to there should be a noun before to kind off?
+stressors	මානසික ආතතිය	apeuni fib-r #839	* life stressors , such as deaths and divorces in the family, issues with friends, substance abuse, and suicide are just a few of the many issues that college students may experience or witness others struggling with.
+witness	සාක්ෂිය | සාක්ෂිකරු	apeuni fib-r #839	* life stressors , such as deaths and divorces in the family, issues with friends, substance abuse, and suicide are just a few of the many issues that college students may experience or witness others struggling with.
+simmer	කැකෑරෙනවා | මඳ ගින්නේ තම්බනවා | වතුර භෙමින් නටනවා	apeuni fib-r #832	
+degrade	පිරිහෙනවා | අවමන් කරනවා	apeuni fib-r #832	* one of the most basic forms of air pollution, haze, degrades visibility in many american cities and scenic areas.
+significant	සැලකිය යුතු	apeuni fib-rw #589	* this in turn will stimulate further investment due to the multiplier effect and significant rural-to-urban migration

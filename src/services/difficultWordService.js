@@ -91,7 +91,7 @@ class IrregularVerbService {
             const l = Math.min(sortedWords.length, 3);
             console.log("L is", l)
             for (let index = 0; index < l; index++) {
-                todaySpecialService.addToTodaySpecials(lcl_key, sortedWords[index] )
+                todaySpecialService.addToTodaySpecials(lcl_key, sortedWords[index].english )
                 
             console.log("i is", index)
             }
@@ -106,11 +106,18 @@ class IrregularVerbService {
 
     updateWord(oldWord, newWord) {
         const wordsMap = this.#wordsMap;
-
+        const examples = wordsMap[oldWord.english].examples;
         delete wordsMap[oldWord.english];
         newWord = newWord.replace( /\(#\)/g, '\t' );
+        if (examples) newWord += "\t" + examples?.replaceAll('\n','(#nl#)');
         console.log(`updating ${newWord}`)
         this.addMany([newWord]);
+    }
+
+    updateExamples(word, examples) {
+        const wordsMap = this.#wordsMap;
+        wordsMap[word.english].examples = examples;
+        this.saveLazy();
     }
 
     #reduceByWieght(marks) {
@@ -160,20 +167,29 @@ class IrregularVerbService {
         const words = this.#wordsMap;
         let newWrdCount = 0;
         newWords.forEach(verbsSet => {
-            const lowerWord = verbsSet.trim().toLocaleLowerCase();
+            const lowerWord = verbsSet.trim();
             const verbSplit = lowerWord.split("\t");
-            if (verbSplit.length !== 3) {
-                const msg = `chunk ${verbsSet} doesnot contain 3 words separated by tabs!`
+            if (!(verbSplit.length === 3 || verbSplit.length === 4)) {
+                const msg = `chunk ${verbsSet} doesnot contain 3 or 4 words separated by tabs!`
                 alert(msg);
                 throw new Error(msg);
             }
-            const english = verbSplit[0].trim();
-            const sinhala = verbSplit[1].trim();
+            const english = verbSplit[0].trim()?.toLocaleLowerCase();
+            const sinhala = verbSplit[1].trim()?.toLocaleLowerCase();
             const comment = verbSplit[2].trim();
-            const w = words[english];
+            const examples = verbSplit[3]?.replaceAll('(#nl#)','\n')?.trim();
+            let w = words[english];
             if (!(w && w.english && w.sinhala)) {
-                words[english] = {...this.#newWordTemplate, english, sinhala, comment};
+                w = {...this.#newWordTemplate, english, sinhala, comment, examples};
+                words[english] = w;
                 ++newWrdCount
+            }
+            if (examples && (!w.examples || !w.examples.includes(examples))) {
+                if(w.examples) {
+                    w.examples = `${examples}\n----\n${w.examples}`;
+                } else {
+                    w.examples = examples;
+                }
             }
         });
         this.save();
@@ -197,12 +213,13 @@ class IrregularVerbService {
     }
 
     getTodaySpecials() {
-        return todaySpecialService.getTodaySpecials(lcl_key);
+        return todaySpecialService.getTodaySpecials(lcl_key).map((key)=>this.#wordsMap[key]);
     }
 
     addToTodaySpecials(content) {
         //todo need to validate content
-        todaySpecialService.addToTodaySpecials(content);
+        todaySpecialService.addToTodaySpecials(lcl_key, content.english);
+        alert(`The word '${content.english}' added to 'Today Specials'`)
     }
 
     
@@ -242,7 +259,7 @@ class IrregularVerbService {
 
     exportToPlainText() {
         const values = Object.values(this.#wordsMap);
-        const valTxts = values.map(v=>`${v.english}\t${v.sinhala}\t${v.comment}`).join("\n");
+        const valTxts = values.map(v=>`${v.english}\t${v.sinhala}\t${v.comment}\t${v.examples?.replaceAll('\n','(#nl#)') || ''}`).join("\n");
         return this.getPlainTextImportPrefix() + "\n" + valTxts
     }
 
