@@ -107,7 +107,7 @@ efficacy	කාර්යක්ෂමතාව	dd fill blanks qno: 71
 assertive	ස්ථිරසාර	dd fill blanks qno: 76	
 advent	පැමිණීම	dd fill blanks qno: 89	
 nevertheless	කෙසේ වෙතත්	dd fill blanks qno: 92	
-intimate	සමීපයි	dd fill blanks qno: 140	
+intimate	සමීපයි	dd fill blanks qno: 140	A married woman should only be affectionate and intimate with her husband.(#nl#)Because I am a private person, I do not like to share intimate details about my home life.(#nl#)Crop to create a more intimate portrait.
 sough after	බොහෝ දෙනාට ප්රියවු	dd fill blanks qno: 144	
 eroding	ඛාදනය වීම	dd fill blanks qno: 164	
 depict	නිරූපණය	dd fill blanks qno: 215	
@@ -359,15 +359,15 @@ aphorism	ප්‍රත්‍යක්ෂය | axiam	ptelabs fib-r 285
 formative	ආකෘතික	ptelabs fib-r 285	
 frontier	මායිම | දේශසීමාව	ptelabs fib-r 285	
 subjugation	යටත් කර ගැනීම | දමනය	ptelabs fib-r 285	
-allegiance	පක්ෂපාතකම	ptelabs fib-r 285	
+allegiance	පක්ෂපාතකම	ptelabs fib-r 285	* Empire builders in the past sought to extend imperial frontiers for a variety of reasons; subjugation of kings and princes to gain their allegiance
 coffer	මුදල් පෙට්ටිය | මුදල් පෙට්ටිය	ptelabs fib-r 285	
-adjoining	යාබද	ptelabs fib-r 285	
+adjoining	යාබද	ptelabs fib-r 285	* security of the core of the empire from external attacks by establishing a string of buffer states in areas adjoining the frontiers.
 sovereign	ස්වෛරී | ශෙ‍්‍රෂ්ඨ	ptelabs fib-r 285	
 demarcation	සීමා නිර්ණය කිරීම	ptelabs fib-r 285	
-delineate	නිරූපනය කරනවා	ptelabs fib-r 285	
+delineate	නිරූපනය කරනවා	ptelabs fib-r 285	* It is important to note in this connection that the concept of international boundaries (between two sovereign states), demarcated and delineated , was yet to emerge in India under Mughal rule.
 prolific	සාරවත් (productive) | plentiful බොහෝ පල දරන	prolific rs	
 a whiff of	a faint or slight scent or smell	apeuni fib-rw #860	#860 - what’s more, there is often more than a whiff of racism to such calls.
-wreaking	විනාශ කරනවා	apeuni fib-rw #858	mock - microplastics in recent years have taken front and center as a massive environmental problem wreaking havoc on ecosystems in even the most remote areas of the planet.
+wreaking	විනාශ කරනවා	apeuni fib-rw #858	* microplastics in recent years have taken front and center as a massive environmental problem wreaking havoc on ecosystems in even the most remote areas of the planet.
 freaking	විකාර | විහිළු	apeuni fib-rw #858	
 creaking	කිරි කිරි ගෑම	apeuni fib-rw #858	
 rid	බැහැර කරනවා | ඉවත් කරනවා	apeuni fib-rw #858	* in fact, since plastic is not decomposable, environmental scientists have been scrambling to come up with ways to rid the planet of microplastics and keep our waterways clean
@@ -396,3 +396,49 @@ witness	සාක්ෂිය | සාක්ෂිකරු	apeuni fib-r #839	* 
 simmer	කැකෑරෙනවා | මඳ ගින්නේ තම්බනවා | වතුර භෙමින් නටනවා	apeuni fib-r #832	
 degrade	පිරිහෙනවා | අවමන් කරනවා	apeuni fib-r #832	* one of the most basic forms of air pollution, haze, degrades visibility in many american cities and scenic areas.
 significant	සැලකිය යුතු	apeuni fib-rw #589	* this in turn will stimulate further investment due to the multiplier effect and significant rural-to-urban migration
+outpacing	අභිබවා යාම	Apeuni FIB-RW #499	* The demand for workers in the US is outpacing the supply,
+flipping	පෙරළීම	Apeuni FIB-RW #499	
+revamping	ප්රතිසංස්කරණය කිරීම	Apeuni FIB-RW #499	* Despite the need for revamping our existing talent strategies to keep pace,
+despite / in spite of	නොසලකා	Apeuni FIB-RW #499	
+avanue	ප්රවේශය | මාවත	Apeuni FIB-RW #502	* Yet, our research shows that there is another important avenue for strengthening worker power
+tilted	ඇලවූ | in favor of	Apeuni FIB-RW #502	* Policymakers have the tools to empower workers to find new jobs even when market conditions aren’t tilted in their favor.
+concentrated	සංකේන්ද්රනය වී ඇත | සාන්ද්‍ර	Apeuni FIB-RW #502	* Research shows that when jobs are concentrated among a small number of employers, workers are more likely to earn lower wages.
+tremendous	අතිමහත්	Apeuni FIB-RW #502	
+scrutinizing	පරීක්ෂා කිරීම	Apeuni FIB-RW #502	*Policymakers could start by more closely scrutinizing corporate mergers for signs they could decrease competition for workers.
+chore	සුළු වැඩ | a routine task, especially a household one	Apeuni FIB-RW #498	* Let’s be honest: saving and investing may be necessary, but they often can feel like a chore .
+delegation	නියෝජිත	Apeuni FIB-RW #498	
+above water	visible and functioning properly despite challenges or difficulties.	Apeuni FIB-RW #500	* Currently, spending on consumer services (think hotels, passenger transportation and hair salons, for example) is growing rapidly and keeping the economy above water .
+persist	නොනැසී පවතිනවා	Apeuni FIB-RW #500	* But this strong growth can’t persist forever.
+tame	හික්මවනවා |  හීලෑ කරනවා	Apeuni FIB-RW #500	*  In its fight to tame inflation and slow the economy, the Federal Reserve will continue to rapidly raise interest rates, which makes stock prices tend to decline, reducing households’ net worth and spending.
+perceive	අවබෝධ කරගන්නවා	Apeuni FIB-RW #500	
+stride	දියුණුව | ඈතින් පය තබමින් යනවා	Apeuni FIB-RW #500	
+precede	පෙර | පෙරටුව ගමන් කරනවා	Apeuni FIB-RW #500	
+composite	සංයුක්ත | මිශ්‍රිත	Apeuni FIB-RW #496	
+erosion	ඛාදනය	Apeuni FIB-R #605	
+utilitarian	උපයෝගිතාවාදී (practical)	Apeuni FIB-R #560	
+typically vs generally	read the examples	Apeuni FIB-R #560	*  foods at breakfast are typically simple, quick and easy to prepare and eat;    *   foods at breakfast are typically simple, quick and easy to prepare and eat;   In summary, "typically" emphasizes the usual or common behavior or pattern, while "generally" provides a broader statement without focusing on specific details. Both adverbs convey a sense of commonality or general trend, but "typically" tends to have a stronger connection to a well-established pattern or norm.
+revives	පුනර්ජීවනය කරයි | නැවත ප්‍රාණවත් වෙනවා	Apeuni FIB-R #560	* Foods at breakfast vlaued for the calorie boost that revives the body and brain after a night's rest.
+unparalleled	අසමසම | exceptional	Apeuni FIB-R #560	* The vaccination of so many in such a short space of time, so soon after the unparalleled rapid development of the vaccines, has saved huge numbers of lives and is a triumph for science and research.
+pernicious	විනාශකාරී	Apeuni FIB-R #499	* But beneath shyness, there may lie something more surprising, pernicious and poignant.
+poignant	සිත් රිදවන	Apeuni FIB-R #499	
+deficiencies	අඩුපාඩු	Apeuni FIB-R #504	* However, current solutions suffer performance deficiencies , or often disregard legacy devices still in operation.
+affirm	තහවුරු කරනවා	Apeuni FIB-R #504	
+constitute	අඩංගු වෙනවා (be (a part) of a whole.) | පිහිටුවීම	PteLabs FIB-R 301	
+deliberate	හිතාමතා	PteLabs FIB-R 304	* Hidden bias, whether or not it is deliberate , can be misleading.
+onus	වගකීම (liability)	PteLabs FIB-R 304	
+inhabitants	වැසියන්	PteLabs FIB-R 305	
+queasy	අප්‍රිය | රෝගී	Apeuni FIB-RW #714	
+paradoxically	පරස්පර විරෝධී ලෙස	Apeuni FIB-RW #714	
+structures	ව්යුහයන්	Apeuni FIB-RW #714	*we can be curious about word origins and the stories behind the structures we find in our language
+crippled	අංග විකල | ආබාධිතයි	Apeuni FIB-RW #714	* There are even language critics who are convinced that English is dying, or if not dying at least being progressively crippled through long years of mistreatment.
+promising	good | encouraging	Apeuni FIB-RW #713	* 'This has been a good day for SpaceX and a promising development for the US human space flight program,
+contempt	අවඥාව	Apeuni FIB-RW #678	
+convection	සංවහනය	Apeuni FIB-RW #678	
+commemorating	අනුස්මරණය කරනවා	Apeuni FIB-R #619	*  I happened upon a radio documentary commemorating Hephzibah, who died earlier
+featured	විශේෂාංගගත	Apeuni FIB-R #619	* Hephzibah’s stepdaughter – it featured interviews with Hephzibah and with those who had known her.
+drawl	ඇදලා කථා කිරීම	Apeuni FIB-R #619	*  I heard her light, precise voice with its slightly Germanic vowels and hint of an American drawl as she spoke about things
+dawn	the beginning of a phenomenon ...  | පාන්දර	Apeuni FIB-R #610	
+provoke	පොළඹවනවා	PteLabs FIB-R 310	
+deterrence	වැළැක්වීම	PteLabs FIB-R 311	
+restitution	ප්රතිස්ථාපන ,restoration	PteLabs FIB-R 311	
+nuance	සියුම් වූ වෙනස	PteLabs FIB-R 313	* When we hear people speak, observe their vocal NUANCES, watch their posture, gestures, and facial expressions
