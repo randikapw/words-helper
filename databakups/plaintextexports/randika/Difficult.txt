@@ -34,7 +34,7 @@ subordination	යටත්වීම	rw fb qno: 167
 convictions	විශ්වාසයන්	rw fb qno: 169	
 attire	ඇඳුම් පැළඳුම්	rw fb qno: 175	
 enigma	ප්‍රහේලිකාව	rw fb qno: 191	
-embarrassed	ලැජ්ජයි	rw fb qno: 199	
+embarrassed	ලැජ්ජයි	rw fb qno: 199	* the overweight 11 -year-old who fails to attend because he is EMBARRASSED about changing for PE in front of peers
 fierce	දරුණු	rw fb qno: 206	
 abolishing	අහෝසි කරනවා	rw fb qno: 245	
 drab	අඳුරු	rw fb qno: 253	
@@ -114,7 +114,7 @@ depict	නිරූපණය	dd fill blanks qno: 215
 conservative	ගතානුගතික	dd fill blanks qno: 216	
 ritual	චාරිත්රය	dd fill blanks qno: 220	
 preservation	සංරක්ෂණය	dd fill blanks qno: 222	
-exacerbate	උග්ර කරයි	dd fill blanks qno: 223	
+exacerbate	උග්ර කරයි	dd fill blanks qno: 223	* #494 Rising sea levels are exacerbating erosion and flooding,
 trajectory	ගමන් පථය	dd fill blanks qno: 225	
 intellectually	බුද්ධිමය වශයෙන්	dd fill blanks qno: 226	
 "in part, to"	partly responsible	(collocation) - dd fill blanks qno: 229	
@@ -317,7 +317,7 @@ plentiful	බහුල	apeuni fib-r #827
 devastating	වනසන	apeuni fib-r #829	
 cohort	සමුහය	apeuni fib-rw #261	
 confounded	අවුල් වූ | ව්‍යාකූල වූ	apeuni fib-rw #261	
-deprive	අහිමි කරනවා	apeuni fib-r #843	
+deprive	අහිමි කරනවා	apeuni fib-r #843	I wouldn't deprive you of that pleasure.(#nl#)Max is a racist who wants to deprive black people from their right to vote on election day.(#nl#)Upon entering the cult, William took upon himself to fast for a week to deprive himself of food.(#nl#)Orwell feared those who would deprive us of information.(#nl#)Working those long hours was depriving him of his sleep.
 criteria	නිර්ණායක	apeuni fib-r #843	
 seldom	කලාතුරකින්	apeuni fib-r #330	He seldom answers my call.
 unwilling	අකමැති	apeuni fib-r #330	
@@ -332,7 +332,7 @@ relying	රඳා පවතී	apeuni fib-rw #869
 lessen	අඩු කරනවා | අඩු වෙනවා	apeuni fib-rw #429	
 commence	ආරම්භ කරනවා	apeuni fib-rw #429	
 impact	බලපෑම (more physically) | ගැටුම	apeuni fib-rw #429	
-undergo	දරනවා / දුකට යටත් වෙනවා	apeuni fib-r #679	
+undergo	දරනවා / දුකට යටත් වෙනවා	apeuni fib-r #679	*#602 During earthquakes, buildings and bridges undergo similar stress.
 phased	අදියර වශයෙන් (adj)	apeuni fib-r #679	
 influx	ගලා ඒම | ආගමනය	apeuni fib-r #72	
 hindering	බාධා කරනවා	apeuni fib-r #84	
@@ -403,11 +403,10 @@ despite / in spite of	නොසලකා	Apeuni FIB-RW #499
 avanue	ප්රවේශය | මාවත	Apeuni FIB-RW #502	* Yet, our research shows that there is another important avenue for strengthening worker power
 tilted	ඇලවූ | in favor of	Apeuni FIB-RW #502	* Policymakers have the tools to empower workers to find new jobs even when market conditions aren’t tilted in their favor.
 concentrated	සංකේන්ද්රනය වී ඇත | සාන්ද්‍ර	Apeuni FIB-RW #502	* Research shows that when jobs are concentrated among a small number of employers, workers are more likely to earn lower wages.
-tremendous	අතිමහත්	Apeuni FIB-RW #502	
+tremendous	අතිමහත්	Apeuni FIB-RW #502	*  These refugees face tremendous social, health, and livelihood challenges.
 scrutinizing	පරීක්ෂා කිරීම	Apeuni FIB-RW #502	*Policymakers could start by more closely scrutinizing corporate mergers for signs they could decrease competition for workers.
 chore	සුළු වැඩ | a routine task, especially a household one	Apeuni FIB-RW #498	* Let’s be honest: saving and investing may be necessary, but they often can feel like a chore .
 delegation	නියෝජිත	Apeuni FIB-RW #498	
-above water	visible and functioning properly despite challenges or difficulties.	Apeuni FIB-RW #500	* Currently, spending on consumer services (think hotels, passenger transportation and hair salons, for example) is growing rapidly and keeping the economy above water .
 persist	නොනැසී පවතිනවා	Apeuni FIB-RW #500	* But this strong growth can’t persist forever.
 tame	හික්මවනවා |  හීලෑ කරනවා	Apeuni FIB-RW #500	*  In its fight to tame inflation and slow the economy, the Federal Reserve will continue to rapidly raise interest rates, which makes stock prices tend to decline, reducing households’ net worth and spending.
 perceive	අවබෝධ කරගන්නවා	Apeuni FIB-RW #500	
@@ -442,3 +441,42 @@ provoke	පොළඹවනවා	PteLabs FIB-R 310
 deterrence	වැළැක්වීම	PteLabs FIB-R 311	
 restitution	ප්රතිස්ථාපන ,restoration	PteLabs FIB-R 311	
 nuance	සියුම් වූ වෙනස	PteLabs FIB-R 313	* When we hear people speak, observe their vocal NUANCES, watch their posture, gestures, and facial expressions
+keep above water	visible and functioning properly despite challenges or difficulties.	Apeuni FIB-RW #500	* Currently, spending on consumer services (think hotels, passenger transportation and hair salons, for example) is growing rapidly and keeping the economy above water .
+criterion	නිර්ණායකය	Apeuni FIB-RW #248	* Obviously, the most important criterion for judges is sound.
+linger	stay , ramain, wait around	Apeuni FIB-RW #326	* The ozone layer is depleted by chemical reactions that involve the by-products of human-made chemicals that linger in the atmosphere.
+counterpart	parallel | peer | equalient	Apeuni FIB-RW #326	* The current hole, which has been unusually large, is on track to last only a few days less than its counterpart last year, which was the longest-lived on record since 1979.
+nemesis	සතුරුකම	Apeuni FIB-RW #326	
+aggrieve	දුක් වෙනවා	Apeuni FIB-R #494	
+retrieve	නැවත ලබාගන්න	Apeuni FIB-R #494	* After an initial failed attempt, the rover drilled and stored its first of many planned samples of Martian rock, which future space missions will retrieve so scientists can analyze them for signs of past life.\
+rationale	තාර්කිකත්වය	Apeuni FIB-R #496	* This kind of work suggests a rationale for minimizing social entropy and real cost in a more advanced economy and technology.
+rationalism	හේතුවාදය	Apeuni FIB-R #496	
+subconsciously	by the part of the mind | යටි සිතින්	Apeuni FIB-R #497	
+uprooted	මුලිනුපුටා දැමූහ	Apeuni FIB-R #502	* .., more than 2.3 million South Sudanese uprooted from their homes have fled to neighboring countries, ..
+fled	පලා ගියා (past tense of flee)	Apeuni FIB-R #502	* .., more than 2.3 million South Sudanese uprooted from their homes have fled to neighboring countries, ..
+battle	සටන	PteLabs FIB-R 316	
+wondering	පුදුම වෙනවා	PteLabs FIB-R 321	* You start WONDERING how you're going to cope with it all.
+purposeful	අරමුණු සහිතයි	PteLabs FIB-R 321	* A limited amount of ANXIETY can help you to be more motivated and more PURPOSEFUL .
+reluctant	අකමැත්තෙන්	PteLabs FIB-R 324	
+scorching	extremely hotred-hot	Apeuni FIB-RW #296	"* The ants' long legs already help keep their bodies away from the scorching desert floor and enable them to speed around at up to 60 cm per second.
+herding	keep or look after (livestock).	Apeuni FIB-R #590	* Border Collies continue to be employed in their traditional work of herding livestock throughout the world.
+harboring	නවාතැන් ගැනීම	Apeuni FIB-R #590	
+teem	be full ofbe filled with	Apeuni FIB-R #616	
+compelling	බල පාන | බලකරයි	Apeuni FIB-R #589	* We need more scientists who can explain what they are doing in language that is compelling and understandable to the public.
+arena	පිටිය	Apeuni FIB-R #589	* Our country needs more scientists who are willing to step out in the public arena and offer their opinions on important matters.
+dune	කඳුකරය	PteLabs FIB-R 329	
+resurface	නැවත මතුවීම	Apeuni FIB-RW #312	* With the birth of a child, father-child issues may resurface from the family in which the father was born and raised.
+resentment	අමනාපය	Apeuni FIB-RW #312	* Thus, bitterness, hostility, or resentment from the family of origin does not spill into the immediate family.
+threshold	එළිපත්ත , entry | *	Apeuni FIB-RW #313	* Many of the leading businessmen of Pittsburgh had a serious responsibility thrust upon them at the very threshold of their career.
+salutary	ශුභවාදී	Apeuni FIB-RW #313	* I notice we have janitors now in offices, and our young men unfortunately miss that salutary branch of business education.
+sedentary	වාඩි වී සිටින	Apeuni FIB-RW #313	
+genius	දක්ෂ adj | noun	Apeuni FIB-RW #313	* But if by chance the professional sweeper is absent any morning, the boy who has the genius of the future partner in him will not hesitate to try his hand at the broom.
+attain	අත්කර ගනී, acheieve, accomplish	Apeuni FIB-RW #314	* In proportion to the degree in which it is felt will probably be the degree in which nobleness and beauty of character will be attained
+gleams	දිලිසෙනවා	Apeuni FIB-RW #314	* It gleams from the hues of the shell and the precious stone.
+ought (to)	අවශ්‍ය | විය යුතුය | කළ යුතුයි	Apeuni FIB-RW #315	* To be really happy and really safe, one ought to have at least two or three hobbies, and they must all be real.
+aggravate	උග්ර කරයි , make (a problem, injury, or offense) worse or more serious.	Apeuni FIB-RW #315	* Such an attempt only aggravates the strain of mental effort.
+immerse	ගිල්වනවා, plunge, dip	Apeuni FIB-R #607	*  Theme parks are safe environments where guests can temporarily immerse themselves into instances and
+evoke	ප්‍රබෝධ කරනවා	Apeuni FIB-R #607	* Instances and situations may push their persona comfort levels such as dark rides where special effects enhance the immersive experience, or shows and films that may evoke personal feelings of happiness, sadness, and exhilaration.
+intensifying	උත්සන්න වෙමින්	Apeuni FIB-R #604	* Climate change is intensifying and is putting the future of the entire coffee sector at risk.
+yet vs still	??? what is the deffernce of yet and still	PteLabs FIB-R 347	* YET their creation, and the sheer amount of imagination and risk-taking involved, marked the beginning of a modern, global, technologically based economy of the kind that we live in today
+delve	සොයා බලන්න	PteLabs FIB-R 124	*
+graze	තණ කන්න, feed grass	PteLabs FIB-R 127	*
