@@ -8,7 +8,7 @@ retention	අත්නෑර තබාගැනීම	rw fb qno: 66
 notion	සංකල්පය	rw fb qno: 69	
 laborious	වෙහෙසකාරී	rw fb qno: 83	
 blossoms	මල් හට ගනී	rw fb qno: 87	
-conventional	typical | සාම්ප්‍රදායික	rw fb qno: 88	
+conventional	typical | සාම්ප්‍රදායික	rw fb qno: 88	* And the trailing edge has a flexible fringe, unlike the rigid trailing edge of a conventional bird wing.
 contemporary	සමකාලීන | pressent-time	rw fb qno: 101	
 reservoirs	ජලාශ	rw fb qno: 104	
 occupancy	පදිංචිය	rw fb qno: 105	
@@ -296,7 +296,7 @@ scheme	යෝජනා ක්‍රමය	ptelabs fib-r 275
 perk	වරප්රසාද	ptelabs fib-r 275	
 emancipate	නිදහස් කරනවා | විමුක්තිය	ptelabs	
 ingestion	ශරීරගත වීම	apeuni fib-rw #853	
-predilection	නැඹුරුව | අභිරුචිය	apeuni fib-rw #853	** this is not a correct answer in the quesiton #853 but comes as an option(#nl#)----(#nl#)Her predilection for chocolate-covered roaches is so weird!(#nl#)Gregory goes out to watch birds daily so I assume he has a predilection for the hobby.(#nl#)Hollywood's predilection to portray evil and wickedness puzzles me.(#nl#)I have a predilection for spending time with my family.
+predilection	නැඹුරුව | අභිරුචිය	apeuni fib-rw #853	XX this is not a correct answer in the question #853 but comes as an option(#nl#)----(#nl#)Her predilection for chocolate-covered roaches is so weird!(#nl#)Gregory goes out to watch birds daily so I assume he has a predilection for the hobby.(#nl#)Hollywood's predilection to portray evil and wickedness puzzles me.(#nl#)I have a predilection for spending time with my family.
 unappetizing	අරුචිය	apeuni fib-rw #851	
 trigger	අවුලුවාලීම | ක්‍රියාරම්භකය | තුවක්කුවේ කොකා	apeuni fib-rw #851	
 contend	තරග කරනවා | විවාද කරනවා	apeuni fib-rw #851	
@@ -437,7 +437,7 @@ commemorating	අනුස්මරණය කරනවා	Apeuni FIB-R #619	*  I
 featured	විශේෂාංගගත	Apeuni FIB-R #619	* Hephzibah’s stepdaughter – it featured interviews with Hephzibah and with those who had known her.
 drawl	ඇදලා කථා කිරීම	Apeuni FIB-R #619	*  I heard her light, precise voice with its slightly Germanic vowels and hint of an American drawl as she spoke about things
 dawn	the beginning of a phenomenon ...  | පාන්දර	Apeuni FIB-R #610	
-provoke	පොළඹවනවා	PteLabs FIB-R 310	
+provoke	පොළඹවනවා	PteLabs FIB-R 310	*  The seminar is to provoke discussion.
 deterrence	වැළැක්වීම	PteLabs FIB-R 311	
 restitution	ප්රතිස්ථාපන ,restoration	PteLabs FIB-R 311	
 nuance	සියුම් වූ වෙනස	PteLabs FIB-R 313	* When we hear people speak, observe their vocal NUANCES, watch their posture, gestures, and facial expressions
@@ -460,7 +460,6 @@ reluctant	අකමැත්තෙන්	PteLabs FIB-R 324
 scorching	extremely hotred-hot	Apeuni FIB-RW #296	"* The ants' long legs already help keep their bodies away from the scorching desert floor and enable them to speed around at up to 60 cm per second.
 herding	keep or look after (livestock).	Apeuni FIB-R #590	* Border Collies continue to be employed in their traditional work of herding livestock throughout the world.
 harboring	නවාතැන් ගැනීම	Apeuni FIB-R #590	
-teem	be full ofbe filled with	Apeuni FIB-R #616	
 compelling	බල පාන | බලකරයි	Apeuni FIB-R #589	* We need more scientists who can explain what they are doing in language that is compelling and understandable to the public.
 arena	පිටිය	Apeuni FIB-R #589	* Our country needs more scientists who are willing to step out in the public arena and offer their opinions on important matters.
 dune	කඳුකරය	PteLabs FIB-R 329	
@@ -480,3 +479,39 @@ intensifying	උත්සන්න වෙමින්	Apeuni FIB-R #604	* Climat
 yet vs still	??? what is the deffernce of yet and still	PteLabs FIB-R 347	* YET their creation, and the sheer amount of imagination and risk-taking involved, marked the beginning of a modern, global, technologically based economy of the kind that we live in today
 delve	සොයා බලන්න	PteLabs FIB-R 124	*
 graze	තණ කන්න, feed grass	PteLabs FIB-R 127	*
+champion (verb form meaning)	support the cause of; defend (back, protect) , පක්ෂයක් වෙනුවෙන් සටනට ඉදිරිපත් වෙනවා | *	Apeuni FIB-RW #78	*And while there are no pollinator bats in our area, gardeners should champion those that do live here,
+native	ස්වදේශික	Apeuni FIB-RW #78	* Of the more than 1,000 bat species worldwide, 22 are native to North America.
+culmination	climax | උච්චතම අවස්ථාව	Apeuni FIB-RW #96	* The promotion marks the culmination of many years of hard work for these legal eagles who are the first to rise to this level from the firm's Cadet Lawyer program with UWS.
+credibility	විශ්වසනීයත්වය	PteLabs FIB-R 134	
+stinging	දැවිල්ල ඇති කරන | *	Apeuni FIB-RW #342	* Disposal of solid wastes is a stinging and widespread problem in both urban and rural areas ...
+compose	ඇමිණීම	Apeuni FIB-RW #342	* Most of the OSW's are composed of agricultural waste, household food waste, human and animal wastes, etc.
+crucial	ඉතා වැදගත් | තීරණාත්මක	Apeuni FIB-RW #344	* JWST is primarily designed to observe infrared light, it's crucial to keep it protected from any heat or light that could drown out the faint signals of distant stars and planets.
+drown	ගිලී මැරෙනවා	Apeuni FIB-RW #344	* JWST is primarily designed to observe infrared light, it's crucial to keep it protected from any heat or light that could drown out the faint signals of distant stars and planets.
+delicate	සියුම්	Apeuni FIB-RW #344	*  the opposite side, where the telescope's mirrors, detectors, and other delicate instruments live, will remain at a chilly -388 degrees Fahrenheit.
+intriguing	කුතුහලය දනවන	Apeuni FIB-RW #344	* The intriguing gravitational properties of the Lagrange Point ensure that JWST won't flip around and fry its
+peculiar	අමුතු	Apeuni FIB-RW #348	* Now, researchers report they've found a possible reason for a peculiar display of collective behavior from fish shoals in sulfur springs in Mexico
+ripe	full grown | හොඳින් වැඩුණු | ඉදුණු	Apeuni FIB-RW #348	* There, they're ripe for the picking by predators such as kingfishers, kiskadees, and other birds.
+majestic	තේජාන්විත	Apeuni FIB-RW #324	* Scotland attracts visitors from around the world to revel in the majestic beauty of this beautiful country.
+fauna	සත්ත්ව විශේෂ	Apeuni FIB-RW #324	*  Each of Scotland's islands is home to many different species of flora and fauna ...
+coalition	union | alliance | federation	Apeuni FIB-R #551	* You direct your reasoning to end up with a conclusion that is already a sacred belief or a shibboleth in your side, your team, your coalition , your party, your posse.
+provision	ප්රතිපාදන , supply	Apeuni FIB-R #500	* The legislation would build on clean-energy provisions in the bipartisan infrastructure package, which includes $66 billion to modernize rail networks.
+supplanted	ආදේශ කර ඇත	PteLabs FIB-R 362	* Daniel Harris, a scholar of consumption and style, has observed that until photography finally SUPPLANTED illustration as the "primary means of advertising clothing" in the 1950s
+inhered	උරුම වී ඇත	PteLabs FIB-R 362	*  glamour INHERED less in the face of the drawing,
+substantial	සැලකිය යුතු	PteLabs FIB-R 376	* Researchers found there is a SUBSTANTIAL cause and effect RELATIONSHIP between exposure and perpetration of violence.
+revelation	එළිදරව්	PteLabs FIB-R 378	* These DISCOVERIES require a shift in our perception as great as that made after Copernicus REVELATION that the Earth moves around the Sun.
+obsessed	අවධානය යොමු කරන්න	Apeuni FIB-RW #104	*  We're obsessed with health and weight loss but face an unprecedented epidemic of obesity.
+teem	be full of, be filled with	Apeuni FIB-R #616	
+possession	(2ndry meaning) an item of property (asset, thing) | *	Apeuni FIB-R #58	*  If you keep your home, your car or any valuable possession in excellent condition, you'll be saving money in the long run.
+sprawl	පැතිරෙනවා | අතපය විහිදාගෙන ඉන්නවා	Apeuni FIB-R #545	*  As cities have become more sprawled ,highways have replaced sidewalks ...
+suffocate	හුස්ම හිර වෙනවා	Apeuni FIB-R #545	* Sidewalks with broken concrete, narrow widths, and illegally parked vehicles on them are further evidence that walking has slowly been suffocated
+caused quite a stir	සෑහෙන කලබලයක් ඇති කළා	Apeuni FIB-RW #309	* I've found quite a few, and — since I started posting them on Twitter — they have been causing quite a stir .
+secreted	ස්රාවය වේ	Apeuni FIB-R #547	* which carry around some amount of toxins on their skin and within their other tissues , such as the highly toxic poison secreted by various poison dart frogs.
+superficial	මතුපිටින්	Apeuni FIB-RW #365	* Teachers have long known that rote memorization can lead to a superficial grasp of material that is quickly forgotten.
+shed light	ආලෝකය විහිදුවා	Apeuni FIB-RW #365	* But new research in the field of neuroscience is starting to shed light on the ways that brains are wired to forget
+poised	සූදානම්	Apeuni FIB-RW #352	* omicron virus is already poised to soon become the dominant variant
+hobble	නොණ්ඩි ගසමින්	Apeuni FIB-RW #352	* So answers, including how sick does omicron make people and how well do vaccines hobble it, can't come fast enough
+bracing	ශක්තිමත් කරනවා	Apeuni FIB-RW #352	* experts are bracing for yet more case surges
+glimpse	යාන්තමට බලනවා | ක්ෂණිකව බලනවා	Apeuni FIB-RW #544 #352	* In fact, you can find them in the neighborhoods, where you might glimpse one perched above on a walk,
+eloquent	කථාවෙහි දක්ෂ	Apeuni FIB-RW #346	* humans are not always the most eloquent of speakers.
+afield	to or at a distance.	Apeuni FIB-RW #283*	* # as Roman cities and towns grew, they needed to bring in water from (Answer: further afield) .
+iridescence	a lustrous rainbowlike play of color caused by differential refraction of light waves (google it, not in dickies)	Apeuni FIB-RW #268*	*  #But she and others noticed something odd about (Answer: iridescence) .

@@ -14,8 +14,10 @@ const getLanguageType = (word) => {
         return ["sinhala", "english"];
     }
     const r = Math.floor(Math.random() * 10);
+    //always to english
+    if (r > -1) return ["english", "sinhala"];
     //biasing to english
-    if (r > 0) return ["english", "sinhala"];
+    // if (r > 0) return ["english", "sinhala"];
     return ["sinhala", "english"];
     // switch (r) {
     //     case 0:
@@ -153,7 +155,7 @@ const DifficultWords = () => {
             </div>}
         <textarea
             value={editText}
-            rows="10"
+            rows="3"
             onChange={(e) => onTextChange(e.target.value)}
             className={editMode?'':'examplesView'}
         ></textarea>
@@ -174,7 +176,7 @@ const DifficultWords = () => {
     const DisplayWord = ({ word, displayMore }) => {
         const [editText, setEditText] = useState("");
         const [editMode, setEditMode] = useState(false);
-        const [showExamples, setShowExamples] = useState(false);
+        const [showExamples, setShowExamples] = useState(word?.examples?true:false);
 
         const onRemove = (key) => {
             difficultWordService.removeWord(key);
@@ -262,12 +264,12 @@ const DifficultWords = () => {
                 }
 
             </div>
+            <DisplayProgress />
             {previousWord && <div>
                 <h4>Previous Word</h4>
                 <DisplayWord word={previousWord} displayMore={true} />
             </div>
             }
-            <DisplayProgress />
             <div>
                 <h4>Today Specials</h4>
                 {
