@@ -14,7 +14,7 @@ reservoirs	ජලාශ	rw fb qno: 104
 occupancy	පදිංචිය	rw fb qno: 105	
 distinguish	වෙන්කර හඳුනාගන්න	rw fb qno: 109	
 steadfast	ස්ථිරයි	rw fb qno: 110	
-abide	රැඳී සිටින්න	rw fb qno: 111	
+abide	රැඳී සිටින්න	rw fb qno: 111	** It is up to them to (Answer: abide) by a moral code and up to us to ensure that the moment we suspect they do not, we fire them or vote them out.
 immense	අතිමහත්	rw fb qno: 118	
 seemingly	පෙනෙන විදිහට	rw fb qno: 119	
 heralded	ප්‍රකාශ කළා	rw fb qno: 121	
@@ -33,7 +33,7 @@ steep	බෑවුම්	rw fb qno: 162
 subordination	යටත්වීම	rw fb qno: 167	
 convictions	විශ්වාසයන්	rw fb qno: 169	
 attire	ඇඳුම් පැළඳුම්	rw fb qno: 175	
-enigma	ප්‍රහේලිකාව	rw fb qno: 191	
+enigma	ප්‍රහේලිකාව	rw fb qno: 191	**  Nature is no longer an alien (Answer: enigma) but something immediately beautiful, an exuberant (Answer: opus) with space for us to join in.
 embarrassed	ලැජ්ජයි	rw fb qno: 199	* the overweight 11 -year-old who fails to attend because he is EMBARRASSED about changing for PE in front of peers
 fierce	දරුණු	rw fb qno: 206	
 abolishing	අහෝසි කරනවා	rw fb qno: 245	
@@ -54,7 +54,7 @@ dignity	ගරුත්වය	rw fb qno: 43
 leapfrogging	පැනීම	rw fb qno: 121	
 booming	පිම්බෙනවා | growing	rw fb qno: 253	
 deterrent	වැළැක්වීම	rw fb qno: 2	
-undermined	යටපත් කර ඇත	rw fb qno: 48	
+undermined	යටපත් කර ඇත	rw fb qno: 48	**  Adams has completely (Answer: undermined) my confidence in these apparently sensible precautions.
 beholder	නරඹන්නා	rw fb qno: 56	1. Beauty is subjective and lies in the eyes of the beholder.(#nl#)(#nl#)2. Each artwork carries its unique message, open to interpretation by the beholder.(#nl#)(#nl#)3. The artist aimed to evoke various emotions in the beholder through his abstract paintings.
 gratification	තෘප්තිය	rw fb qno: 83	
 buds	අංකුර	rw fb qno: 87	1. The cherry tree in my backyard is covered in beautiful pink buds, ready to blossom.(#nl#)(#nl#)2. The children eagerly plucked the fresh strawberries from the plant, delighting in the sweet taste of the ripe buds.(#nl#)(#nl#)3. Spring is my favorite season when the garden is filled with colorful buds and the promise of new life.
@@ -62,12 +62,12 @@ instinct	සහජ බුද්ධිය	rw fb qno: 90
 deterioration	පිරිහීම	rw fb qno: 105	
 stiff	දැඩි	rw fb qno: 110	
 conventions	සම්ප්‍රදාය | සම්මුතීන්	rw fb qno: 118	
-dissemination	පැතිරීම	rw fb qno: 121	
+dissemination	පැතිරීම	rw fb qno: 121	** The exponential growth of the Internet was (Answer: heralded) ,in the 1990s, as revolutionizing the production and (Answer: dissemination) of information.
 eventually	අවසානයේ	rw fb qno: 124	
 unvoiced	not expressed in words; unuttered; වචනවලින් ප්‍රකාශ නොකළ; නොකියන ලද	rw fb qno: 134	
 dialects	උපභාෂා	rw fb qno: 147	
 odoriferous	දුර්ගන්ධය	rw fb qno: 161	
-opus	any artistic work, especially one on a large scale.	rw fb qno: 191	
+opus	any artistic work, especially one on a large scale.	rw fb qno: 191	**  Nature is no longer an alien (Answer: enigma) but something immediately beautiful, an exuberant (Answer: opus) with space for us to join in.
 deserves	fit | සුදුසුයි	rw fb qno: 199	
 retains	රඳවා තබයි	rw fb qno: 360	
 notions	සංකල්ප	rw fb qno: 411	
@@ -105,9 +105,9 @@ thriving	දියුණු වෙනවා	dd fill blanks qno: 264
 offenders	වැරදිකරුවන්	dd fill blanks qno: 265	
 efficacy	කාර්යක්ෂමතාව	dd fill blanks qno: 71	
 assertive	ස්ථිරසාර	dd fill blanks qno: 76	
-advent	පැමිණීම	dd fill blanks qno: 89	
+advent	පැමිණීම	dd fill blanks qno: 89	** Steven Weinberg, Nobel laureate and professor of physics at the university, called the Centre' s (Answer: advent) a very exciting development for that department.
 nevertheless	කෙසේ වෙතත්	dd fill blanks qno: 92	
-intimate	සමීපයි	dd fill blanks qno: 140	A married woman should only be affectionate and intimate with her husband.(#nl#)Because I am a private person, I do not like to share intimate details about my home life.(#nl#)Crop to create a more intimate portrait.
+intimate	සමීපයි	dd fill blanks qno: 140	** Symbiosis is a general term for (Answer: interspecific) interactions in which two species live together in a long-term, (Answer: intimate) association.(#nl#)----(#nl#)A married woman should only be affectionate and intimate with her husband.(#nl#)Because I am a private person, I do not like to share intimate details about my home life.(#nl#)Crop to create a more intimate portrait.
 sough after	බොහෝ දෙනාට ප්රියවු	dd fill blanks qno: 144	
 eroding	ඛාදනය වීම	dd fill blanks qno: 164	
 depict	නිරූපණය	dd fill blanks qno: 215	
@@ -145,7 +145,7 @@ bristle	රළු ලෝම | පොල් කෙඳි | a short, stiff hair	ap
 desperate	මංමුලා සහගත | hopeless	apeuni fib-rw #811	
 conformance	අනුකූලතාව | compliance with standards, rules, or laws.	apeuni fib-rw #811	
 compliance	අනුකූලතාව | යටත් වීම	apeuni fib-rw #811	
-manifestation	විද්‍යමානවීම | demonstration	apeuni fib-rw #811	
+manifestation	විද්‍යමානවීම | demonstration	apeuni fib-rw #811	** The very substance of the Mexicans body is to a considerable extent a (Answer: manifestation) of this plant.
 infestation	ආසාදනය | ගහණවීම (of insects or animals)	apeuni fib-rw #811	
 citation	උපුටා දැක්වීම | or: සිතාසිය	apeuni fib-rw #811	
 recessed	අවපාතය	apeuni fib-rw #811	
@@ -153,7 +153,7 @@ outrageous	දරුණු | සාහසික | කෝපාවිෂ්ඨ | 
 forgo	අත්හරිනවා | අත්හරින්න	apeuni fib-rw #806	
 respiring	ශ්වසනය	apeuni fib-rw #806	
 inspiring	ආශ්වාදජනකයි	apeuni fib-rw #806	
-potent	ප්‍රබල | බලසම්පන්න	apeuni fib-rw #806	
+potent	ප්‍රබල | බලසම්පන්න	apeuni fib-rw #806	** Cuteness in offspring is a (Answer: potent) protective mechanism that (Answer: ensures) survival for otherwise completely (Answer: dependent) infants.
 pertinent	අදාළ | උචිත	apeuni fib-rw #806	
 prominent	විශිෂ්ට | ප්‍රමුඛ | ප්‍රසිද්ධ	apeuni fib-rw #806	
 immanent	තැන්පත්	apeuni fib-rw #806	
@@ -168,7 +168,7 @@ encompass	ආවරණය කරයි | වට කරනවා | enclose	apeuni
 phenomena	සංසිද්ධි | සිද්ධි	apeuni fib-r #786	
 dominant	ප්‍රබල | ප්‍රධාන | ප්‍රමුඛ	apeuni fib-r #784	
 alleviating	සමනය කිරීම | relieving	apeuni fib-r #781	
-consequence	විපාකය | ප්‍රතිඑලය | outcome	apeuni fib-r #778	
+consequence	විපාකය | ප්‍රතිඑලය | outcome	apeuni fib-r #778	**  But today, I more clearly understand the (Answer: consequences) of leaving my original profession.
 adolescence	නවයොවුන් විය | ගැටවර විය	apeuni fib-r #778	
 sacrifice	කැප කිරීම | පරිත්‍යාගය | බිල්ල	apeuni fib-r #770	
 exhaustion	වෙහෙසට පත්වීම | අධික වෙභෙස | නාස්තිය | පිට කිරීම	apeuni fib-l #192	
@@ -192,7 +192,7 @@ subsist	ජීවත් වෙනවා | survive	apeuni fib-r #838
 insist	අවධාරනය කරති | ස්ථීර ලෙස සිටිනවා	apeuni fib-r #838	
 diverse	විවිධ	apeuni fib-r #795	
 slammed	ගැහුවා | තදින් ගසා වැසීම	apeuni fib-r #797	
-ingrained	සහජයෙන් පිහිටි | මුල් බැසගත්	apeuni fib-rw #887	
+ingrained	සහජයෙන් පිහිටි | මුල් බැසගත්	apeuni fib-rw #887	**  He says that music is (Answer: ingrained) in our auditory, cognitive and motor functions.
 ambitious	මහාඅපේක්ෂා සහිත | අභිලාෂකාමී	apeuni fib-rw #887	
 avid	උද්යෝගිමත් |  තද ආශා ඇති	apeuni fib-rw #887	
 alike	සමානව | ඒකාකාර	apeuni fib-rw #886	
@@ -238,7 +238,7 @@ curb	සීමා කරන්න | පාලනය | මැඩලනවා | �
 encroachment	ආක්‍රමණය කිරීම	ptelabs fib-r 48	
 invasion	ආක්‍රමණය	ptelabs fib-r 48	
 wetland	තෙත් බිම	ptelabs fib-r 48	
-deplete	ප්‍රමාණය අඩු කරනවා | හිස් කරනවා	apeuni fib-rw #768	
+deplete	ප්‍රමාණය අඩු කරනවා | හිස් කරනවා	apeuni fib-rw #768	** algae and other aquatic species which may (Answer: deplete) minerals in the water, thus endanger other species.
 sophisticated	සංකීර්ණ | අතිපණ්ඩිත | විචිත්‍ර	apeuni fib-rw 767	
 rejuvenated	තිරිහන් | පුනර්ජීවනය විය	apeuni fib-rw 767	
 stitch	මසනවා | ගොතනවා | මැහුම | ගෙත්තම	apeuni fib-rw 771	
@@ -455,7 +455,7 @@ uprooted	මුලිනුපුටා දැමූහ	Apeuni FIB-R #502	* .., 
 fled	පලා ගියා (past tense of flee)	Apeuni FIB-R #502	* .., more than 2.3 million South Sudanese uprooted from their homes have fled to neighboring countries, ..
 battle	සටන	PteLabs FIB-R 316	
 wondering	පුදුම වෙනවා	PteLabs FIB-R 321	* You start WONDERING how you're going to cope with it all.
-purposeful	අරමුණු සහිතයි	PteLabs FIB-R 321	* A limited amount of ANXIETY can help you to be more motivated and more PURPOSEFUL .
+purposeful	අරමුණු සහිතයි	PteLabs FIB-R 321	** A limited amount of ANXIETY can help you to be more motivated and more PURPOSEFUL .
 reluctant	අකමැත්තෙන්	PteLabs FIB-R 324	
 scorching	extremely hotred-hot	Apeuni FIB-RW #296	"* The ants' long legs already help keep their bodies away from the scorching desert floor and enable them to speed around at up to 60 cm per second.
 herding	keep or look after (livestock).	Apeuni FIB-R #590	* Border Collies continue to be employed in their traditional work of herding livestock throughout the world.
@@ -515,3 +515,42 @@ glimpse	යාන්තමට බලනවා | ක්ෂණිකව බලන�
 eloquent	කථාවෙහි දක්ෂ	Apeuni FIB-RW #346	* humans are not always the most eloquent of speakers.
 afield	to or at a distance.	Apeuni FIB-RW #283*	* # as Roman cities and towns grew, they needed to bring in water from (Answer: further afield) .
 iridescence	a lustrous rainbowlike play of color caused by differential refraction of light waves (google it, not in dickies)	Apeuni FIB-RW #268*	*  #But she and others noticed something odd about (Answer: iridescence) .
+rudimentary	ප්රාථමික	Apeuni FIB-RW #252*	** This suggests that the cells have a (Answer: rudimentary) memory being able to remember the last direction they had just turned in
+equities	කොටස්	Apeuni FIB-R #391*	** Financial markets swung wildly yesterday in the frenzied trading market by further selling of equities (Answer: equities) and fears about an unraveling of the global carry trade.
+marveled	පුදුමයට පත් විය	Apeuni FIB-R #237*	** (Answer: On) opening day–“Pedestrian Day”–some 200,000 bridge walkers (Answer: marveled) at the 4,200-foot-long suspension bridge,
+facets	sides, faces	Apeuni FIB-R #351*	** After all, Earth is a big place with many (Answer: facets) to study.
+concise	සංක්ෂිප්ත | brief	Apeuni FIB-R #351*	**  The concept has also changed throughout the ages, making it difficult to create a (Answer: concise) , universal geography definition for such a dynamic and all-encompassing subject.
+accumulate	රැස් කරනවා	Apeuni FIB-R #332*	** Eutrophication is a process when bodies of water (Answer: accumulate) to a high nutrient level due to extensive fertilizer in the soil.
+coined	invented | created | made up (2nd meainign) | *	Apeuni FIB-RW #93*	** The term radioactivity was (Answer: coined) by Marie Curie and her husband Pierre Curie.
+particularly	විශේෂයෙන්ම	Apeuni FIB-RW #48*	**  Most decisions will at some stage involve consideration of financial matters, (Answer: particularly) cost.
+vernacular	ගමේ ගොඩේ බාසාව | native speach	Apeuni FIB-RW #419*	**  It gives lexicographers (people who write dictionaries) (Answer: access) to a more vibrant, up-to-date (Answer: vernacular) language which has never really been studied before.
+predominant	ප්රමුඛ වේ | main |most important	Apeuni FIB-RW #297*	**  'Up until our research, the (Answer: predominant) wisdom in the scientific community was that Umami was not a separate sense.
+converging	tend to meet at a point.	Apeuni FIB-RW #18*	**  The advantage of group discussion is that people can overcome linear sequence of words by (Answer: converging) on ideas from different directions
+decisiveness	තීරණාත්මක බව	Apeuni FIB-RW #838	** . Frequently, such moments require (Answer: decisiveness) and absolute conviction above all else.
+unwittingly	නොදැනුවත්වම	Apeuni FIB-R #283*	**  You might relate a story to a friend but commonly (Answer: unwittingly) include some mistaken details.
+modest	ප්‍රමාණවත්	Apeuni FIB-R #282*	**  lithium has, until now, played a (Answer: modest) role in industry.
+sustenance	පෝෂණය	Apeuni FIB-RW #66*	**  the task of providing water for human (Answer: sustenance) more difficult.
+commemorates	සිහිපත් කරයි	Apeuni FIB-RW #216	** Fireworks were also used in the German lands. An elaborate colour-painted book (Answer: commemorates) the Schembart carnival of Nuremberg,
+culpability	වරදකාරිත්වය	Apeuni FIB-RW #734	**  Criminal acts are seen as individual issues of personal responsibility and (Answer: culpability) , to which the state responds by way of policing, (Answer: prosecution) , adjudication and punishment.
+prosecution	නඩු පැවරීම	Apeuni FIB-RW #734	**  Criminal acts are seen as individual issues of personal responsibility and (Answer: culpability) , to which the state responds by way of policing, (Answer: prosecution) , adjudication and punishment.
+prosper	සමෘද්ධිමත් වේ	Apeuni FIB-RW #733	**  Street-front retail and commercial establishments will (Answer: prosper) from the large volume of foot traffic drawn to an environment
+tenacity	ස්ථාවරත්වය	Apeuni FIB-RW #270	** During this period, I learnt a lot and realised the importance of (Answer: tenacity) and how to (Answer: rouse) other pupils' awareness.
+rouse	නැගිටින්න	Apeuni FIB-RW #270	** During this period, I learnt a lot and realised the importance of (Answer: tenacity) and how to (Answer: rouse) other pupils' awareness.
+dissipated	විසුරුවා හරින ලදී	Apeuni FIB-RW #674	** However, when I think about the rate at which my medical skills and knowledge have (Answer: dissipated) , the years spent reading weighty medical textbooks..
+indistinguishable	වෙන් කළ නොහැකි ය	Apeuni FIB-RW #666	**  For example, the strain currently in the Americas and another previously detected in French Polynesia are practically (Answer: indistinguishable) from each other (group in white box).
+prejudice	පක්ෂපාතකම (2) | *	Apeuni FIB-R #237	** The difficulty (Answer: difficulty) is that beauty is in the eye of the beholder, and you cannot behold a politician's face without a veil of extraneous wink (Answer: prejudice) getting in the way.
+utopian	මනෝරාජික	Apeuni FIB-R #215	** Walt Disney World has become a pilgrimage site partly because of the luminosity of its crosscultural and marketing and partly because its (Answer: utopian) aspects appeal powerfully to real needs in the capitalist (Answer: society) .
+misperceives	වැරදියට වටහා ගනියි	Apeuni FIB-R #198	** The advantage falls to the cheater because the cheated person misperceives (Answer: misperceives) what is assumed to be the real world".
+lure	උපාය	Apeuni FIB-RW #602	** In an attempt to (Answer: lure) new students, leading business schools — including Harvard, Stanford, the University of Chicago and Wharton – have moved away from the unofficial admissions...
+hinges on	මත රඳා පවතී	Apeuni FIB-RW #618	** The success of the business (Answer: hinges on) the successful sales of its products and services.
+mimicking	අනුකරණය කිරීම	Apeuni FIB-R #576	** The philosophy of (Answer: mimicking) natural processes precedes the science of understanding them.
+credible	විශ්වසනීය	Apeuni FIB-R #576	** ... our fetishism of science as the only (Answer: credible) tool with which to approach nature.
+substantially	සැලකිය යුතු ලෙස	Apeuni FIB-RW #82	** ...,  thanks to increased (Answer: production) of the signaling molecule nitric oxide. In rodents, anyway.
+stellar	තාරකා	Apeuni FIB-R #135	** Stars and the material between them are almost always found in gigantic (Answer: stellar) systems called galaxies.
+instinctual	සහජ බුද්ධිය	Apeuni FIB-R #92	** Previous research has linked cuteness to early ethological ideas of a "kindchenschema" (infant schema) where infant facial features serve as "innate releasing mechanisms" for (Answer: instinctual) caregiving behaviors.
+altitudes	උන්නතාංශ | hieght | elevation	Apeuni FIB-R #74	** There will be (Answer: thousands) of tiny jets, seating six or fewer, at airliner (Answer: altitudes) , competing for space with remotely operated drones
+interspecific	adj. existing or occurring between different species	Apeuni FIB-RW #255	** Symbiosis is a general term for (Answer: interspecific) interactions in which two species live together in a long-term, (Answer: intimate) association.
+tolerate	ඉවසනවා	Apeuni FIB-RW #186	** Since some people don't contribute and many are irresponsible, the choices of those who do contribute and are responsible are either to (Answer: tolerate) the free riders, refuse to pay for the (Answer: effects) of their irresponsibility or trust the state to (Answer: educate) them.
+innate	සහජ	Apeuni FIB-RW #167]	**  Now a study shows that ability to resist temptation isn't strictly (Answer: innate) -- it's aIso highly influenced by environment.
+unsuspecting	සැකයක් නැති	Apeuni FIB-RW #655	**  What transpires in the tubes usually knocks the socks off of any (Answer: unsuspecting) bystander.
+offspring	දරුවා | ජනිතය	Apeuni FIB-RW	
