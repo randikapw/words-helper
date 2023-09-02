@@ -87,7 +87,7 @@ engagement of effort	උත්සාහයේ නියැලීම	(collocation
 unrivaled	අසමසම	rw fb qno: 10	
 hatch | hatching	පැටවුන් බිහි කිරීම	rw fb qno: 40	
 truant	absentee | අලසයා	rw fb qno: 254	
-boon	වාසිය | advantage	rw fb qno: 48	
+boon	වාසිය | advantage	rw fb qno: 48	** News coverage has also proven to be a (Answer: boon) to alternative programs.
 contrary	ප්‍රතිවිරුද්ධ | opposite | opposing	rw fb qno: 90	
 certainly	නිසැකවම	dd fill blanks qno: 220	
 prospect	අපේක්ෂාව	dd fill blanks qno: 217	
@@ -204,7 +204,7 @@ corresponding	සමාන | අනූරූප	ptelabs fib-rw 184
 sustainability	තිරසාර බව | නොනැසී පවත්වනවා	ptelabs fib-rw 184	
 archipelago	දූපත් ගහන මුහුද	ptelabs fib-rw 256	
 aground	බිම ඇනී | grounded | beached	ptelabs fib-rw 256	
-scurried	ගැස්සිලා ගියා	ptelabs fib-rw 256	
+scurried	ගැස්සිලා ගියා	ptelabs fib-rw 256	** when the ship's infestation "scurried" ashore and made itself at home.
 shipwreck	නැව් දියබත් වීම	ptelabs fib-rw 256	
 consciousness	සිහිය | විඥානය	ptelabs fib-rw 256	
 inadvertently	අනවධාන ලෙස | නොසැලකිලිමත් ලෙස	ptelabs fib-rw 256	
@@ -226,7 +226,7 @@ strive	උත්සාහ කරන්න	ptelabs fib-r 94
 abandoning	අත්හැරීම	ptelabs fib-r 94	
 competent	දක්ෂ	ptelabs fib-r 94	
 dizzy	කරකැවිල්ල	ptelabs fib-r 94	
-convey	ගෙන යනවා | පවරා දෙනවා	ptelabs fib-r 94	
+convey	ගෙන යනවා | පවරා දෙනවා	ptelabs fib-r 94	** Inevitably, there are unintentional modifications as well, partly because of straightforward error, and partly because inexplicit ideas are hard to (Answer: convey) accurately
 flourish	සමෘද්ධිමත්	ptelabs fib-r 94	
 vivid	විචිත්රවත්	ptelabs fib-r 108	
 oftentimes	බොහෝ විට	ptelabs fib-r 108	
@@ -554,3 +554,4 @@ tolerate	ඉවසනවා	Apeuni FIB-RW #186	** Since some people don't contri
 innate	සහජ	Apeuni FIB-RW #167]	**  Now a study shows that ability to resist temptation isn't strictly (Answer: innate) -- it's aIso highly influenced by environment.
 unsuspecting	සැකයක් නැති	Apeuni FIB-RW #655	**  What transpires in the tubes usually knocks the socks off of any (Answer: unsuspecting) bystander.
 offspring	දරුවා | ජනිතය	Apeuni FIB-RW	
+stimuli	උත්තේජක	Apeuni FIB-RW #200	**  The theories of behaviorism arose through (Answer: experiments) largely on animals in which behaviors were learned through carefully controlled (Answer: stimuli) .
