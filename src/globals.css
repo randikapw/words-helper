@@ -26,12 +26,6 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-* {
-	margin: 0;
-	padding: 4px 20px;
-	box-sizing: border-box;
-}
-
 .Speech {
 	width: 50px;
 }
