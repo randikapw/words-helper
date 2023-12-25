@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useSpeechSynthesis } from "react-speech-kit";
 import difficultWordService from "../services/difficultWordService";
 import { useMemo } from "react";
@@ -46,7 +46,10 @@ const DifficultWords = () => {
     const [previousWord, setPreviousWord] = useState(null);
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
     const [index, setIndex] = useState(0);
-    const { speak } = useSpeechSynthesis();
+    const [spchIndex, setSpchIndex] = useState(6);
+    const { speak : speakO, voices } = useSpeechSynthesis();
+
+    const speak = useCallback(({text})=>speakO({text,voice:voices[spchIndex]}),[speakO,voices,spchIndex])
 
     const [words, setWords] = useState([]);
     const [todaySpecials, setTodaySpecials] = useState([]);
@@ -61,6 +64,7 @@ const DifficultWords = () => {
         const ws = difficultWordService.getPrioratizedWordList();
         setWords(ws);
         setTodaySpecials(difficultWordService.getTodaySpecials());
+        setSpchIndex(localStorage.getItem("spchIndex") ?? 1)
     }, []);
 
     useEffect(() => {
@@ -97,7 +101,7 @@ const DifficultWords = () => {
         if (currentWord[currentAnswerLangType] === choosedWord) {
             difficultWordService.scoreAttempt(currentWord, false, isFirstAttempt, currentLangType);
             setIsFirstAttempt(true);
-            speak({ text: getNextWord() });
+            speak({ text: getNextWord()});
         } else {
             difficultWordService.scoreAttempt(currentWord, true, isFirstAttempt, currentLangType);
             setIsFirstAttempt(false);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useSpeechSynthesis } from "react-speech-kit";
 import { getWords } from "../utils";
 import wordsService from "../services/wordsService";
@@ -12,15 +12,23 @@ const SpellCheck = () => {
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
     const [editMode, setEditMode] = useState(null);
     const [index, setIndex] = useState(1);
-    const { speak } = useSpeechSynthesis();
+    const [spchIndex, setSpchIndex] = useState(6);
+    const { speak : speakO, voices } = useSpeechSynthesis();
 
     const [words, setWords] = useState([]);
+
+    const speak = useCallback(({text})=>speakO({text,voice:voices[spchIndex]}),[speakO,voices,spchIndex])
+    const setSpeechIndex = useCallback((index)=>{
+        setSpchIndex(index)
+        localStorage.setItem("spchIndex",index)
+    },[])
 
     useEffect(() => {
         const ws = wordsService.getPrioratizedWordList();
         setWords(ws);
         const currWrd = ws[0]
         setCurrentWord(currWrd);
+        setSpchIndex(localStorage.getItem("spchIndex") ?? 1)
     }, []);
 
     const getNextWord = () => {
@@ -41,8 +49,21 @@ const SpellCheck = () => {
 
     const onCheck = () => {
         const lclValue = value.trim().toLocaleLowerCase();
-        if (lclValue === "l") {
+        if (!(lclValue) || lclValue === "l") {
             speak({ text: currentWord});
+            setValue("");
+            return;
+        }
+        if (lclValue.includes("v")) {
+            const index = parseInt(lclValue.split(" ")[1])
+            let message;
+            if (index && index >= 1 ) {
+                setSpeechIndex(index-1)
+                message = "The voice has changed"
+            } else {
+                message = "Invalid voice index"
+            }
+            setTimeout(() => speak({ text: message}), 500);
             setValue("");
             return;
         }

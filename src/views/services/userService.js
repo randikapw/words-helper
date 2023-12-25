@@ -45,4 +45,5 @@ class UserSevice {
     }
 }
 
+export const getNewUserSeviceInstance = () => (new UserSevice())
 export default new UserSevice();

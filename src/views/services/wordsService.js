@@ -1,7 +1,7 @@
 import { convertStringToJson, getItemFromLocalStorageAsJson, getToday, setItemFromJson } from "../utils";
 import counterService from "./counterService";
 import moment from "moment";
-import userService from "./userService";
+import userService, { getNewUserSeviceInstance } from "./userService";
 
 // export const lcl_key = "Spellings";
 export const lcl_key = "spellings";
@@ -134,17 +134,23 @@ class WordService {
         return counterService.getCounts(lcl_key);
     }
 
-    addMany(newWords) {
-        const words = this.#wordsMap;
+    async addMany(newWords) {
+        const rootUserService = getNewUserSeviceInstance();
+        const rootUsr = await rootUserService.loadUser("root");
+        // const words = this.#wordsMap;
+        const words = convertStringToJson(rootUsr[lcl_key]);
         let newWrdCount = 0;
         newWords.forEach(word => {
             const lowerWord = word.trim().toLocaleLowerCase();
             if (!words[lowerWord]) {
-                words[lowerWord] = { ...this.#newWordTemplate, word: lowerWord };
+                const w = { ...this.#newWordTemplate, word: lowerWord };
+                words[lowerWord] = w
+                this.#wordsMap[lowerWord] = w
                 ++newWrdCount
             }
         });
-        this.save();
+        // this.save();
+        await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(words)})
         return newWrdCount;
     }
 
@@ -184,11 +190,11 @@ class WordService {
         this.save();
     }
 
-    importFromPlainText(value) {
+    async importFromPlainText(value) {
         const newWords = value.split('\n');
         const prf = this.getPlainTextImportPrefix()
         if(newWords.shift()?.includes(prf)) {
-            let newWrdCount = this.addMany(newWords);
+            let newWrdCount = await this.addMany(newWords);
             alert(`${newWrdCount} ${lcl_key} imported`);
         } else {
             alert(`Import failed: prefix not found '${prf}'`);

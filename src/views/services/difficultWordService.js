@@ -2,7 +2,7 @@ import { convertStringToJson, getItemFromLocalStorageAsJson, getToday, setItemFr
 import counterService from "./counterService";
 import moment from "moment";
 import todaySpecialService from "./todaySpecialService";
-import userService from "./userService";
+import userService, { getNewUserSeviceInstance } from "./userService";
 
 // export const lcl_key = "Difficult_Words";
 export const lcl_key = "difficultWords";
@@ -163,8 +163,10 @@ class IrregularVerbService {
        return counterService.getCounts(lcl_key);
     }
 
-    addMany(newWords) {
-        const words = this.#wordsMap;
+    async addMany(newWords) {
+        const rootUserService = getNewUserSeviceInstance();
+        const rootUsr = await rootUserService.loadUser("root");
+        const words = convertStringToJson(rootUsr[lcl_key]);  //this.#wordsMap 
         let newWrdCount = 0;
         newWords.forEach(verbsSet => {
             const lowerWord = verbsSet.trim();
@@ -182,6 +184,7 @@ class IrregularVerbService {
             if (!(w && w.english && w.sinhala)) {
                 w = {...this.#newWordTemplate, english, sinhala, comment, examples};
                 words[english] = w;
+                this.#wordsMap[english] = w
                 ++newWrdCount
             }
             if (examples && (!w.examples || !w.examples.includes(examples))) {
@@ -190,16 +193,18 @@ class IrregularVerbService {
                 } else {
                     w.examples = examples;
                 }
+                this.#wordsMap[english].examples = w.examples
             }
         });
-        this.save();
+        //this.save();
+        await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(words)})
         return newWrdCount;
     }
 
-    save() {
+    async save() {
         console.log("saving irregularVerbs data...",this.#wordsMap);
         // setItemFromJson(lcl_key,this.#wordsMap);
-        userService.upadteUserAttributes({[lcl_key]:JSON.stringify(this.#wordsMap)})
+        await userService.upadteUserAttributes({[lcl_key]:JSON.stringify(this.#wordsMap)})
         this.#lazyCount = 0;
         clearTimeout(this.#lazyTimeoutObj);
         this.#lazyTimeoutObj=null;
@@ -243,11 +248,11 @@ class IrregularVerbService {
         this.save();
     }
 
-    importFromPlainText(value) {
+    async importFromPlainText(value) {
         const newWords = value.split('\n');
         const prf = this.getPlainTextImportPrefix()
         if(newWords.shift()?.includes(prf)) {
-            let newWrdCount = this.addMany(newWords);
+            let newWrdCount = await this.addMany(newWords);
             alert(`${newWrdCount} ${lcl_key} imported`);
         } else {
             alert(`Import failed: prefix not found '${prf}'`);
