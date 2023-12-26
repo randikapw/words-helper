@@ -159,7 +159,7 @@ const IrregularVerbs = () => {
             }
             <div className="group">
                 <textarea
-                    rows="10"
+                    rows="2"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     onKeyDown={onEnterPress}

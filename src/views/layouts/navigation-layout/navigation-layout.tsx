@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from './nav-bar'
 const NavigationLayout
     = ({
@@ -7,10 +7,14 @@ const NavigationLayout
     }: {
         children: React.ReactNode
     }) => {
+        const [user, setUser] = useState(null)
         return (
             <div>
-                <NavBar/>
-                {children}
+                <NavBar setUser={setUser}/>
+                {user
+                    ? children
+                    : <div>Require sign in with a valid user...</div>
+                }
             </div>
         )
     }

@@ -12,22 +12,24 @@ const SpellCheck = () => {
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
     const [editMode, setEditMode] = useState(null);
     const [index, setIndex] = useState(1);
+    const [repeats, setRepeats] = useState({ current: 1, total: 1 })
     const [spchIndex, setSpchIndex] = useState(6);
-    const { speak : speakO, voices } = useSpeechSynthesis();
+    const { speak: speakO, voices } = useSpeechSynthesis();
 
     const [words, setWords] = useState([]);
 
-    const speak = useCallback(({text})=>speakO({text,voice:voices[spchIndex]}),[speakO,voices,spchIndex])
-    const setSpeechIndex = useCallback((index)=>{
+    const speak = useCallback(({ text }) => speakO({ text, voice: voices[spchIndex] }), [speakO, voices, spchIndex])
+    const setSpeechIndex = useCallback((index) => {
         setSpchIndex(index)
-        localStorage.setItem("spchIndex",index)
-    },[])
+        localStorage.setItem("spchIndex", index)
+    }, [])
 
     useEffect(() => {
         const ws = wordsService.getPrioratizedWordList();
         setWords(ws);
         const currWrd = ws[0]
         setCurrentWord(currWrd);
+        setRepeats(wordsService.getRepeatCountsForWord(currWrd))
         setSpchIndex(localStorage.getItem("spchIndex") ?? 1)
     }, []);
 
@@ -37,6 +39,9 @@ const SpellCheck = () => {
         const newTxt = words[i];
         setPreviousWord(currentWord);
         setCurrentWord(newTxt);
+        setIsFirstAttempt(true);
+        setShowCurrent(false);
+        setRepeats(wordsService.getRepeatCountsForWord(newTxt))
         return newTxt;
     }
 
@@ -50,35 +55,44 @@ const SpellCheck = () => {
     const onCheck = () => {
         const lclValue = value.trim().toLocaleLowerCase();
         if (!(lclValue) || lclValue === "l") {
-            speak({ text: currentWord});
+            speak({ text: currentWord });
             setValue("");
             return;
         }
-        if (lclValue.includes("v")) {
+        if (lclValue.startsWith("v ")) {
             const index = parseInt(lclValue.split(" ")[1])
             let message;
-            if (index && index >= 1 ) {
-                setSpeechIndex(index-1)
+            if (index && index >= 1) {
+                setSpeechIndex(index - 1)
                 message = "The voice has changed"
             } else {
                 message = "Invalid voice index"
             }
-            setTimeout(() => speak({ text: message}), 500);
+            setTimeout(() => speak({ text: message }), 500);
             setValue("");
             return;
         }
 
         if (currentWord.toLocaleLowerCase() === lclValue) {
-            wordsService.scoreAttempt(currentWord,false,isFirstAttempt);
-            setIsFirstAttempt(true);
-            speak({ text: getNextWord() });
-            setShowCurrent(false);
+            const { current, total } = repeats;
+            console.log("current", current)
+            wordsService.scoreAttempt(currentWord, false, isFirstAttempt, current);
+            if (current + 1 < total) { //+1 to reprocent ongoing current attempt
+                setRepeats({ ...repeats, current: current + 1 })
+                speak({ text: currentWord })
+                setShowCurrent(false);
+            } else {
+                speak({ text: getNextWord() });
+            }
         } else {
-            wordsService.scoreAttempt(currentWord,true,isFirstAttempt);
+            wordsService.scoreAttempt(currentWord, true, isFirstAttempt);
             setIsFirstAttempt(false);
             speak({ text: currentWord });
             setCurrentEnteredWord(lclValue);
             setShowCurrent(true);
+            const { total } = repeats;
+            const increment = total > 9 ? 0 : total > 4 ? 1 : total > 2 ? 2 : 3  
+            setRepeats({ ...repeats, total: total + increment })
         }
         setValue("");
 
@@ -89,13 +103,13 @@ const SpellCheck = () => {
         speak({ text: getNextWord() });
         setShowCurrent(false);
     }
-    
+
     const onEdit = (key, newKey) => {
-        wordsService.updateWord(key,newKey);
+        wordsService.updateWord(key, newKey);
         setCurrentWord(newKey);
         speak({ text: newKey });
         setEditMode(null);
-               
+
     }
 
     const onSearch = (key, soruce) => {
@@ -103,9 +117,9 @@ const SpellCheck = () => {
         else window.open(`https://www.google.com/search?q=${key}&oq=${key}`, "_blank");
     }
 
-    const DisplayWord = ({word}) => {
-        return <div className="group">
-            <h1 >{word}</h1>
+    const DisplayWord = ({ word }) => {
+        return <div className="pl-0">
+            <h1 className="text-3xl">{word}</h1>
             {editMode
                 ? <div>
                     <textarea
@@ -115,7 +129,7 @@ const SpellCheck = () => {
                     <span> | </span> <span onClick={() => setEditMode(null)}>Cancel</span>
                 </div>
                 : <div>
-                    <span onClick={() => setEditMode(word)}>Edit</span>
+                    <span onClick={() => setEditMode(word)} className="pl-0">Edit</span>
                     <span> | </span> <span onClick={() => onRemove(word)}>Remove</span>
                     <span> | </span> <span onClick={() => onSearch(word)}>Google</span>
                     <span> | </span> <span onClick={() => onSearch(word, "madura")}>Madura</span>
@@ -127,8 +141,11 @@ const SpellCheck = () => {
     const DisplayProgress = () => {
         const counts = wordsService.getCounts();
         return <div className="group">
+            <span>Repeats to cover: {`${repeats.total - repeats.current}`}</span>
+            <span>|</span>
             <span>Current Session: {`${index} / ${words.length}`}</span>
-            <div>Today: Unique - {counts.uniqueAttempts} Retries - {counts.retries}</div>
+            <span>|</span>
+            <span>Today: Unique - {counts.uniqueAttempts} Retries - {counts.retries}</span>
         </div>
     }
 
@@ -137,29 +154,29 @@ const SpellCheck = () => {
             <div className="group">
                 <h2>Type the word with correct spellings</h2>
             </div>
-            {showCurrent 
-                ? <><DisplayWord word={currentWord}/><div>Word you entered: <span style={{color:"red"}}>{currentEnteredWord}</span></div> </>
-                : <div>Type 'L' then Enter to listen the word again</div>
+            {showCurrent
+                ? <><DisplayWord word={currentWord} /><div>Word you entered: <span style={{ color: "red" }}>{currentEnteredWord}</span></div> </>
+                : <div className="text-sm">Type 'L' then Enter to listen the word again</div>
             }
             <div className="group">
                 <textarea
-                    rows="10"
+                    rows="2"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     onKeyDown={onEnterPress}
                 ></textarea>
             </div>
-            <div className="group">
+            {/* <div className="group">
                 <button onClick={() => onEnterPress({ keyCode: 13, shiftKey: false, preventDefault: () => { } })}>
                     check
                 </button>
-            </div>
-            {previousWord && <div className="group">
+            </div> */}
+            <DisplayProgress />
+            {previousWord && <div className="border-y">
                 <span>Previous Word</span>
-                <DisplayWord word={previousWord}/>
+                <DisplayWord word={previousWord} />
             </div>
             }
-            <DisplayProgress/>
         </div>
     );
 };

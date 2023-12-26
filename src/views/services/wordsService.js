@@ -17,8 +17,8 @@ class WordService {
     }
 
     #lazyCount = 0;
-    #lazyCountMax = 5;
-    #lazyTimeout = 30000;
+    #lazyCountMax = 15;
+    #lazyTimeout = 45000;
     #lazyTimeoutObj;
 
     constructor() {
@@ -105,7 +105,14 @@ class WordService {
         this.save();
     }
 
-    scoreAttempt(word, isWrong = false, isFirstAttempt = true) {
+    
+    getRepeatCountsForWord(word) {
+        const {score=0} = this.#wordsMap[word] ?? {};
+        const total = score > 20 ? 10 : score > 10 ? 5 : score > 5 ? 3 : 0
+        return {total, current: 0}
+    }
+
+    scoreAttempt(word, isWrong = false, isFirstAttempt = true, currentRepeatAttempt = 0) {
         const wordObj = this.#wordsMap[word];
         let score = wordObj.score || 0;
         let attempts = wordObj.attempts || 0;
@@ -117,16 +124,20 @@ class WordService {
         }
 
         if (isWrong) {
-            score += (isFirstAttempt ? 2 : 1)
-        } else if (isFirstAttempt && score > 0) {
-            score -= 1;
-            if(score > 5) score -= 1;
-            if(score > 10) score -= 1;
-            if(score > 20) score -= 1;
+            score += (isFirstAttempt ? 3 : 2) //actually this will be again becomes 2 : 1 as two repeats of given for a wrong attempt will reduce one mark. 
+        } else if (score > 0) {
+            if (isFirstAttempt) score -= 1;
+            //now it deduced with repeats
+            // if(score > 5) score -= 1;
+            // if(score > 10) score -= 1;
+            // if(score > 20) score -= 1;
+            if (currentRepeatAttempt && currentRepeatAttempt%2===0) score -= 1;
+            //didnt optimize to increase the readability
         }
         // if(!isFirstAttempt) alert("next attempt");
         this.#wordsMap[word] = { ...wordObj, score, attempts, date }
-        counterService.countAttempt(lcl_key, isFirstAttempt, isWrong);
+        //same word repeating as not counting if the repeat attmpt is correct.
+        if (!currentRepeatAttempt || isWrong)counterService.countAttempt(lcl_key, isFirstAttempt, isWrong);
         this.saveLazy();
     }
 
