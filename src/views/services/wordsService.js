@@ -149,26 +149,36 @@ class WordService {
         const rootUserService = getNewUserSeviceInstance();
         const rootUsr = await rootUserService.loadUser("root");
         // const words = this.#wordsMap;
-        const words = convertStringToJson(rootUsr[lcl_key]);
+        const rootWords = convertStringToJson(rootUsr[lcl_key]);
         let newWrdCount = 0;
+        let existWords = false
         newWords.forEach(word => {
             const lowerWord = word.trim().toLocaleLowerCase();
-            if (!words[lowerWord]) {
-                const w = { ...this.#newWordTemplate, word: lowerWord };
-                words[lowerWord] = w
-                this.#wordsMap[lowerWord] = w
+            let w = rootWords[lowerWord]
+            if (!w) {
+                w = { ...this.#newWordTemplate, word: lowerWord };
+                rootWords[lowerWord] = w
+                this.#wordsMap[lowerWord] = {...w}
                 ++newWrdCount
+            } else {
+                let ew = this.#wordsMap[lowerWord]
+                if (!ew) {
+                    ew = {...w}
+                    this.#wordsMap[lowerWord] = ew
+                }
+                ew.score += 5
+                existWords = true
             }
         });
-        // this.save();
-        await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(words)})
+        if (existWords) await this.save();
+        await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(rootWords)})
         return newWrdCount;
     }
 
-    save() {
+    async save() {
         console.log("saving wordsMap data...", this.#wordsMap);
         // setItemFromJson(lcl_key, this.#wordsMap);
-        userService.upadteUserAttributes({[lcl_key]:JSON.stringify(this.#wordsMap)})
+        await userService.upadteUserAttributes({[lcl_key]:JSON.stringify(this.#wordsMap)})
         this.#lazyCount = 0;
         clearTimeout(this.#lazyTimeoutObj);
         this.#lazyTimeoutObj = null;
@@ -192,14 +202,22 @@ class WordService {
         setItemFromJson(backupKey, this.#wordsMap);
         console.log("#databackup on key: " + backupKey);
     }
-
-    importFromJson(json) {
-        this.backupJson();
-        //Verify for valid json
-        JSON.stringify(json)
-        this.#wordsMap = json;
-        this.save();
+    
+    resetScore(json) {
+        Object.values(json).forEach((word)=>{
+          word.attempts = 0
+          word.score = 0;
+        }) 
     }
+
+    
+    // importFromJson(json) {
+    //     this.backupJson();
+    //     //Verify for valid json
+    //     JSON.stringify(json)
+    //     this.#wordsMap = json;
+    //     this.save();
+    // }
 
     async importFromPlainText(value) {
         const newWords = value.split('\n');

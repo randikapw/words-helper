@@ -190,14 +190,24 @@ class IrregularVerbService {
         setItemFromJson(backupKey,this.#wordsMap);
         console.log("#databackup on key: " + backupKey);
     }
-
-    importFromJson(json) {
-        this.backupJson();
-        //Verify for valid json
-        JSON.stringify(json)
-        this.#wordsMap = json;
-        this.save();
+    
+    resetScore(json) {
+        Object.values(json).forEach((word)=>{
+          word.attempts = 0
+          word.score = 0;
+          word.score_v1 = 0;
+          word.score_v2 = 0;
+          word.score_v3 = 0;
+        }) 
     }
+
+    // importFromJson(json) {
+    //     this.backupJson();
+    //     //Verify for valid json
+    //     JSON.stringify(json)
+    //     this.#wordsMap = json;
+    //     this.save();
+    // }
 
     importFromPlainText(value) {
         const newWords = value.split('\n');

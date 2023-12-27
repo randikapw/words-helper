@@ -239,14 +239,23 @@ class IrregularVerbService {
         setItemFromJson(backupKey,this.#wordsMap);
         console.log("#databackup on key: " + backupKey);
     }
-
-    importFromJson(json) {
-        this.backupJson();
-        //Verify for valid json
-        JSON.stringify(json)
-        this.#wordsMap = json;
-        this.save();
+    
+    resetScore(json) {
+        Object.values(json).forEach((word)=>{
+          word.attempts = 0
+          word.score = 0;
+          word.score_e2s = 0;
+          word.score_s2e = 0;
+        }) 
     }
+
+    // importFromJson(json) {
+    //     this.backupJson();
+    //     //Verify for valid json
+    //     JSON.stringify(json)
+    //     this.#wordsMap = json;
+    //     this.save();
+    // }
 
     async importFromPlainText(value) {
         const newWords = value.split('\n');

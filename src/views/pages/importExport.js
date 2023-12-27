@@ -76,9 +76,12 @@ const ImportExport = () => {
                 const irregJson = importJson[content_irreugler];
                 const diffJson = importJson[content_difficult];
                 if (spellJson && irregJson && diffJson) {
-                    // wordsService.importFromJson(spellJson);
-                    // irregularVerbService.importFromJson(irregJson);
-                    // difficultWordService.importFromJson(diffJson);
+                    if (userName === "root") {
+                        wordsService.resetScore(spellJson)
+                        // wordsService.importFromJson(spellJson);
+                        irregularVerbService.resetScore(irregJson);
+                        difficultWordService.resetScore(diffJson);
+                    }
                     const body = {
                         userName,
                         spellings: JSON.stringify(spellJson),
