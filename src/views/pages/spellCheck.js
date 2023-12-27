@@ -81,6 +81,7 @@ const SpellCheck = () => {
                 setRepeats({ ...repeats, current: current + 1 })
                 speak({ text: currentWord })
                 setShowCurrent(false);
+                setIsFirstAttempt(false);
             } else {
                 speak({ text: getNextWord() });
             }
