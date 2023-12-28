@@ -33,7 +33,8 @@ function App() {
         {page === "diff-import" && <AddDifficultWords />}
         {page === "options" && <ImportExport />}
 
-        <div className="group options">
+    <div className='h-8'></div>
+        <div className="group options fixed left-0 bottom-0 bg-[#f5f3f3] bg-opacity-[.90] justify-center w-full">
           <button onClick={() => setPage("spell")}>spellings</button>
           {/* <button onClick={()=>setPage("import")}>Import Speellings</button> */}
           <button onClick={() => setPage("irr")}>Irregular</button>

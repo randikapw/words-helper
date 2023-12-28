@@ -104,20 +104,36 @@ class IrregularVerbService {
         this.save();
     }
 
-    updateWord(oldWord, newWord) {
+    async updateWord(oldWord, newWord) {
         const wordsMap = this.#wordsMap;
         const examples = wordsMap[oldWord.english].examples;
+        
         delete wordsMap[oldWord.english];
+        const rootUserService = getNewUserSeviceInstance();
+        const rootUsr = await rootUserService.loadUser("root");
+        // const words = this.#wordsMap;
+        const rootWords = convertStringToJson(rootUsr[lcl_key]);
+        delete rootWords[oldWord.english];
+        await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(rootWords)})
+        
         newWord = newWord.replace( /\(#\)/g, '\t' );
         if (examples) newWord += "\t" + examples?.replaceAll('\n','(#nl#)');
         console.log(`updating ${newWord}`)
-        this.addMany([newWord]);
+        await this.addMany([newWord]);
+        
     }
 
-    updateExamples(word, examples) {
+    async updateExamples(word, examples) {
         const wordsMap = this.#wordsMap;
         wordsMap[word.english].examples = examples;
-        this.saveLazy();
+        // this.saveLazy();
+
+        const rootUserService = getNewUserSeviceInstance();
+        const rootUsr = await rootUserService.loadUser("root");
+        // const words = this.#wordsMap;
+        const rootWords = convertStringToJson(rootUsr[lcl_key]);
+        rootWords[word.english].examples = examples;
+        await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(rootWords)})
     }
 
     #reduceByWieght(marks) {

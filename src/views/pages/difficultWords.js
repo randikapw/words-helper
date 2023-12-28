@@ -133,7 +133,8 @@ const DifficultWords = () => {
         // const counts = difficultWordService.getCounts();
         return <div className="group">
             <span>Current Session: {`${index} / ${words.length}`}</span>
-            <div>Today: Unique - {counts.uniqueAttempts} Retries - {counts.retries}</div>
+            <span>|</span>
+            <span>Today: Unique - {counts.uniqueAttempts} Retries - {counts.retries}</span>
         </div>
     }
 
@@ -201,8 +202,8 @@ const DifficultWords = () => {
             setEditMode(!editMode);
         }
 
-        return <div className="group">
-            <h1>
+        return <div className="pl-0">
+            <h1 className={displayMore === "tsps" ? "text-xl" : displayMore ? "text-2xl" : "text-3xl"}>
                 {
                     word && ((displayMore && (displayMore === "tsps" && showTSPs || true))
                         ? `${word["english"]} : ${word["sinhala"]}`
@@ -220,7 +221,7 @@ const DifficultWords = () => {
                     ></textarea><span onClick={() => onEdit(word, editText)}>Update</span>
                     <span onClick={toggoleEditMode}>Cancel</span>
                 </div>
-                : <div >
+                : <div className="pl-0">
                     <div className="options">
                     <span onClick={toggoleEditMode}>🖉</span>
                     {(displayMore || (currentLangType === "english")) && <>
@@ -246,7 +247,7 @@ const DifficultWords = () => {
 
     return (
         <div className="speech">
-            <div className="group">
+            <div className="group p-0">
                 <h2>Choose the correct meaning</h2>
             </div>
             <DisplayWord word={currentWord} />
@@ -269,15 +270,15 @@ const DifficultWords = () => {
 
             </div>
             <DisplayProgress />
-            {previousWord && <div>
-                <h4>Previous Word</h4>
+            {previousWord && <div className="border-y">
+                <h4 >Previous Word</h4>
                 <DisplayWord word={previousWord} displayMore={true} />
             </div>
             }
             <div>
-                <h4>Today Specials</h4>
+                <h4 className="text-xl pl-0">Today Specials</h4>
                 {
-                    todaySpecials.map((word) => <DisplayWord key={word.english} word={word} displayMore={"tsps"} />)
+                    todaySpecials.map((word) => <div className="border-l p-0 mx-1 mb-4"><DisplayWord key={word.english} word={word} displayMore={"tsps"} /></div>)
                 }
             </div>
         </div>
