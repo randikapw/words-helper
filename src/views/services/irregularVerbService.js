@@ -15,9 +15,9 @@ class IrregularVerbService {
         v3: "",
         attempts: 0,
         score: 0,
-        score_v1:0,
-        score_v2:0,
-        score_v3:0,
+        score_v1: 0,
+        score_v2: 0,
+        score_v3: 0,
         date: today
     }
 
@@ -28,7 +28,7 @@ class IrregularVerbService {
 
     constructor() {
         this.#wordsMap = {};
-        userService.subscribeOnUpdateUser((user)=>{
+        userService.subscribeOnUpdateUser((user) => {
             this.#wordsMap = convertStringToJson(user[lcl_key]);
         })
     }
@@ -46,7 +46,7 @@ class IrregularVerbService {
         else return 0;
     }
 
-    
+
     #prioritySorter(b, a) {
 
         let isAold = moment(a.date).isBefore(today);
@@ -60,22 +60,22 @@ class IrregularVerbService {
         }
 
         if (a.score > b.score) {
-            if (isAold)return 1;
+            if (isAold) return 1;
             else if (isBold) return -1;
         }
         else if (a.score < b.score) {
-            if (isBold)return -1;
-            else if (isAold)return 1;
+            if (isBold) return -1;
+            else if (isAold) return 1;
         }
         else if (!a.attempts) return 1
         else if (!b.attempts) return -1
-        else if (a.attempts < b.attempts){
-            if (isAold)return 1;
+        else if (a.attempts < b.attempts) {
+            if (isAold) return 1;
             else if (isBold) return -1;
         }
         else if (a.attempts > b.attempts) {
-            if (isBold)return -1;
-            else if (isAold)return 1;
+            if (isBold) return -1;
+            else if (isAold) return 1;
         }
         else return 0;
     }
@@ -98,24 +98,30 @@ class IrregularVerbService {
         const wordsMap = this.#wordsMap;
 
         delete wordsMap[oldWord.v1];
-        newWord = newWord.replace( /\s+/g, '\t' );
+        newWord = newWord.replace(/\s+/g, '\t');
         console.log(`updating ${newWord}`)
         this.addMany([newWord]);
     }
 
     #reduceByWieght(marks) {
-        if (marks < 1) return marks;
-        if(--marks < 5) return marks;
-        if(--marks < 10) return marks;
-        if(--marks < 20) return marks;
+        // if (marks < 1) return marks;
+        // if (--marks < 5) return marks;
+        // if (--marks < 10) return marks;
+        // if (--marks < 20) return marks;
         return --marks;
     }
 
-    scoreAttempt(word, isWrong = false, isFirstAttempt = true, vType) {
+    getRepeatCountsForWord(word) {
+        const { score = 0 } = this.#wordsMap[word.v1] ?? {};
+        const total = score > 20 ? 5 : score > 10 ? 3 : score > 5 ? 2 : 0
+        return { total, current: 0 }
+    }
+
+    scoreAttempt(word, isWrong = false, isFirstAttempt = true, vType, currentRepeatAttempt = 0) {
         const wordObj = this.#wordsMap[word.v1];
         let score = wordObj.score || 0;
         let attempts = wordObj.attempts || 0;
-        
+
         if (isFirstAttempt) wordObj.date = today;
 
         const vTypeKey = `score_${vType}`;
@@ -123,19 +129,25 @@ class IrregularVerbService {
             const newPoints = isFirstAttempt ? 2 : 1;
             score += newPoints
             wordObj[vTypeKey] += newPoints;
-        } else if (isFirstAttempt) { //if correct AND first attempt
-            ++attempts;
-            if (score > 0) score = this.#reduceByWieght(score);
-            if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = this.#reduceByWieght(wordObj[vTypeKey]);
+        } else {
+            if (isFirstAttempt) { //if correct AND first attempt
+                ++attempts;
+                if (score > 0) score = this.#reduceByWieght(score);
+                if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = this.#reduceByWieght(wordObj[vTypeKey]);
+            }
+            if (currentRepeatAttempt && currentRepeatAttempt%2===0) {
+                if (score > 0) score -= 1;
+                if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = wordObj[vTypeKey]  - 1;
+            }
         }
-        
-        this.#wordsMap[word.v1] = {...wordObj, score, attempts}
-        counterService.countAttempt(lcl_key,isFirstAttempt,isWrong);
+
+        this.#wordsMap[word.v1] = { ...wordObj, score, attempts }
+        if (!currentRepeatAttempt || isWrong) counterService.countAttempt(lcl_key, isFirstAttempt, isWrong);
         this.saveLazy();
     }
 
     getCounts() {
-       return counterService.getCounts(lcl_key);
+        return counterService.getCounts(lcl_key);
     }
 
     addMany(newWords) {
@@ -153,8 +165,8 @@ class IrregularVerbService {
             const v2 = verbSplit[1].trim();
             const v3 = verbSplit[2].trim();
             const w = words[v1];
-            if (!(w && w.v1 && w.v2 && w.v3 )) {
-                words[v1] = {...this.#newWordTemplate, v1, v2, v3};
+            if (!(w && w.v1 && w.v2 && w.v3)) {
+                words[v1] = { ...this.#newWordTemplate, v1, v2, v3 };
                 ++newWrdCount
             }
         });
@@ -163,12 +175,12 @@ class IrregularVerbService {
     }
 
     save() {
-        console.log("saving irregularVerbs data...",this.#wordsMap);
+        console.log("saving irregularVerbs data...", this.#wordsMap);
         // setItemFromJson(lcl_key,this.#wordsMap);
-        userService.upadteUserAttributes({[lcl_key]:JSON.stringify(this.#wordsMap)})
+        userService.upadteUserAttributes({ [lcl_key]: JSON.stringify(this.#wordsMap) })
         this.#lazyCount = 0;
         clearTimeout(this.#lazyTimeoutObj);
-        this.#lazyTimeoutObj=null;
+        this.#lazyTimeoutObj = null;
     }
 
     saveLazy() {
@@ -179,26 +191,26 @@ class IrregularVerbService {
         }
     }
 
-    
+
     exportJson() {
         return this.#wordsMap;
     }
 
-    
+
     backupJson() {
         const backupKey = `back_${lcl_key}_${moment().toString()}`;
-        setItemFromJson(backupKey,this.#wordsMap);
+        setItemFromJson(backupKey, this.#wordsMap);
         console.log("#databackup on key: " + backupKey);
     }
-    
+
     resetScore(json) {
-        Object.values(json).forEach((word)=>{
-          word.attempts = 0
-          word.score = 0;
-          word.score_v1 = 0;
-          word.score_v2 = 0;
-          word.score_v3 = 0;
-        }) 
+        Object.values(json).forEach((word) => {
+            word.attempts = 0
+            word.score = 0;
+            word.score_v1 = 0;
+            word.score_v2 = 0;
+            word.score_v3 = 0;
+        })
     }
 
     // importFromJson(json) {
@@ -212,7 +224,7 @@ class IrregularVerbService {
     importFromPlainText(value) {
         const newWords = value.split('\n');
         const prf = this.getPlainTextImportPrefix()
-        if(newWords.shift()?.includes(prf)) {
+        if (newWords.shift()?.includes(prf)) {
             let newWrdCount = this.addMany(newWords);
             alert(`${newWrdCount} ${lcl_key} imported`);
         } else {
@@ -226,7 +238,7 @@ class IrregularVerbService {
 
     exportToPlainText() {
         const values = Object.values(this.#wordsMap);
-        const valTxts = values.map(v=>`${v.v1}\t${v.v2}\t${v.v3}`).join("\n");
+        const valTxts = values.map(v => `${v.v1}\t${v.v2}\t${v.v3}`).join("\n");
         return this.getPlainTextImportPrefix() + "\n" + valTxts
     }
 

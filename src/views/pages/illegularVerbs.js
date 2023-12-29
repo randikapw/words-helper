@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useSpeechSynthesis } from "react-speech-kit";
 import { getWords } from "../utils";
 import irregularVerbService from "../services/irregularVerbService";
 
 const getVerbType = (word) => {
     if (word && (word.score_v1 || word.score_v2 || word.score_v3)) {
-        if (word.score_v1 > word.score_v2){
-            if (word.score_v1 > word.score_v3){
+        if (word.score_v1 > word.score_v2) {
+            if (word.score_v1 > word.score_v3) {
                 return "v1";
-            } 
-        } 
-        if (word.score_v2 > word.score_v3){
+            }
+        }
+        if (word.score_v2 > word.score_v3) {
             return "v2";
-        } 
+        }
         return "v3";
     }
     const r = Math.floor(Math.random() * 3);
@@ -36,18 +36,27 @@ const IrregularVerbs = () => {
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
     const [editMode, setEditMode] = useState(null);
     const [index, setIndex] = useState(0);
-    const { speak } = useSpeechSynthesis();
+    const [repeats, setRepeats] = useState({ current: 1, total: 1 })
+    const [spchIndex, setSpchIndex] = useState(6);
+    const { speak: speakO, voices } = useSpeechSynthesis();
 
     const [verbs, setVerbs] = useState([]);
+
+    const speak = useCallback(({ text }) => speakO({ text, voice: voices[spchIndex] }), [speakO, voices, spchIndex])
+    const setSpeechIndex = useCallback((index) => {
+        setSpchIndex(index)
+        localStorage.setItem("spchIndex", index)
+    }, [])
 
     useEffect(() => {
         const ws = irregularVerbService.getPrioratizedWordList();
         setVerbs(ws);
+        setSpchIndex(localStorage.getItem("spchIndex") ?? 1)
     }, []);
 
     useEffect(() => {
-        if(verbs.length)getNextWord()
-    },[verbs])
+        if (verbs.length) getNextWord()
+    }, [verbs])
 
     const getNextWord = () => {
         const i = index % verbs.length;
@@ -58,6 +67,10 @@ const IrregularVerbs = () => {
 
         setCurrentWordType(targetType)
         setCurrentWord(newVerb);
+        setRepeats(irregularVerbService.getRepeatCountsForWord(newVerb))
+
+        setIsFirstAttempt(true);
+        setShowCurrent(false);
         return newVerb[targetType];
     }
 
@@ -70,7 +83,7 @@ const IrregularVerbs = () => {
 
     const onCheck = () => {
         const lclValue = value.trim().toLocaleLowerCase();
-        if (lclValue === "l") {
+        if (!(lclValue) || lclValue === "l") {
             speak({ text: currentWord[currentWordType] });
             setValue("");
             return;
@@ -80,21 +93,43 @@ const IrregularVerbs = () => {
             setValue("");
             return;
         }
+        if (lclValue.startsWith("v ")) {
+            const index = parseInt(lclValue.split(" ")[1])
+            let message;
+            if (index && index >= 1) {
+                setSpeechIndex(index - 1)
+                message = "The voice has changed"
+            } else {
+                message = "Invalid voice index"
+            }
+            setTimeout(() => speak({ text: message }), 500);
+            setValue("");
+            return;
+        }
 
 
-        const {v1,v2,v3} = currentWord;
-        const [ov1,ov2,ov3] = lclValue.replace( /\s\s+/g, ' ' ).split(" ");
-        if (v1===ov1 && v2 === ov2 && v3 === ov3) {
-            irregularVerbService.scoreAttempt(currentWord, false, isFirstAttempt, currentWordType);
-            setIsFirstAttempt(true);
-            speak({ text: getNextWord() });
-            setShowCurrent(false);
+        const { v1, v2, v3 } = currentWord;
+        const [ov1, ov2, ov3] = lclValue.replace(/\s\s+/g, ' ').split(" ");
+        if (v1 === ov1 && v2 === ov2 && v3 === ov3) {
+            const { current, total } = repeats;
+            irregularVerbService.scoreAttempt(currentWord, false, isFirstAttempt, currentWordType,current);
+            if (current + 1 < total) { //+1 to reprocent ongoing current attempt
+                setRepeats({ ...repeats, current: current + 1 })
+                speak({ text: currentWord[currentWordType] })
+                setShowCurrent(false);
+                setIsFirstAttempt(false);
+            } else {
+                speak({ text: getNextWord() });
+            }
         } else {
             irregularVerbService.scoreAttempt(currentWord, true, isFirstAttempt, currentWordType);
             setIsFirstAttempt(false);
             speak({ text: currentWord[currentWordType] });
             setCurrentEnteredWord(lclValue);
             setShowCurrent(true);
+            const { total } = repeats;
+            const increment = total > 4 ? 0 : total > 2 ? 1 : 2  
+            setRepeats({ ...repeats, total: total + increment })
         }
         setValue("");
 
@@ -120,8 +155,8 @@ const IrregularVerbs = () => {
     }
 
     const DisplayWord = ({ word }) => {
-        return <div className="group">
-            <h1 >{word && `${word.v1} ${word.v2} ${word.v3}`}</h1>
+        return <div className="pl-0">
+            <h1 className="text-3xl">{word && `${word.v1} ${word.v2} ${word.v3}`}</h1>
             {editMode
                 ? <div>
                     <textarea
@@ -133,8 +168,8 @@ const IrregularVerbs = () => {
                 : <div>
                     <span onClick={() => setEditMode(`${word.v1} ${word.v2} ${word.v3}`)}>Edit</span>
                     <span> | </span> <span onClick={() => onRemove(word)}>Remove</span>
-                    <span> | </span> <span onClick={() => onSearch(word)}>Google</span>
-                    <span> | </span> <span onClick={() => onSearch(word, "madura")}>Madura</span>
+                    <span> | </span> <span onClick={() => onSearch(word.v1)}>Google</span>
+                    <span> | </span> <span onClick={() => onSearch(word.v1, "madura")}>Madura</span>
                 </div>
             }
         </div>
@@ -143,8 +178,11 @@ const IrregularVerbs = () => {
     const DisplayProgress = () => {
         const counts = irregularVerbService.getCounts();
         return <div className="group">
+            <span>Repeats to cover: {`${repeats.total - repeats.current}`}</span>
+            <span>|</span>
             <span>Current Session: {`${index} / ${verbs.length}`}</span>
-            <div>Today: Unique - {counts.uniqueAttempts} Retries - {counts.retries}</div>
+            <span>|</span>
+            <span>Today: Unique - {counts.uniqueAttempts} Retries - {counts.retries}</span>
         </div>
     }
 
@@ -153,8 +191,8 @@ const IrregularVerbs = () => {
             <div className="group">
                 <h2>Type the all three verbfroms seperated by spaces with correct spellings</h2>
             </div>
-            {showCurrent 
-                ? <><DisplayWord word={currentWord}/><div>Word you entered: <span style={{color:"red"}}>{currentEnteredWord}</span></div> </>
+            {showCurrent
+                ? <><DisplayWord word={currentWord} /><div>Word you entered: <span style={{ color: "red" }}>{currentEnteredWord}</span></div> </>
                 : <div>Type 'L' then Enter to listen the word again or, Type 'S' then Enter to show the word.</div>
             }
             <div className="group">
@@ -176,12 +214,12 @@ const IrregularVerbs = () => {
                     Show me the word
                 </button>
             </div>
-            {previousWord && <div className="group">
+            <DisplayProgress />
+            {previousWord && <div className="border-y">
                 <span>Previous Word</span>
                 <DisplayWord word={previousWord} />
             </div>
             }
-            <DisplayProgress/>
         </div>
     );
 };
