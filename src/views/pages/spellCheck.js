@@ -5,6 +5,7 @@ import wordsService from "../services/wordsService";
 
 const SpellCheck = () => {
     const [value, setValue] = useState("");
+    const [filter, setFilter] = useState({ status: "ACTIVE" });
     const [currentWord, setCurrentWord] = useState("ready");
     const [currentEnteredWord, setCurrentEnteredWord] = useState("");
     const [previousWord, setPreviousWord] = useState(null);
@@ -25,7 +26,7 @@ const SpellCheck = () => {
     }, [])
 
     useEffect(() => {
-        const ws = wordsService.getPrioratizedWordList();
+        const ws = wordsService.getPrioratizedWordList(filter);
         setWords(ws);
         const currWrd = ws[0]
         setCurrentWord(currWrd);
@@ -92,18 +93,13 @@ const SpellCheck = () => {
             setCurrentEnteredWord(lclValue);
             setShowCurrent(true);
             const { total } = repeats;
-            const increment = total > 9 ? 0 : total > 4 ? 1 : total > 2 ? 2 : 3  
+            const increment = total > 9 ? 0 : total > 4 ? 1 : total > 2 ? 2 : 3
             setRepeats({ ...repeats, total: total + increment })
         }
         setValue("");
 
     }
 
-    const onRemove = (key) => {
-        wordsService.removeWord(key);
-        speak({ text: getNextWord() });
-        setShowCurrent(false);
-    }
 
     const onEdit = (key, newKey) => {
         wordsService.updateWord(key, newKey);
@@ -118,9 +114,39 @@ const SpellCheck = () => {
         else window.open(`https://www.google.com/search?q=${key}&oq=${key}`, "_blank");
     }
 
-    const DisplayWord = ({ word }) => {
+    const DisplayWord = ({ word, isPrevious = false }) => {
+        const [status, setStatus] = useState(wordsService.getWordStatus(word))
+
+        const onRemove = (key, isPrevious) => {
+            wordsService.removeWord(key);
+            // alert(`Word "${key}" has removed from your collection`);
+            setStatus(wordsService.getWordStatus(word));
+            // const ws = wordsService.getPrioratizedWordList(filter);
+            // setWords(ws);
+            if (isPrevious) {
+                // setPreviousWord(null);
+                return
+            }
+            speak({ text: getNextWord() });
+            setShowCurrent(false);
+        }
+
+
+        const onRestore = (key, isPrevious) => {
+            wordsService.restoreWord(key);
+            // alert(`Word "${key}" has restored to your collection`);
+            setStatus(wordsService.getWordStatus(word));
+            // const ws = wordsService.getPrioratizedWordList(filter);
+            // setWords(ws);
+        }
+
+
+
         return <div className="pl-0">
-            <h1 className="text-3xl">{word}</h1>
+
+            <h1 className="text-3xl">{word} </h1>
+            {status === "DELETE" && <span className="tagLabel bg-red-500">DELETED</span>}
+            {status === "ARCHIVED" && <span className="tagLabel bg-yellow-500">{status}</span>}
             {editMode
                 ? <div>
                     <textarea
@@ -129,11 +155,19 @@ const SpellCheck = () => {
                     ></textarea><span onClick={() => onEdit(word, editMode)}>Update</span>
                     <span> | </span> <span onClick={() => setEditMode(null)}>Cancel</span>
                 </div>
-                : <div>
-                    <span onClick={() => setEditMode(word)} className="pl-0">Edit</span>
-                    <span> | </span> <span onClick={() => onRemove(word)}>Remove</span>
-                    <span> | </span> <span onClick={() => onSearch(word)}>Google</span>
-                    <span> | </span> <span onClick={() => onSearch(word, "madura")}>Madura</span>
+                : <div className="options pt-4">
+
+                    {
+                        status === "ACTIVE"
+                            ? <>
+                                <span onClick={() => setEditMode(word)} className="pl-0">Edit</span>
+                                <span onClick={() => onRemove(word, isPrevious)}>Delete</span>
+                            </>
+                            : <span onClick={() => onRestore(word, isPrevious)}>Restore</span>
+                    }
+
+                    <span onClick={() => onSearch(word)}>Google</span>
+                    <span onClick={() => onSearch(word, "madura")}>Madura</span>
                 </div>
             }
         </div>
@@ -175,7 +209,7 @@ const SpellCheck = () => {
             <DisplayProgress />
             {previousWord && <div className="border-y">
                 <span>Previous Word</span>
-                <DisplayWord word={previousWord} />
+                <DisplayWord word={previousWord} isPrevious={true} />
             </div>
             }
         </div>

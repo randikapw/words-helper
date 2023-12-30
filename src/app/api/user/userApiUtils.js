@@ -1,13 +1,14 @@
 export function mergeSpellings(rootCollectionStr, userCollectionStr){
     const rootCollection = JSON.parse(rootCollectionStr);
     const userCollection = JSON.parse(userCollectionStr);
-    //{\"incorporating\":{\"word\":\"incorporating\",\"attempts\":23,\"score\":2,\"date\":\"2023-09-27T18:30:00.000Z\"}
+    //old structure {\"incorporating\":{\"word\":\"incorporating\",\"attempts\":23,\"score\":2,\"date\":\"2023-09-27T18:30:00.000Z\"}
     Object.entries(rootCollection).forEach(([key, record]) => {
         const userRecord = userCollection[key]
         if (userRecord) {
-            record.attempts = userRecord.attempts || 0;
+            record.uniqueAttempts = userRecord.uniqueAttempts || userRecord.attempts || 0;
             record.score = userRecord.score ?? 0;
             if (userRecord.date) record.date = userRecord.date;
+            record.status = userRecord.status ?? "ACTIVE";
         }
     });
     return JSON.stringify(rootCollection)

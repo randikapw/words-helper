@@ -114,3 +114,10 @@ h2 {
 	margin-bottom: 10px;
 	text-align: center;
 }
+
+.tagLabel {
+    color: beige;
+	font-size: small;
+    margin: 2px 8px;
+    border-radius: 10px;
+}
