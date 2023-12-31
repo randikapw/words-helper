@@ -5,6 +5,12 @@ import userService, { getNewUserSeviceInstance } from "./userService";
 
 // export const lcl_key = "Spellings";
 export const lcl_key = "spellings";
+
+const AUTO_ARC_SUCCESS_STREAK = 3;
+const AUTO_ARC_SUCCESS_ATMPTS = 3;
+const AUTO_ARC_SUCCESS_RATIO = 0.8;
+const AUTO_ARC_MAX_SOCRE = 5;
+
 let today = getToday().toISOString();
 
 class WordService {
@@ -127,7 +133,10 @@ class WordService {
     }
 
     restoreWord(word) {
-        this.#wordsMap[word].status = "ACTIVE";
+        const w = this.#wordsMap[word];
+        w.status = "ACTIVE";
+        //If it was archived by streak reduce it by to auto archive again in next attempt
+        if (w.firstAttepmtSuccessStreak > AUTO_ARC_SUCCESS_STREAK) w.firstAttepmtSuccessStreak = AUTO_ARC_SUCCESS_STREAK - 2
         this.save();
     }
 
@@ -162,18 +171,6 @@ class WordService {
         let {firstAttepmtSuccess=0,firstAttepmtSuccessStreak=0,score=0,status,date} = wordObj
         let uniqueAttempts = wordObj.uniqueAttempts ||  wordObj.attempts || 0;  // wordObj.attempts is the old attribute and now it replaced with uniqueAttempts
 
-        if (isFirstAttempt) {
-            ++uniqueAttempts
-            date = today;
-            if (!isWrong) {
-                ++firstAttepmtSuccess;
-                // if the ther good first attempt streak or if there good first attmpt success to unique attemps ratio, the word will auto archived.
-                if(++firstAttepmtSuccessStreak > 3 || (firstAttepmtSuccess > 3 && (firstAttepmtSuccess/uniqueAttempts) > 0.8 )) status = "ARCHIVED"
-            } else {
-                firstAttepmtSuccessStreak = 0;
-            }
-        } 
-
         if (isWrong) {
             score += (isFirstAttempt ? 3 : 2) //actually this will be again becomes 2 : 1 as two repeats of given for a wrong attempt will reduce one mark. 
         } else if (score > 0) {
@@ -183,8 +180,26 @@ class WordService {
             // if(score > 10) score -= 1;
             // if(score > 20) score -= 1;
             if (currentRepeatAttempt && currentRepeatAttempt % 2 === 0) score -= 1;
-            //didnt optimize to increase the readability
+            //didnt optimize with the purpose of increase the readability
         }
+
+        if (isFirstAttempt) {
+            ++uniqueAttempts
+            date = today;
+            if (!isWrong) {
+                ++firstAttepmtSuccess;
+                ++firstAttepmtSuccessStreak
+                // if the there less score and good first attempt streak or if there good first attmpt success to unique attemps ratio, the word will auto archived.
+                if( score < AUTO_ARC_MAX_SOCRE &&
+                    (firstAttepmtSuccessStreak > AUTO_ARC_SUCCESS_STREAK || 
+                        (firstAttepmtSuccess > AUTO_ARC_SUCCESS_ATMPTS && (firstAttepmtSuccess/uniqueAttempts) > AUTO_ARC_SUCCESS_RATIO ) 
+                    )
+                ) status = "ARCHIVED"
+            } else {
+                firstAttepmtSuccessStreak = 0;
+            }
+        } 
+
         // if(!isFirstAttempt) alert("next attempt");
         this.#wordsMap[word] = { ...wordObj, score, uniqueAttempts, date, firstAttepmtSuccess, firstAttepmtSuccessStreak, status }
         //same word repeating as not counting if the repeat attmpt is correct.
@@ -218,6 +233,7 @@ class WordService {
                     this.#wordsMap[lowerWord] = ew
                 }
                 ew.score += 5
+                ew.status = "ACTIVE"
                 existWords = true
             }
         });

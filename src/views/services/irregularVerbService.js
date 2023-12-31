@@ -22,8 +22,8 @@ class IrregularVerbService {
     }
 
     #lazyCount = 0;
-    #lazyCountMax = 5;
-    #lazyTimeout = 30000;
+    #lazyCountMax = 15;
+    #lazyTimeout = 45000;
     #lazyTimeoutObj;
 
     constructor() {
