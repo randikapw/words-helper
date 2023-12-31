@@ -9,6 +9,8 @@ export function mergeSpellings(rootCollectionStr, userCollectionStr){
             record.score = userRecord.score ?? 0;
             if (userRecord.date) record.date = userRecord.date;
             record.status = userRecord.status ?? "ACTIVE";
+            record.firstAttepmtSuccess = userRecord.firstAttepmtSuccess
+            record.firstAttepmtSuccessStreak = userRecord.firstAttepmtSuccessStreak
         }
     });
     return JSON.stringify(rootCollection)
