@@ -34,7 +34,6 @@ const IrregularVerbs = () => {
     const [previousWord, setPreviousWord] = useState(null);
     const [showCurrent, setShowCurrent] = useState(false);
     const [isFirstAttempt, setIsFirstAttempt] = useState(true);
-    const [editMode, setEditMode] = useState(null);
     const [index, setIndex] = useState(0);
     const [repeats, setRepeats] = useState({ current: 1, total: 1 })
     const [spchIndex, setSpchIndex] = useState(6);
@@ -141,13 +140,6 @@ const IrregularVerbs = () => {
         setShowCurrent(false);
     }
 
-    const onEdit = (key, newKey) => {
-        irregularVerbService.updateWord(key, newKey);
-        //setCurrentWord(newKey);
-        speak({ text: getNextWord() });
-        setEditMode(null);
-
-    }
 
     const onSearch = (key, soruce) => {
         if (soruce === "madura") window.open(`https://www.maduraonline.com/?find=${key}`, "_blank");
@@ -155,6 +147,19 @@ const IrregularVerbs = () => {
     }
 
     const DisplayWord = ({ word }) => {
+        const [editMode, setEditMode] = useState(null);
+        const onEdit = async (key, newKey) => {
+            try {
+                await irregularVerbService.updateWord(key, newKey);
+                //setCurrentWord(newKey);
+                speak({ text: getNextWord() });
+                setEditMode(null);
+            } catch (error) {
+                console.error(error)
+                alert(error.message)
+            }
+        }
+        
         return <div className="pl-0">
             <h1 className="text-3xl">{word && `${word.v1} ${word.v2} ${word.v3}`}</h1>
             {editMode

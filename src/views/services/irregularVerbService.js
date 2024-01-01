@@ -94,26 +94,35 @@ class IrregularVerbService {
         this.save();
     }
 
-    updateWord(oldWord, newWord) {
+    async updateWord(oldWord, newWord) {
         const wordsMap = this.#wordsMap;
 
-        delete wordsMap[oldWord.v1];
+        if (oldWord.v1 !== newWord.split(" ")[0]) { // newWord.split(" ")[0] is for v1
+            delete wordsMap[oldWord.v1];
+            const rootUserService = getNewUserSeviceInstance();
+            const rootUsr = await rootUserService.loadUser("root");
+            // const words = this.#wordsMap;
+            const rootWords = convertStringToJson(rootUsr[lcl_key]);
+            delete rootWords[oldWord.v1];
+            await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(rootWords)})
+        }
+        
         newWord = newWord.replace(/\s+/g, '\t');
-        console.log(`updating ${newWord}`)
-        this.addMany([newWord]);
+        console.log(`irregular updating ${newWord}`)
+        await this.addMany([newWord]);
     }
 
-    #reduceByWieght(marks) {
-        // if (marks < 1) return marks;
-        // if (--marks < 5) return marks;
-        // if (--marks < 10) return marks;
-        // if (--marks < 20) return marks;
-        return --marks;
-    }
+    // #reduceByWieght(marks) {
+    //     // if (marks < 1) return marks;
+    //     // if (--marks < 5) return marks;
+    //     // if (--marks < 10) return marks;
+    //     // if (--marks < 20) return marks;
+    //     return --marks;
+    // }
 
     getRepeatCountsForWord(word) {
         const { score = 0 } = this.#wordsMap[word.v1] ?? {};
-        const total = score > 20 ? 5 : score > 10 ? 3 : score > 5 ? 2 : 0
+        const total = score > 20 ? 5 : score > 10 ? 4 : score > 5 ? 3 : score > 2 ? 2 : 0
         return { total, current: 0 }
     }
 
@@ -128,12 +137,13 @@ class IrregularVerbService {
         if (isWrong) {
             const newPoints = isFirstAttempt ? 2 : 1;
             score += newPoints
-            wordObj[vTypeKey] += newPoints;
+            wordObj[vTypeKey] += 1;
         } else {
             if (isFirstAttempt) { //if correct AND first attempt
                 ++attempts;
-                if (score > 0) score = this.#reduceByWieght(score);
-                if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = this.#reduceByWieght(wordObj[vTypeKey]);
+                if (score > 0) --score //score = this.#reduceByWieght(score);
+                if (wordObj[vTypeKey] > 1) wordObj[vTypeKey] -= 2 //this.#reduceByWieght(wordObj[vTypeKey]);
+                else if (wordObj[vTypeKey] > 0) wordObj[vTypeKey] = 0
             }
             if (currentRepeatAttempt && currentRepeatAttempt%2===0) {
                 if (score > 0) score -= 1;
@@ -150,11 +160,14 @@ class IrregularVerbService {
         return counterService.getCounts(lcl_key);
     }
 
-    addMany(newWords) {
-        const words = this.#wordsMap;
+    async addMany(newWords) {
+
+        const rootUserService = getNewUserSeviceInstance();
+        const rootUsr = await rootUserService.loadUser("root");
+        const words = convertStringToJson(rootUsr[lcl_key]);  //this.#wordsMap 
         let newWrdCount = 0;
         newWords.forEach(verbsSet => {
-            const lowerWord = verbsSet.trim().toLocaleLowerCase();
+            const lowerWord = verbsSet.trim();
             const verbSplit = lowerWord.split("\t");
             if (verbSplit.length !== 3) {
                 const msg = `chunk ${verbsSet} doesnot contain 3 words separated by tabs!`
@@ -164,20 +177,25 @@ class IrregularVerbService {
             const v1 = verbSplit[0].trim();
             const v2 = verbSplit[1].trim();
             const v3 = verbSplit[2].trim();
-            const w = words[v1];
-            if (!(w && w.v1 && w.v2 && w.v3)) {
-                words[v1] = { ...this.#newWordTemplate, v1, v2, v3 };
+            let w = words[v1];
+            if (!(w && w.v2===v2 && w.v3===v3)) {
+                w = { ...this.#newWordTemplate, v1, v2, v3 };
+                words[v1] = w;
+                this.#wordsMap[v1] = w
                 ++newWrdCount
-            }
+            } 
         });
-        this.save();
+        if (newWrdCount) {
+            await rootUserService.upadteUserAttributes({[lcl_key]:JSON.stringify(words)})
+            await this.save();
+        }
         return newWrdCount;
     }
 
-    save() {
+    async save() {
         console.log("saving irregularVerbs data...", this.#wordsMap);
         // setItemFromJson(lcl_key,this.#wordsMap);
-        userService.upadteUserAttributes({ [lcl_key]: JSON.stringify(this.#wordsMap) })
+        await userService.upadteUserAttributes({ [lcl_key]: JSON.stringify(this.#wordsMap) })
         this.#lazyCount = 0;
         clearTimeout(this.#lazyTimeoutObj);
         this.#lazyTimeoutObj = null;
