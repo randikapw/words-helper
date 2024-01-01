@@ -1,7 +1,7 @@
 import { convertStringToJson, getItemFromLocalStorageAsJson, getToday, setItemFromJson } from "../utils";
 import counterService from "./counterService";
 import moment from "moment";
-import userService from "./userService";
+import userService, { getNewUserSeviceInstance } from "./userService";
 
 // export const lcl_key = "Irregular_Verbs";
 export const lcl_key = "irregular";
