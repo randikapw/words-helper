@@ -105,7 +105,7 @@ class WordService {
                     // call each funtion set to filters array and check the word fullfills the match
                     for (let i = 0; i < filters.length; i++) {
                         const func = filters[i];
-                        if(!func(word)) return false;
+                        if (!func(word)) return false;
                     }
 
                 }
@@ -140,17 +140,26 @@ class WordService {
         this.save();
     }
 
-    updateWord(oldWord, newWord) {
+    async updateWord(oldWord, newWord) {
         const wordsMap = this.#wordsMap;
 
         delete wordsMap[oldWord];
 
+        const rootUserService = getNewUserSeviceInstance();
+        const rootUsr = await rootUserService.loadUser("root");
+        // const words = this.#wordsMap;
+        const rootWords = convertStringToJson(rootUsr[lcl_key]);
+        delete rootWords[oldWord];
+
         newWord = newWord.trim();
         if (!wordsMap[newWord]) {
-            wordsMap[newWord] = { ...this.#newWordTemplate, word: newWord }
+            const newW = { ...this.#newWordTemplate, word: newWord }
+            wordsMap[newWord] = newW
+            rootWords[newWord] = newW
         }
 
-        this.save();
+        await rootUserService.upadteUserAttributes({ [lcl_key]: JSON.stringify(rootWords) })
+        await this.save();
     }
 
     getWordStatus(word) {
@@ -168,8 +177,8 @@ class WordService {
         // let score = wordObj.score || 0;
         // let date = wordObj.date;
         // let status = wordObj.status
-        let {firstAttepmtSuccess=0,firstAttepmtSuccessStreak=0,score=0,status,date} = wordObj
-        let uniqueAttempts = wordObj.uniqueAttempts ||  wordObj.attempts || 0;  // wordObj.attempts is the old attribute and now it replaced with uniqueAttempts
+        let { firstAttepmtSuccess = 0, firstAttepmtSuccessStreak = 0, score = 0, status, date } = wordObj
+        let uniqueAttempts = wordObj.uniqueAttempts || wordObj.attempts || 0;  // wordObj.attempts is the old attribute and now it replaced with uniqueAttempts
 
         if (isWrong) {
             score += (isFirstAttempt ? 3 : 2) //actually this will be again becomes 2 : 1 as two repeats of given for a wrong attempt will reduce one mark. 
@@ -190,15 +199,15 @@ class WordService {
                 ++firstAttepmtSuccess;
                 ++firstAttepmtSuccessStreak
                 // if the there less score and good first attempt streak or if there good first attmpt success to unique attemps ratio, the word will auto archived.
-                if( score < AUTO_ARC_MAX_SOCRE &&
-                    (firstAttepmtSuccessStreak > AUTO_ARC_SUCCESS_STREAK || 
-                        (firstAttepmtSuccess > AUTO_ARC_SUCCESS_ATMPTS && (firstAttepmtSuccess/uniqueAttempts) > AUTO_ARC_SUCCESS_RATIO ) 
+                if (score < AUTO_ARC_MAX_SOCRE &&
+                    (firstAttepmtSuccessStreak > AUTO_ARC_SUCCESS_STREAK ||
+                        (firstAttepmtSuccess > AUTO_ARC_SUCCESS_ATMPTS && (firstAttepmtSuccess / uniqueAttempts) > AUTO_ARC_SUCCESS_RATIO)
                     )
                 ) status = "ARCHIVED"
             } else {
                 firstAttepmtSuccessStreak = 0;
             }
-        } 
+        }
 
         // if(!isFirstAttempt) alert("next attempt");
         this.#wordsMap[word] = { ...wordObj, score, uniqueAttempts, date, firstAttepmtSuccess, firstAttepmtSuccessStreak, status }
